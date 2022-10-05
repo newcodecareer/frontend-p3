@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --main-color: #F77F00;
+    --second-color: rgb(55, 55, 55);
+    /* Font-family */
+    --font-family: 'Inter', sans-serif;
+}
+
 form {
-    font-family: sans-serif;
-    max-width: 40%;
-    min-width: 500px;
+    font-family: var(--font-family);
+    max-width: 580px;
     margin: auto;
     box-sizing: border-box;
     padding: 30px 25px;
@@ -36,7 +45,7 @@ form {
 
 .inputs label {
     font-size: 1.2rem;
-    color: rgb(55, 55, 55);
+    color: var(--second-color);
     font-weight: 600;
     padding: 15px;
 }
@@ -64,7 +73,7 @@ form {
     font-size: 1rem;
     font-weight: 600;
     padding: 18px 0;
-    background-color: rgb(251, 90, 31);
+    background-color: var(--main-color);
     border: none;
     border-radius: 5px;
     margin: 10px;
@@ -73,20 +82,25 @@ form {
 
 .terms {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .terms p {
     width: 95%;
     text-align: center;
     font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
 
 .terms p>:link {
-    color: rgb(55, 55, 55);
-    font-weight: 600;
+    color: var(--second-color);
+    font-weight: 700;
     text-decoration: none;
 }
 
 .terms p>:visited {
-    color: rgb(55, 55, 55);
+    color: var(--second-color);
 }

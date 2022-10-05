@@ -1,25 +1,26 @@
 import classes from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
     <form>
       <div className={classes.inputs}>
-        <label>Create a new account</label>
+        <label>Log into your account</label>
         <input type="email" placeholder="Email address" />
         <input type="password" placeholder="Create password" />
       </div>
       <div className={classes.btnSignin}>
-        <button type="submit">Sign in</button>
+        <button type="submit">Log in</button>
       </div>
       <div className={classes.terms}>
         <p>
-          <a href="#">Forgot your password?</a>
+          <Link to="#">Forgot your password?</Link>
         </p>
         <p>
-          Are you a new user? <a href="#">Create a free account</a>
+          Are you a new user? <Link to="/signup">Create a free account</Link>
         </p>
         <p>
-          A new tradie? <a href="#">List your business here</a>
+          A new tradie? <Link to="#">List your business here</Link>
         </p>
       </div>
     </form>

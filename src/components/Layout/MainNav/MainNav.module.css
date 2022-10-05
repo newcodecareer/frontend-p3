@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --main-color: #F77F00;
+    --second-color: rgb(55, 55, 55);
+    /* Font-family */
+    --font-family: 'Inter', sans-serif;
+}
+
 .header {
-    width: 60%;
+    max-width: 1920px;
     height: 3rem;
-    font-family: sans-serif;
+    font-family: var(--font-family);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +20,7 @@
 }
 
 .logo img {
-    width: 120px;
+    max-width: 120px;
 }
 
 .header ul {
@@ -27,25 +37,26 @@
 .header a {
     text-decoration: none;
     font-size: 0.9rem;
-    color: rgb(55, 55, 55);
+    font-weight: 500;
+    color: var(--second-color);
 }
 
 .header a:link {
-    color: rgb(55, 55, 55);
+    color: var(--second-color);
 }
 
 .header a:hover,
 .header a:active {
-    color: rgb(251, 90, 31);
+    color: var(--main-color);
 }
 
 .header li:last-child {
     padding: 4px 18px;
-    border: solid 1px rgb(251, 90, 31);
+    border: solid 1px var(--main-color);
     border-radius: 25px;
 }
 
 .header li:last-child a {
-    color: rgb(251, 90, 31);
+    color: var(--main-color);
     font-weight: 600;
 }

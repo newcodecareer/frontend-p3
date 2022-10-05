@@ -1,4 +1,5 @@
 import classes from "./Signup.module.css";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -11,19 +12,19 @@ const Signup = () => {
         <input type="password" placeholder="Create password" />
       </div>
       <div className={classes.btnCreate}>
-        <button type="submit">Create Account</button>
+        <button type="submit">Sign up</button>
       </div>
       <div className={classes.terms}>
         <p>
           By registering with Houddy, you agree to our{" "}
-          <a href="#">Privacy Policy & Terms & Conditions</a>.
+          <Link to="#">Privacy Policy & Terms & Conditions</Link>
         </p>
         <p>
-          Already have an account? <a href="#">Log in</a>
+          Already have an account ? <Link to="/login">Log in</Link>
         </p>
       </div>
     </form>
   );
 };
-
+// Already have an account ? <Routes></Routes><a href="/login">Log in</a>
 export default Signup;

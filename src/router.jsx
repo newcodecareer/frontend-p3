@@ -19,7 +19,7 @@ const routes = [
     element: <Signup />,
   },
   {
-    path: "login",
+    path: "/login",
     element: <Login />,
   },
 ];
