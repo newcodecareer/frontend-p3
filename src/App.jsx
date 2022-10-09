@@ -1,7 +1,8 @@
 import React from "react";
-import { Routes, BrowserRouter, Route, Navigate } from "react-router-dom";
+import { Routes, BrowserRouter, Route, Navigate, } from "react-router-dom";
 import routes from "./router";
 import LoadingPage from "./pages/LoadingPage";
+
 
 const App = () => {
   return (
@@ -16,6 +17,16 @@ const App = () => {
         <Route path="/loading" element={<LoadingPage />} />
         <Route path="*" element={<Navigate to="/error" replace />} />
       </Routes>
+      {/* <Routes>
+        <Navbar/>
+        <Switch>
+          <Route path='/' exact component={Logo} />
+          <Route path='/browseNeeds' component={BrowseNeeds} />
+          <Route path='/myNeeds' component={MyNeeds} />
+          <Route path='/postNeeds' component={PostNeeds} />
+          <Route path='/profile' component={Profile} />
+        </Switch>
+      </Routes> */}
     </BrowserRouter>
   );
 };
