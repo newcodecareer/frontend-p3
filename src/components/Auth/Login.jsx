@@ -1,4 +1,14 @@
-import { BtnDiv, Form, InputDiv, Input, Label, P, TermDiv, Button, StyledLink } from "./Auth.styles";
+import {
+  BtnDiv,
+  Form,
+  InputDiv,
+  Input,
+  Label,
+  P,
+  TermDiv,
+  Button,
+  StyledLink,
+} from "./Auth.styles";
 
 const Login = () => {
   return (

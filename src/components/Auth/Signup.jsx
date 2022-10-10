@@ -1,4 +1,14 @@
-import { BtnDiv, Button, Form, Input, InputDiv, Label, P, StyledLink, TermDiv } from "./Auth.styles";
+import {
+  BtnDiv,
+  Button,
+  Form,
+  Input,
+  InputDiv,
+  Label,
+  P,
+  StyledLink,
+  TermDiv,
+} from "./Auth.styles";
 
 const Signup = () => {
   return (
