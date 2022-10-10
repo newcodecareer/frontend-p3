@@ -7,9 +7,9 @@ export const Form = styled.form`
   padding: 30px 25px;
 `;
 
-export const InputDiv = styled.div.attrs(props => ({
-    size: props.size || '1.2rem',
-    color: props.color || 'rgb(55,55,55)',
+export const InputDiv = styled.div.attrs((props) => ({
+    size: props.size || "1.2rem",
+    color: props.color || "rgb(55,55,55)",
 }))`
   width: 100%;
   height: auto;
@@ -21,8 +21,8 @@ export const InputDiv = styled.div.attrs(props => ({
   padding-top: 20px;
 
   label {
-    font-size: ${props => props.size};
-    color: ${props => props.color};
+    font-size: ${(props) => props.size};
+    color: ${(props) => props.color};
     font-weight: 600;
     padding: 15px;
   }
