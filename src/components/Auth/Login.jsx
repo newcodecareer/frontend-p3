@@ -1,27 +1,26 @@
-import { Link } from "react-router-dom";
-import { BtnDiv, Form, InputDiv, TermDiv } from "./Auth.styles";
+import { BtnDiv, Form, InputDiv, Input, Label, P, TermDiv, Button, StyledLink } from "./Auth.styles";
 
 const Login = () => {
   return (
     <Form>
       <InputDiv>
-        <label>Log into your account</label>
-        <input type="email" placeholder="Email address" />
-        <input type="password" placeholder="Create password" />
+        <Label>Log into your account</Label>
+        <Input type="email" placeholder="Email address" />
+        <Input type="password" placeholder="Create password" />
       </InputDiv>
       <BtnDiv>
-        <button type="submit">Log in</button>
+        <Button type="submit">Log in</Button>
       </BtnDiv>
       <TermDiv>
-        <p>
-          <Link to="#">Forgot your password?</Link>
-        </p>
-        <p>
-          Are you a new user? <Link to="/signup">Create a free account</Link>
-        </p>
-        <p>
-          A new tradie? <Link to="#">List your business here</Link>
-        </p>
+        <P>
+          <StyledLink to="/reset-password">Forgot your password?</StyledLink>
+        </P>
+        <P>
+          Are you a new user? <StyledLink to="/signup">Create a free account</StyledLink>
+        </P>
+        <P>
+          A new tradie? <StyledLink to="#">List your business here</StyledLink>
+        </P>
       </TermDiv>
     </Form>
   );

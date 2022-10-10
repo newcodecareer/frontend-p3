@@ -1,5 +1,6 @@
 import React from "react";
 import Login from "./components/Auth/Login";
+import ResetPassword from "./components/Auth/ResetPassword";
 import Signup from "./components/Auth/Signup";
 
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "reset-password",
+    element: <ResetPassword />,
   },
 ];
 
