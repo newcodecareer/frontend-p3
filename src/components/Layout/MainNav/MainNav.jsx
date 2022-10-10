@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import classes from "./MainNav.module.css";
+import { Header, LogoDiv, NavDiv } from "./MainNav.styles";
 
 const MainNav = () => {
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}>
+    <Header>
+      <LogoDiv>
         <Link to="/">
           <img src="../src/images/logo.png" alt="Houddy logo" />
         </Link>
-      </div>
-      <nav>
+      </LogoDiv>
+      <NavDiv>
         <ul>
           <li>
             <Link to="/signup">Sign up</Link>
@@ -21,8 +21,8 @@ const MainNav = () => {
             <Link to="/earn-money">Register Tradie</Link>
           </li>
         </ul>
-      </nav>
-    </header>
+      </NavDiv>
+    </Header>
   );
 };
 

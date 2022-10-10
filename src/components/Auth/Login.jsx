@@ -1,18 +1,18 @@
-import classes from "./Login.module.css";
 import { Link } from "react-router-dom";
+import { BtnDiv, Form, InputDiv, TermDiv } from "./Auth.styles";
 
 const Login = () => {
   return (
-    <form>
-      <div className={classes.inputs}>
+    <Form>
+      <InputDiv>
         <label>Log into your account</label>
         <input type="email" placeholder="Email address" />
         <input type="password" placeholder="Create password" />
-      </div>
-      <div className={classes.btnSignin}>
+      </InputDiv>
+      <BtnDiv>
         <button type="submit">Log in</button>
-      </div>
-      <div className={classes.terms}>
+      </BtnDiv>
+      <TermDiv>
         <p>
           <Link to="#">Forgot your password?</Link>
         </p>
@@ -22,8 +22,8 @@ const Login = () => {
         <p>
           A new tradie? <Link to="#">List your business here</Link>
         </p>
-      </div>
-    </form>
+      </TermDiv>
+    </Form>
   );
 };
 
