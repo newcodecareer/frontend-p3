@@ -8,8 +8,8 @@ export const Form = styled.form`
 `;
 
 export const InputDiv = styled.div.attrs((props) => ({
-    size: props.size || "1.2rem",
-    color: props.color || "rgb(55,55,55)",
+  size: props.size || "1.2rem",
+  color: props.color || "rgb(55,55,55)",
 }))`
   width: 100%;
   height: auto;
