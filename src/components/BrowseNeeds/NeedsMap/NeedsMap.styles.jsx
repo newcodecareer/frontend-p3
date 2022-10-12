@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MapContainer } from 'react-leaflet'
+import { MapContainer } from "react-leaflet";
 
 export const NeedsMapDiv = styled.div`
   width: 65%;
