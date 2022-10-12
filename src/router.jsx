@@ -2,6 +2,7 @@ import React from "react";
 import PostOne from "./components/Post/PostOne";
 import PostTwo from "./components/Post/PostTwo";
 import PostThree from "./components/Post/PostThree";
+import SearchFilters from "./components/SearchFilters/SearchFilters";
 
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -26,6 +27,10 @@ const routes = [
   {
     path: "/postthree",
     element: <PostThree />,
+  },
+  {
+    path: "/test",
+    element: <SearchFilters />,
   },
 ];
 
