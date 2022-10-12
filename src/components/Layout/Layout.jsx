@@ -1,8 +1,6 @@
 import { Main } from "./Layout.styles";
 import MainNav from "./MainNav/MainNav";
 
-
-
 const Layout = (props) => {
   return (
     <div>
