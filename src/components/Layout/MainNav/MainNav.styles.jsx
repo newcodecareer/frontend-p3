@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
   font-family: "Inter", sans-serif;
-  max-width: 1920px;
+  max-width: 100%;
   height: 3rem;
   display: flex;
   align-items: center;
