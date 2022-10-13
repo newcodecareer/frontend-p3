@@ -12,6 +12,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faCalendar, faClock, faUser } from "@fortawesome/free-solid-svg-icons";
 
+
+const location = 'North Lakes';
+
 const NeedsCard = () => {
   return (
     <NeedsCardDiv>
@@ -20,7 +23,7 @@ const NeedsCard = () => {
           <Title>Need Plumbers to fix residential toilet pipe blocked</Title>
           <PDiv>
             <FontAwesomeIcon icon={faLocationDot} />
-            <p>Hobart</p>
+            <p>{location}</p>
           </PDiv>
           <PDiv>
             <FontAwesomeIcon icon={faCalendar} />
