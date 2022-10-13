@@ -1,24 +1,19 @@
 import { NeedsMapDiv, StyledMapContainer } from "./NeedsMap.styles";
 import { TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css"
+import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 const icon = L.icon({
   iconUrl: "../src/images/placeholder.png",
-  iconSize: [38, 38]
+  iconSize: [38, 38],
 });
 
-const position = [-27.48, 153.02]
+const position = [-27.48, 153.02];
 
 const NeedsMap = () => {
   return (
     <NeedsMapDiv>
-      <StyledMapContainer
-        className="mapSize"
-        center={position}
-        zoom={11}
-        scrollWheelZoom={true}
-      >
+      <StyledMapContainer className="mapSize" center={position} zoom={11} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=H2yI2WkdBisakXqHODp5"
@@ -29,7 +24,7 @@ const NeedsMap = () => {
           </Popup>
         </Marker>
       </StyledMapContainer>
-    </NeedsMapDiv >
+    </NeedsMapDiv>
   );
 };
 

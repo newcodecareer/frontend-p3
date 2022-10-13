@@ -12,8 +12,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faCalendar, faClock, faUser } from "@fortawesome/free-solid-svg-icons";
 
-
-const location = 'North Lakes';
+const location = "North Lakes";
 
 const NeedsCard = () => {
   return (
