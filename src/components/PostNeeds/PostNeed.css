@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+    --main-color: #F77F00;
+    --second-color: #a5a5a5;
+    --third-color:#707070;
+    --font-family: 'Inter', sans-serif;
+}
+
+.post-need{
+    text-align: center;
+}
+
+.post-need h1{
+    position: relative;
+    height: auto;
+    font-size: 3rem;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.post-need .subtitle{
+    position: relative;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--third-color);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container .card{
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.card-container .card img{
+    height: 250px;
+}
+
+.card-container .card p{
+    color: var( --third-color);
+}
+
+.post-need button{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.post-need button:hover{
+    filter: brightness(1.2);
+}
