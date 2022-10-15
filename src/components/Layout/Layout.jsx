@@ -1,11 +1,11 @@
 import { Main } from "./Layout.styles";
 import MainNav from "./MainNav/MainNav";
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   return (
     <div>
       <MainNav />
-      <Main>{props.children}</Main>
+      <Main>{children}</Main>
     </div>
   );
 };

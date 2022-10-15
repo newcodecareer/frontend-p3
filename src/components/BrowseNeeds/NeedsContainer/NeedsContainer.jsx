@@ -1,16 +1,17 @@
 import NeedsCard from "./NeedsCard/NeedsCard";
-import { NeedsContainerDiv } from "./NeedsContainer.styles";
+import { NeedsContainerSection } from "./NeedsContainer.styles";
 
+// TODO temporary use for displaying cards, will use API mapping later
 const NeedsContainer = () => {
   return (
-    <NeedsContainerDiv>
+    <NeedsContainerSection>
       <NeedsCard />
       <NeedsCard />
       <NeedsCard />
       <NeedsCard />
       <NeedsCard />
       <NeedsCard />
-    </NeedsContainerDiv>
+    </NeedsContainerSection>
   );
 };
 

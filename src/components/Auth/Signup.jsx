@@ -1,37 +1,37 @@
 import {
-  BtnDiv,
+  BtnContainer,
   Button,
   Form,
   Input,
-  InputDiv,
+  InputContainer,
   Label,
-  P,
+  Paragraph,
   StyledLink,
-  TermDiv,
+  TermContainer,
 } from "./Auth.styles";
 
 const Signup = () => {
   return (
     <Form>
-      <InputDiv>
+      <InputContainer>
         <Label>Create a new account</Label>
         <Input type="text" placeholder="Your name" />
         <Input type="email" placeholder="Email address" />
         <Input type="text" placeholder="Mobile number" />
         <Input type="password" placeholder="Create password" />
-      </InputDiv>
-      <BtnDiv>
+      </InputContainer>
+      <BtnContainer>
         <Button type="submit">Sign up</Button>
-      </BtnDiv>
-      <TermDiv>
-        <P>
+      </BtnContainer>
+      <TermContainer>
+        <Paragraph>
           By registering with Houddy, you agree to our
           <StyledLink to="#"> Privacy Policy & Terms & Conditions</StyledLink>
-        </P>
-        <P>
+        </Paragraph>
+        <Paragraph>
           Already have an account ? <StyledLink to="/login">Log in</StyledLink>
-        </P>
-      </TermDiv>
+        </Paragraph>
+      </TermContainer>
     </Form>
   );
 };

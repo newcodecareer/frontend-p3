@@ -1,25 +1,26 @@
 import styled from "styled-components";
+import { primaryThemeColor, primaryFontColor, secondaryFontColor, thirdFontColor, primaryShadowColor, primaryBorderColor } from "../../../common/index.styles";
 
-export const NeedsCardDiv = styled.div`
+export const NeedsCardContainer = styled.div`
   width: 100%;
   min-width: 300px;
-  padding: 0 1rem 0.5rem 1rem;
+  padding: 0 1rem 0.5rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px ${primaryShadowColor};
   border-radius: 6px;
-  color: rgb(55, 55, 55);
-  border-left: solid 5px #f77f00;
+  color: ${primaryFontColor};
+  border-left: solid 5px ${primaryThemeColor};
   margin-bottom: 1rem;
 
   &:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px ${primaryShadowColor};
     cursor: pointer;
   }
 `;
 
-export const TitleDiv = styled.div`
-  border-bottom: solid 1px lightgray;
+export const TitleContainer = styled.div`
+  border-bottom: solid 1px ${primaryBorderColor};
   display: flex;
   justify-content: center;
 `;
@@ -30,21 +31,21 @@ export const Title = styled.h3`
   line-height: 1.5;
 `;
 
-export const NeedsInfoDiv = styled.div`
+export const NeedsInfoContainer = styled.div`
   width: 78%;
   margin-right: 2%;
 `;
 
-export const PDiv = styled.div`
+export const ParagraphContainer = styled.div`
   font-size: 0.8rem;
   display: flex;
   align-items: center;
   gap: 3%;
-  color: rgb(150, 150, 150);
+  color: ${secondaryFontColor};
   margin-top: -9%;
 `;
 
-export const PriceDiv = styled.div`
+export const PriceContainer = styled.div`
   width: 20%;
   font-size: 1.5rem;
   font-weight: 600;
@@ -57,21 +58,21 @@ export const PriceDiv = styled.div`
 
 export const UserIcon = styled.div`
   font-size: 2rem;
-  color: rgb(200, 200, 200);
-  border: solid 3px rgb(200, 200, 200);
+  color: ${thirdFontColor};
+  border: solid 3px ${thirdFontColor};
   padding: 4px 6px;
   border-radius: 50%;
 `;
 
-export const StatusDiv = styled.div`
+export const StatusContainer = styled.div`
   font-size: 0.8rem;
   margin-top: 0.5rem;
-  color: rgb(150, 150, 150);
+  color: ${secondaryFontColor};
 `;
 
 export const NeedsStatus = styled.span`
   font-size: 0.8rem;
-  color: #f77f00;
+  color: ${primaryThemeColor};
   font-weight: 600;
   margin-right: 10%;
 `;

@@ -1,50 +1,50 @@
 import {
-  NeedsCardDiv,
-  NeedsInfoDiv,
+  NeedsCardContainer,
+  NeedsInfoContainer,
   Title,
-  TitleDiv,
-  PriceDiv,
-  StatusDiv,
+  TitleContainer,
+  PriceContainer,
+  StatusContainer,
   NeedsStatus,
   UserIcon,
-  PDiv,
+  ParagraphContainer,
 } from "./NeedsCard.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faCalendar, faClock, faUser } from "@fortawesome/free-solid-svg-icons";
 
+// TODO temporary use location, will use api mapping later
 const location = "North Lakes";
 
 const NeedsCard = () => {
   return (
-    <NeedsCardDiv>
-      <TitleDiv>
-        <NeedsInfoDiv>
+    <NeedsCardContainer>
+      <TitleContainer>
+        <NeedsInfoContainer>
           <Title>Need Plumbers to fix residential toilet pipe blocked</Title>
-          <PDiv>
+          <ParagraphContainer>
             <FontAwesomeIcon icon={faLocationDot} />
             <p>{location}</p>
-          </PDiv>
-          <PDiv>
+          </ParagraphContainer>
+          <ParagraphContainer>
             <FontAwesomeIcon icon={faCalendar} />
             <p>Sun, 11 Oct</p>
-          </PDiv>
-          <PDiv>
+          </ParagraphContainer>
+          <ParagraphContainer>
             <FontAwesomeIcon icon={faClock} />
             <p>Anytime</p>
-          </PDiv>
-        </NeedsInfoDiv>
-        <PriceDiv>
+          </ParagraphContainer>
+        </NeedsInfoContainer>
+        <PriceContainer>
           <p>$300</p>
           <UserIcon>
             <FontAwesomeIcon icon={faUser} />
           </UserIcon>
-        </PriceDiv>
-      </TitleDiv>
-
-      <StatusDiv>
+        </PriceContainer>
+      </TitleContainer>
+      <StatusContainer>
         <NeedsStatus>OPEN</NeedsStatus> <span>3 offers</span>
-      </StatusDiv>
-    </NeedsCardDiv>
+      </StatusContainer>
+    </NeedsCardContainer>
   );
 };
 export default NeedsCard;

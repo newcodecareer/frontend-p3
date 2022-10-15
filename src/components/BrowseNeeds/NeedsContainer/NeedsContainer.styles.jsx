@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const NeedsContainerDiv = styled.div`
-  width: 35%;
+export const NeedsContainerSection = styled.div`
+  flex-basis: 35%;
   height: calc(100vh - 3rem);
   display: flex;
   justify-content: flex-start;

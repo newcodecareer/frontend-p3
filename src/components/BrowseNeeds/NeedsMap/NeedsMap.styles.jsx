@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { MapContainer } from "react-leaflet";
 
-export const NeedsMapDiv = styled.div`
-  width: 65%;
+export const NeedsMapContainer = styled.div`
+  flex-basis: 65%;
   height: calc(100vh - 3rem);
   margin: 1rem 0;
   padding-bottom: 1.5rem;
