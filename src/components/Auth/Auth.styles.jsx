@@ -8,7 +8,7 @@ export const Form = styled.form`
   padding: 30px 25px;
 `;
 
-export const InputDiv = styled.div`
+export const InputContainer = styled.div`
   width: 100%;
   height: auto;
   box-sizing: border-box;
@@ -36,7 +36,7 @@ export const Input = styled.input`
   border-radius: 5px;
 `;
 
-export const BtnDiv = styled.div`
+export const BtnContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -56,14 +56,14 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const TermDiv = styled.div`
+export const TermContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
 
-export const P = styled.p`
+export const Paragraph = styled.p`
   width: 95%;
   text-align: center;
   font-size: ${(props) => props.inputSize || "0.8rem"};

@@ -1,11 +1,11 @@
 import {
-  BtnDiv,
+  BtnContainer,
   Form,
-  InputDiv,
+  InputContainer,
   Input,
   Label,
-  P,
-  TermDiv,
+  Paragraph,
+  TermContainer,
   Button,
   StyledLink,
 } from "./Auth.styles";
@@ -13,25 +13,25 @@ import {
 const Login = () => {
   return (
     <Form>
-      <InputDiv>
+      <InputContainer>
         <Label>Log into your account</Label>
         <Input type="email" placeholder="Email address" />
         <Input type="password" placeholder="Create password" />
-      </InputDiv>
-      <BtnDiv>
+      </InputContainer>
+      <BtnContainer>
         <Button type="submit">Log in</Button>
-      </BtnDiv>
-      <TermDiv>
-        <P>
+      </BtnContainer>
+      <TermContainer>
+        <Paragraph>
           <StyledLink to="/reset-password">Forgot your password?</StyledLink>
-        </P>
-        <P>
+        </Paragraph>
+        <Paragraph>
           Are you a new user? <StyledLink to="/signup">Create a free account</StyledLink>
-        </P>
-        <P>
+        </Paragraph>
+        <Paragraph>
           A new tradie? <StyledLink to="#">List your business here</StyledLink>
-        </P>
-      </TermDiv>
+        </Paragraph>
+      </TermContainer>
     </Form>
   );
 };
