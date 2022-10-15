@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { primaryThemeColor, primaryFontColor, secondaryFontColor, thirdFontColor, primaryShadowColor, primaryBorderColor } from "../../../common/index.styles";
+import {
+  primaryThemeColor,
+  primaryFontColor,
+  secondaryFontColor,
+  thirdFontColor,
+  primaryShadowColor,
+  primaryBorderColor,
+} from "../../../common/index.styles";
 
 export const NeedsCardContainer = styled.div`
   width: 100%;

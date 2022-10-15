@@ -1,4 +1,13 @@
-import { BtnContainer, Button, Form, Input, InputContainer, Label, Paragraph, TermContainer } from "./Auth.styles";
+import {
+  BtnContainer,
+  Button,
+  Form,
+  Input,
+  InputContainer,
+  Label,
+  Paragraph,
+  TermContainer,
+} from "./Auth.styles";
 
 const ResetPassword = () => {
   return (

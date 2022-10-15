@@ -6,5 +6,5 @@ export const BrowseNeedsSection = styled.div`
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  flex:  5 3 ;
+  flex: 5 3;
 `;
