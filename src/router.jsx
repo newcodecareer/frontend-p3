@@ -1,9 +1,14 @@
 import React from "react";
-import PostOne from "./components/Post/PostOne";
-import PostTwo from "./components/Post/PostTwo";
-import PostThree from "./components/Post/PostThree";
-import SearchFilters from "./components/SearchFilters/SearchFilters";
+import Login from "./components/Auth/Login";
+import ResetPassword from "./components/Auth/ResetPassword";
+import Signup from "./components/Auth/Signup";
+import BrowseNeeds from "./components/BrowseNeeds/BrowseNeeds";
 
+import PostStepOne from "./components/Post/PostStepOne";
+import PostStepTwo from "./components/Post/PostStepTwo";
+import PostStepThree from "./components/Post/PostStepThree";
+import SearchFilters from "./components/SearchFilters/SearchFilters";
+// import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
 
@@ -17,19 +22,35 @@ const routes = [
     element: <Homepage />,
   },
   {
-    path: "/postone",
-    element: <PostOne />,
+    path: "/signup",
+    element: <Signup />,
   },
   {
-    path: "/posttwo",
-    element: <PostTwo />,
+    path: "/login",
+    element: <Login />,
   },
   {
-    path: "/postthree",
-    element: <PostThree />,
+    path: "/reset-password",
+    element: <ResetPassword />,
   },
   {
-    path: "/test",
+    path: "/browse-needs",
+    element: <BrowseNeeds />,
+  },
+  {
+    path: "/poststepone",
+    element: <PostStepOne />,
+  },
+  {
+    path: "/poststeptwo",
+    element: <PostStepTwo />,
+  },
+  {
+    path: "/poststepthree",
+    element: <PostStepThree />,
+  },
+  {
+    path: "/searchfilters",
     element: <SearchFilters />,
   },
 ];

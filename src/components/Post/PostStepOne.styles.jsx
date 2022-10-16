@@ -12,16 +12,15 @@ export const Form = styled.form`
   align-items: center;
 `;
 
-export const H1 = styled.h1`
+export const Heading = styled.h1`
   height: 114px;
   margin-top: 150px;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 73px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
 `;
 
 export const Label = styled.label`
@@ -30,14 +29,13 @@ export const Label = styled.label`
   height: 55px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 42px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
 `;
 
-export const InputDiv = styled.div`
+export const InputContainer = styled.div`
   margin-bottom: 55px;
 `;
 
@@ -46,11 +44,10 @@ export const Input = styled.input`
   height: 84px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 36px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
 
   background: #ffffff;
   border: 3px solid #b4b4b4;
@@ -68,12 +65,11 @@ export const Button = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
   color: white;
 
   background-color: ${(props) => props.inputColor || "#f77f00"};

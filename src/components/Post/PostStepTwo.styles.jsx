@@ -12,32 +12,30 @@ export const Form = styled.form`
   align-items: center;
 `;
 
-export const H1 = styled.h1`
+export const Heading = styled.h1`
   height: 114px;
   margin-top: 150px;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 73px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
 `;
 
-export const InputDiv = styled.div`
+export const InputContainer = styled.div`
   margin-bottom: 55px;
 `;
 
-export const Input = styled.textarea`
+export const TextArea = styled.textarea`
     width: 1074px;
     height: 219px;
 
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.6px;
     align-items: 
     background: #FFFFFF;
     border: 3px solid #B4B4B4;
@@ -49,7 +47,7 @@ export const Input = styled.textarea`
         color: #B4B4B4;
     }
 `;
-export const BtnDiv = styled.div`
+export const ButtonContainer = styled.div`
   width: 1110px;
   display: flex;
   justify-content: space-between;
@@ -62,12 +60,11 @@ export const Button = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
   color: white;
 
   background-color: ${(props) => props.inputColor || "#f77f00"};
@@ -78,17 +75,16 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const BackBtn = styled.button`
+export const BackButton = styled.button`
   width: 380px;
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
   color: black;
   background-color: white;
   border: none;
@@ -97,7 +93,7 @@ export const BackBtn = styled.button`
   cursor: pointer;
 `;
 
-export const HR = styled.hr`
+export const BreakLine = styled.hr`
   width: 1131px;
   height: 0px;
   border: 1px solid #d2d2d2;

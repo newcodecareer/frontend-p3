@@ -1,44 +1,44 @@
-import { Background, InputDiv, Input, ImgBtn, Ul, Li, A, Polygon } from "./SearchFilters.styles";
+import { Background, Input, SearchContainer, SearchButton, NavBar, NavItem, DropList, Arrow } from "./SearchFilters.styles";
 
 const SearchFilters = () => {
   return (
     <Background>
-      <InputDiv>
+      <SearchContainer>
         <Input type="text" placeholder="Search for needs"></Input>
-        <ImgBtn src="/src/images/search_logo.png"></ImgBtn>
-      </InputDiv>
-      <Ul>
-        <Li>
-          <A href="#home">
+        <SearchButton src="/src/images/search_logo.png"></SearchButton>
+      </SearchContainer>
+      <NavBar>
+        <NavItem>
+          <DropList href="#">
             Category
-            <Polygon src="/src/images/Polygon.png"></Polygon>
-          </A>
-        </Li>
-        <Li>
-          <A href="#news">
+            <Arrow src="/src/images/arrow.png"></Arrow>
+          </DropList>
+        </NavItem>
+        <NavItem>
+          <DropList href="#">
             50km Hobart TAS & remotely
-            <Polygon src="/src/images/Polygon.png"></Polygon>
-          </A>
-        </Li>
-        <Li>
-          <A href="#news">
+            <Arrow src="/src/images/arrow.png"></Arrow>
+          </DropList>
+        </NavItem>
+        <NavItem>
+          <DropList href="#">
             Price
-            <Polygon src="/src/images/Polygon.png"></Polygon>
-          </A>
-        </Li>
-        <Li>
-          <A href="#news">
+            <Arrow src="/src/images/arrow.png"></Arrow>
+          </DropList>
+        </NavItem>
+        <NavItem>
+          <DropList href="#">
             Offers
-            <Polygon src="/src/images/Polygon.png"></Polygon>
-          </A>
-        </Li>
-        <Li>
-          <A href="#news">
+            <Arrow src="/src/images/arrow.png"></Arrow>
+          </DropList>
+        </NavItem>
+        <NavItem>
+          <DropList href="#">
             Preference Sort
-            <Polygon src="/src/images/Polygon.png"></Polygon>
-          </A>
-        </Li>
-      </Ul>
+            <Arrow src="/src/images/arrow.png"></Arrow>
+          </DropList>
+        </NavItem>
+      </NavBar>
     </Background>
   );
 };

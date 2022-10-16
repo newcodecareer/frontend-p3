@@ -1,25 +1,33 @@
-import { Background, H1, Button, Form, Input, InputDiv, Label } from "./PostOne.styles";
+import {
+  Background,
+  Heading,
+  Button,
+  Form,
+  Input,
+  InputContainer,
+  Label,
+} from "./PostStepOne.styles";
 
 import { Link } from "react-router-dom";
 
-const PostOne = () => {
+const PostStepOne = () => {
   return (
     <Background>
-      <H1>Take three steps to get started.</H1>
+      <Heading>Take three steps to get started.</Heading>
       <Form>
-        <InputDiv>
+        <InputContainer>
           <Label>what service do you need?</Label>
           <Input type="text" placeholder="e.g. Plumber" />
-        </InputDiv>
-        <InputDiv>
+        </InputContainer>
+        <InputContainer>
           <Label>where is the location?</Label>
           <Input type="text" placeholder="Enter your postcode" />
-        </InputDiv>
-        <InputDiv>
+        </InputContainer>
+        <InputContainer>
           <Label>when do you need this done?</Label>
           <Input type="text" placeholder="DD/MM/YYYY" />
-        </InputDiv>
-        <Link to={"/posttwo"}>
+        </InputContainer>
+        <Link to="/poststeptwo">
           <Button>Next</Button>
         </Link>
       </Form>
@@ -27,4 +35,4 @@ const PostOne = () => {
   );
 };
 
-export default PostOne;
+export default PostStepOne;

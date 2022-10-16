@@ -13,7 +13,7 @@ export const Background = styled.div`
   align-items: center;
 `;
 
-export const InputDiv = styled.div`
+export const SearchContainer = styled.div`
   width: 350px;
   height: 56px;
 
@@ -37,18 +37,17 @@ export const Input = styled.input`
   outline: none;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.6px;
 `;
 
-export const ImgBtn = styled.img`
+export const SearchButton = styled.img`
   width: 30px;
 `;
 
-export const Ul = styled.ul`
+export const NavBar = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -58,25 +57,22 @@ export const Ul = styled.ul`
   margin-left: 90px;
 `;
 
-export const Li = styled.li`
+export const NavItem = styled.li`
   margin-right: 80px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: -0.01em;
-
-  color: #f77f00;
+  letter-spacing: -0.6px;
 `;
 
-export const A = styled.a`
+export const DropList = styled.a`
   color: #f77f00;
   text-decoration: none;
 `;
 
-export const Polygon = styled.img`
+export const Arrow = styled.img`
   width: 15px;
   padding: 0 15px;
 `;
