@@ -16,7 +16,6 @@ export const H1 = styled.h1`
   margin-bottom: 80px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 73px;
@@ -33,7 +32,6 @@ export const Span = styled.span`
   width: 390px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
@@ -73,7 +71,6 @@ export const PDiv = styled.p`
 export const P = styled.p`
   margin: 0;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
@@ -84,7 +81,6 @@ export const P = styled.p`
 export const Prompt = styled.p`
   margin: 0;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 36px;
@@ -102,7 +98,6 @@ export const Button = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
@@ -122,7 +117,6 @@ export const BackBtn = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;

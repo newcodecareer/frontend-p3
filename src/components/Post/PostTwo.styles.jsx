@@ -16,7 +16,6 @@ export const H1 = styled.h1`
   height: 114px;
   margin-top: 150px;
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 73px;
@@ -33,7 +32,6 @@ export const Input = styled.textarea`
     height: 219px;
 
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
@@ -62,7 +60,6 @@ export const Button = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
@@ -83,7 +80,6 @@ export const BackBtn = styled.button`
   height: 90px;
 
   font-family: "Inter";
-  font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
