@@ -8,6 +8,7 @@ import PostStepOne from "./components/Post/PostStepOne";
 import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
+import PostDetails from "./components/PostDetails/PostDetails";
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -52,6 +53,10 @@ const routes = [
   {
     path: "/searchfilters",
     element: <SearchFilters />,
+  },
+  {
+    path: "/postdetails",
+    element: <PostDetails />,
   },
 ];
 
