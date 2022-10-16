@@ -4,10 +4,10 @@ import ResetPassword from "./components/Auth/ResetPassword";
 import Signup from "./components/Auth/Signup";
 import BrowseNeeds from "./components/BrowseNeeds/BrowseNeeds";
 
-import PostOne from "./components/Post/PostOne";
-import PostTwo from "./components/Post/PostTwo";
-import PostThree from "./components/Post/PostThree";
-
+import PostStepOne from "./components/Post/PostStepOne";
+import PostStepTwo from "./components/Post/PostStepTwo";
+import PostStepThree from "./components/Post/PostStepThree";
+// import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
 
@@ -37,16 +37,16 @@ const routes = [
     element: <BrowseNeeds />,
   },
   {
-    path: "/postone",
-    element: <PostOne />,
+    path: "/poststepone",
+    element: <PostStepOne />,
   },
   {
-    path: "/posttwo",
-    element: <PostTwo />,
+    path: "/poststeptwo",
+    element: <PostStepTwo />,
   },
   {
-    path: "/postthree",
-    element: <PostThree />,
+    path: "/poststepthree",
+    element: <PostStepThree />,
   },
 ];
 
