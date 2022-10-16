@@ -1,4 +1,12 @@
-import { Background, Heading, Button, Form, Input, InputContainer, Label } from "./PostStepOne.styles";
+import {
+  Background,
+  Heading,
+  Button,
+  Form,
+  Input,
+  InputContainer,
+  Label,
+} from "./PostStepOne.styles";
 
 import { Link } from "react-router-dom";
 
