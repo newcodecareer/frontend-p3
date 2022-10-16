@@ -1,4 +1,13 @@
-import { Background, Input, SearchContainer, SearchButton, NavBar, NavItem, DropList, Arrow } from "./SearchFilters.styles";
+import {
+  Background,
+  Input,
+  SearchContainer,
+  SearchButton,
+  NavBar,
+  NavItem,
+  DropList,
+  Arrow,
+} from "./SearchFilters.styles";
 
 const SearchFilters = () => {
   return (
