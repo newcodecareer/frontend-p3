@@ -6,7 +6,7 @@ const Homepage = () => {
     <div>
       Homepage
       <Footer />
-    </div>    
+    </div>
   );
 };
 
