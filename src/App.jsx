@@ -18,7 +18,7 @@ const App = () => {
             return <Route {...route} key={path} />;
           })}
           <Route path="/loading" element={<LoadingPage />} />
-          <Route path="*" element={<Navigate to="/error" replace />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>
       </Layout>
     </BrowserRouter>

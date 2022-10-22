@@ -15,12 +15,12 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px ${primaryBorderColor};
-  padding: 0 20%;
+  padding: 0 20% 1rem;
 `;
 
 export const NavLogo = styled.div`
   img {
-    max-width: 120px;
+    width: 120px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const NavList = styled.nav`
       a {
         text-decoration: none;
         font-size: 0.9rem;
-        font-weight: 500;
+        font-weight: 600;
         color: ${primaryFontColor};
 
         &:link {
