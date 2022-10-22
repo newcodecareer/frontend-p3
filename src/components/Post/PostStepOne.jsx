@@ -1,11 +1,4 @@
-import {
-  Background,
-  Heading,
-  InputGroup,
-  Label,
-  Input,
-  Button,
-} from "./PostStepOne.styles";
+import { Background, Heading, InputGroup, Label, Input, Button } from "./PostStepOne.styles";
 
 import { Link } from "react-router-dom";
 
@@ -28,7 +21,7 @@ const PostStepOne = () => {
             <Input type="text" placeholder="DD/MM/YYYY" />
           </div>
           <Link to="/post-step-two">
-              <Button primary>Next</Button>
+            <Button primary>Next</Button>
           </Link>
         </InputGroup>
       </div>

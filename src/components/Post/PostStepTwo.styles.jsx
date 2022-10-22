@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
 export const TextArea = styled.textarea`
-    width: 550px;
-    height: 120px;
+  width: 550px;
+  height: 120px;
 
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: -0.6px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.6px;
 
-    background: #FFFFFF;
-    border: 2px solid #B4B4B4;
-    border-radius: 7px;
+  background: #ffffff;
+  border: 2px solid #b4b4b4;
+  border-radius: 7px;
 
-    padding: 15px;
+  padding: 15px;
 
-    ::placeholder {
-        color: #B4B4B4;
-    }
+  ::placeholder {
+    color: #b4b4b4;
+  }
 `;
 
 export const ButtonContainer = styled.div`

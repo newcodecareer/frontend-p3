@@ -1,13 +1,6 @@
-import {
-  Background,
-  Heading,
-  Button,
-} from "./PostStepOne.styles";
+import { Background, Heading, Button } from "./PostStepOne.styles";
 
-import {
-  BackButton,
-  ButtonContainer,
-} from "./PostStepTwo.styles";
+import { BackButton, ButtonContainer } from "./PostStepTwo.styles";
 
 import {
   Info,

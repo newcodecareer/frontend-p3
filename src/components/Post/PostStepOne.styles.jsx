@@ -65,7 +65,7 @@ export const Button = styled.button`
   box-shadow: 4px 5px 21px rgba(0, 0, 0, 0.16);
   border-radius: 7px;
   border: none;
- 
-  margin: ${props => (props.primary ? "50px auto" : "0")}; 
+
+  margin: ${(props) => (props.primary ? "50px auto" : "0")};
   cursor: pointer;
 `;

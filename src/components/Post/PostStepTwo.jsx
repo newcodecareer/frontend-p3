@@ -1,15 +1,6 @@
-import {
-  Background,
-  Heading,
-  Button,
-} from "./PostStepOne.styles";
+import { Background, Heading, Button } from "./PostStepOne.styles";
 
-import {
-  TextArea,
-  ButtonContainer,
-  BackButton,
-  BreakLine,
-} from "./PostStepTwo.styles";
+import { TextArea, ButtonContainer, BackButton, BreakLine } from "./PostStepTwo.styles";
 
 import { Link } from "react-router-dom";
 

@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
+
   margin-bottom: 40px;
 `;
 
