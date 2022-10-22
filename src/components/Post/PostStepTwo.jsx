@@ -2,12 +2,13 @@ import {
   Background,
   Heading,
   Button,
-  Form,
+} from "./PostStepOne.styles";
+
+import {
   TextArea,
   ButtonContainer,
   BackButton,
   BreakLine,
-  InputContainer,
 } from "./PostStepTwo.styles";
 
 import { Link } from "react-router-dom";
@@ -16,20 +17,18 @@ const PostStepTwo = () => {
   return (
     <Background>
       <Heading>Please clarify your details.</Heading>
-      <Form>
-        <InputContainer>
-          <TextArea type="text" placeholder="e.g. Plumber" />
-        </InputContainer>
-        <BreakLine></BreakLine>
-        <ButtonContainer>
-          <Link to="/poststepone">
-            <BackButton>Back</BackButton>
-          </Link>
-          <Link to="/poststepthree">
-            <Button>Next</Button>
-          </Link>
-        </ButtonContainer>
-      </Form>
+      <div>
+        <TextArea type="text" placeholder="e.g. Plumber" />
+      </div>
+      <BreakLine></BreakLine>
+      <ButtonContainer>
+        <Link to="/post-step-one">
+          <BackButton>Back</BackButton>
+        </Link>
+        <Link to="/post-step-three">
+          <Button>Next</Button>
+        </Link>
+      </ButtonContainer>
     </Background>
   );
 };

@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {
+  primaryFontColor,
+  secondaryFontColor,
+  primaryThemeColor,
+  thirdFontColor,
+} from "../common/index.styles";
 
 export const Form = styled.form`
   max-width: 580px;
@@ -21,7 +27,7 @@ export const InputContainer = styled.div`
 
 export const Label = styled.label`
   font-size: ${(props) => props.inputSize || "1.2rem"};
-  color: ${(props) => props.inputColor || "rgb(55,55,55)"};
+  color: ${(props) => props.inputColor || `${primaryFontColor}`};
   font-weight: ${(props) => props.inputWeight || "600"};
   padding: 15px;
 `;
@@ -32,8 +38,11 @@ export const Input = styled.input`
   font-size: 1rem;
   margin: 10px;
   padding: 15px;
-  border: solid 1px rgb(211, 211, 211);
+  border: solid 2px ${thirdFontColor};
   border-radius: 5px;
+  ::placeholder {
+    color: ${secondaryFontColor};
+  }
 `;
 
 export const BtnContainer = styled.div`
@@ -49,7 +58,7 @@ export const Button = styled.button`
   font-size: 1rem;
   font-weight: 600;
   padding: 18px 0;
-  background-color: ${(props) => props.inputColor || "#f77f00"};
+  background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
   border: none;
   border-radius: 5px;
   margin: 10px;
@@ -72,7 +81,7 @@ export const Paragraph = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${(props) => props.inputColor || "rgb(55,55,55)"};
+  color: ${(props) => props.inputColor || `${primaryFontColor}`};
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
 `;

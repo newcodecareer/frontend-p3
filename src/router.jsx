@@ -8,6 +8,7 @@ import PostStepOne from "./components/Post/PostStepOne";
 import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
+import Profile from "./components/Profile/Profile";
 import PostDetails from "./components/PostDetails/PostDetails";
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -39,23 +40,27 @@ const routes = [
     element: <BrowseNeeds />,
   },
   {
-    path: "/poststepone",
+    path: "/post-step-one",
     element: <PostStepOne />,
   },
   {
-    path: "/poststeptwo",
+    path: "/post-step-two",
     element: <PostStepTwo />,
   },
   {
-    path: "/poststepthree",
+    path: "/post-step-three",
     element: <PostStepThree />,
   },
   {
-    path: "/searchfilters",
+    path: "/search-filters",
     element: <SearchFilters />,
   },
   {
-    path: "/postdetails",
+    path: "/profiles",
+    element: <Profile />,
+  },
+  {
+    path: "/post-details",
     element: <PostDetails />,
   },
 ];

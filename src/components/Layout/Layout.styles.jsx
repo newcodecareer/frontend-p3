@@ -6,5 +6,4 @@ export const Main = styled.main`
   margin: auto;
   box-sizing: border-box;
   width: 100%;
-  position: fixed;
 `;
