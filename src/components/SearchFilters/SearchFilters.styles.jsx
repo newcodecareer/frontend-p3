@@ -5,8 +5,6 @@ export const Background = styled.div`
   height: 90px;
   margin: auto;
 
-  border-top: 1px solid #d2d2d2;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
