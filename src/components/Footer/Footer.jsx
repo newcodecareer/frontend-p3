@@ -1,24 +1,25 @@
-import "./footer.css";
-import user from "../../image/logo.png";
+import {
+  Afooter,
+  Img,
+  StyledLink,
+  ParagraphOne,
+  ParagraphTwo,
+  ParagraphThree,
+} from "./footer.style";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="img">
-        <img src={user} alt="something wrong" />
-      </div>
-      <div>
-        <span>&copy; 2022 Houddy Pty Ltd. All Rights Reserved.</span>
-      </div>
-      <div>
-        <span>Privacy policy</span>
-      </div>
-      <div>
-        <span>Terms of use</span>
-      </div>
-    </div>
+    <Afooter>
+      <Img src="/src/images/logo.png" alt="Houddy Logo" />
+      <ParagraphOne>&copy; 2022 Houddy Pty Ltd. All Rights Reserved.</ParagraphOne>
+      <ParagraphTwo>
+        <StyledLink to="#">Privacy Policy</StyledLink>
+      </ParagraphTwo>
+      <ParagraphThree>
+        <StyledLink to="#">Terms of Use</StyledLink>
+      </ParagraphThree>
+    </Afooter>
   );
 };
 
 export default Footer;
-
