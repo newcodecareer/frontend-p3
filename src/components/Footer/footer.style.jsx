@@ -5,9 +5,6 @@ export const Afooter = styled.div`
   display: flex;
   justify-content: center;
   border-top: 1px solid grey;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
 `;
 export const ParagraphOne = styled.span`
   height: 50px;
