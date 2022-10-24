@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 import {
   fontFamily,
   fontSizeS,
-//   fontSizeM,
-//   fontSizeXL,
+  //   fontSizeM,
+  //   fontSizeXL,
   primaryThemeColor,
   secondaryFontColor,
   thirdFontColor,
