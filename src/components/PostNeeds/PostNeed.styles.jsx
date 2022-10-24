@@ -44,6 +44,7 @@ export const Steps = styled.h3``;
 
 export const Description = styled.p`
   color: ${secondaryFontColor};
+
 `;
 
 export const PostNeedBtn = styled.button`
