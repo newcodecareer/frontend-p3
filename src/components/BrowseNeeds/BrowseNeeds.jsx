@@ -1,14 +1,19 @@
 import { useState } from "react";
-import { BrowseNeedsSection } from "./BrowseNeeds.styles";
+import { BrowseNeedsSection, NeedsSection } from "./BrowseNeeds.styles";
 import NeedsContainer from "./NeedsContainer/NeedsContainer";
 import NeedsMap from "./NeedsMap/NeedsMap";
+import SearchFilters from "../SearchFilters/SearchFilters";
 
-const BrowseNeeds = () => {
+const BrowseNeeds = (props) => {
   const [location, setLocation] = useState("");
+
   return (
     <BrowseNeedsSection>
-      <NeedsContainer location={location} setLocation={setLocation} />
-      <NeedsMap location={location} />
+      <SearchFilters />
+      <NeedsSection>
+        <NeedsContainer location={location} setLocation={setLocation} />
+        <NeedsMap location={location} />
+      </NeedsSection>
     </BrowseNeedsSection>
   );
 };

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {
   btnFontColor,
+  fontSizeL,
   primaryBorderColor,
   primaryFontColor,
   primaryThemeColor,
@@ -19,8 +20,11 @@ export const Header = styled.header`
 `;
 
 export const NavLogo = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
   img {
-    width: 120px;
+    width: 150px;
   }
 `;
 
@@ -36,7 +40,7 @@ export const NavList = styled.nav`
 
       a {
         text-decoration: none;
-        font-size: 0.9rem;
+        font-size: ${fontSizeL};
         font-weight: 600;
         color: ${primaryFontColor};
 
@@ -56,6 +60,9 @@ export const NavList = styled.nav`
         border-radius: 5px;
         a {
           color: ${btnFontColor};
+        }
+        &:hover {
+          filter: brightness(1.2);
         }
       }
     }

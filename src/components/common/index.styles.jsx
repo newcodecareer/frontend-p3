@@ -8,3 +8,10 @@ export const primaryShadowColor = "rgba(0, 0, 0, 0.2)";
 export const primaryBorderColor = "lightgray";
 
 export const primaryThemeColor = "#f77f00";
+
+export const fontFamily = '"Inter", sans-serif';
+
+export const fontSizeS = "0.8rem";
+export const fontSizeM = "1rem";
+export const fontSizeL = "1.2rem";
+export const fontSizeXL = "1.5rem";

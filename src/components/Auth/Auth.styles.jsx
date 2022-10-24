@@ -5,13 +5,14 @@ import {
   secondaryFontColor,
   primaryThemeColor,
   thirdFontColor,
+  fontSizeL,
 } from "../common/index.styles";
 
 export const Form = styled.form`
   max-width: 580px;
   margin: auto;
   box-sizing: border-box;
-  padding: 30px 25px;
+  padding: 2rem 1.5rem;
 `;
 
 export const InputContainer = styled.div`
@@ -22,22 +23,22 @@ export const InputContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 1.2rem;
 `;
 
 export const Label = styled.label`
-  font-size: ${(props) => props.inputSize || "1.2rem"};
+  font-size: ${(props) => props.inputSize || `${fontSizeL}`};
   color: ${(props) => props.inputColor || `${primaryFontColor}`};
-  font-weight: ${(props) => props.inputWeight || "600"};
-  padding: 15px;
+  font-weight: ${(props) => props.inputWeight || "700"};
+  padding: 1rem;
 `;
 
 export const Input = styled.input`
   box-sizing: border-box;
   width: 95%;
-  font-size: 1rem;
-  margin: 10px;
-  padding: 15px;
+  font-size: ${fontSizeL};
+  margin: 0.8rem;
+  padding: 1rem;
   border: solid 2px ${thirdFontColor};
   border-radius: 5px;
   ::placeholder {
@@ -55,14 +56,18 @@ export const BtnContainer = styled.div`
 export const Button = styled.button`
   width: 95%;
   color: white;
-  font-size: 1rem;
+  font-size: ${fontSizeL};
   font-weight: 600;
-  padding: 18px 0;
+  padding: 1.2rem 0;
   background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
   border: none;
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 8px;
+  margin: 0.8rem;
   cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const TermContainer = styled.div`
@@ -75,7 +80,7 @@ export const TermContainer = styled.div`
 export const Paragraph = styled.p`
   width: 95%;
   text-align: center;
-  font-size: ${(props) => props.inputSize || "0.8rem"};
+  font-size: ${(props) => props.inputSize || "${fontSizeM}"};
   font-weight: ${(props) => props.inputWeight || "500"};
   margin-bottom: 0.2rem;
 `;
@@ -84,4 +89,7 @@ export const StyledLink = styled(Link)`
   color: ${(props) => props.inputColor || `${primaryFontColor}`};
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
+  &:hover {
+    color: ${primaryThemeColor};
+  }
 `;
