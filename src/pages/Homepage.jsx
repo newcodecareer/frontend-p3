@@ -6,6 +6,8 @@ import { HomeMain } from "./Homepage.styles";
 
 const Homepage = () => {
   return (
+
+   
     <HomeMain>
       <Banner />
       <PostNeed />
