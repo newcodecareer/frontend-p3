@@ -1,10 +1,5 @@
-import {
-  BannerContainer,
-  Information,
-  Title,
-  GetQuoteBtn
-} 
-from "./banner.styles";
+import { Link } from "react-router-dom";
+import { BannerContainer, Information, Title, GetQuoteBtn } from "./banner.styles";
 
 const Banner = () => {
   return (
@@ -13,7 +8,9 @@ const Banner = () => {
         <Title>One-stop solution for your house.</Title>
         {/* <input type="text" placeholder="Tell us what service do you need? e.g.Plumber" /> */}
         <div>
+          <Link to="/browse-needs">
             <GetQuoteBtn>Get Free Quotes</GetQuoteBtn>
+          </Link>
         </div>
       </Information>
     </BannerContainer>

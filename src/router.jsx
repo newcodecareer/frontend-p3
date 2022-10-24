@@ -44,7 +44,7 @@ const routes = [
     element: <PostStepOne />,
   },
   {
-    path: "/post-step-two",
+    path: "/post-needs",
     element: <PostStepTwo />,
   },
   {

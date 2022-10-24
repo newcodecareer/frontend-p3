@@ -1,10 +1,16 @@
 import styled from "styled-components";
+import {
+  fontFamily,
+  fontSizeM,
+  fontSizeXL,
+  primaryThemeColor,
+  thirdFontColor,
+} from "../common/index.styles";
 
 export const Background = styled.div`
-  width: 1920px;
   height: 90px;
   margin: auto;
-
+  width: 1180px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13,14 +19,14 @@ export const Background = styled.div`
 
 export const SearchContainer = styled.div`
   width: 350px;
-  height: 56px;
+  height: 3rem;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  border: 2px solid #d2d2d2;
+  border: 2px solid ${thirdFontColor};
   border-radius: 94px;
 `;
 
@@ -28,21 +34,21 @@ export const Input = styled.input`
   width: 250px;
 
   ::placeholder {
-    color: #b4b4b4;
+    color: ${thirdFontColor};
   }
 
   border: none;
   outline: none;
 
-  font-family: "Inter";
+  font-family: ${fontFamily};
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: ${fontSizeM};
+  /* line-height: 24px; */
   letter-spacing: -0.6px;
 `;
 
 export const SearchButton = styled.img`
-  width: 30px;
+  width: ${fontSizeXL};
 `;
 
 export const NavBar = styled.ul`
@@ -60,17 +66,17 @@ export const NavItem = styled.li`
 
   font-family: "Inter";
   font-weight: 600;
-  font-size: 20px;
+  font-size: ${fontSizeM};
   line-height: 24px;
   letter-spacing: -0.6px;
 `;
 
 export const DropList = styled.a`
-  color: #f77f00;
+  color: ${primaryThemeColor};
   text-decoration: none;
 `;
 
 export const Arrow = styled.img`
-  width: 15px;
-  padding: 0 15px;
+  width: 0.8rem;
+  padding: 0 0.8rem;
 `;

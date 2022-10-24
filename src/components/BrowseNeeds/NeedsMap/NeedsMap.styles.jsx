@@ -3,7 +3,7 @@ import { MapContainer } from "react-leaflet";
 
 export const NeedsMapContainer = styled.div`
   flex-basis: 65%;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 8rem);
   margin: 1rem 0;
   padding-bottom: 1.5rem;
 `;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   PostContainer,
   StepsTiitle,
@@ -7,9 +8,8 @@ import {
   Img,
   Description,
   Steps,
-  PostNeedBtn
-} 
-from "./PostNeed.styles";
+  PostNeedBtn,
+} from "./PostNeed.styles";
 
 const PostNeed = () => {
   return (
@@ -34,7 +34,9 @@ const PostNeed = () => {
         </Card>
       </CardContainer>
       <div>
-        <PostNeedBtn>Post Your Need</PostNeedBtn>
+        <Link to="/post-needs">
+          <PostNeedBtn>Post Your Need</PostNeedBtn>
+        </Link>
       </div>
     </PostContainer>
   );
