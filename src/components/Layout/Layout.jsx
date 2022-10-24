@@ -1,10 +1,12 @@
 import { Main } from "./Layout.styles";
-import MainNav from "./MainNav/MainNav";
+// import MainNav from "./MainNav/MainNav";
+import NavBeforeLogin from "./NavBeforeLogin/NavBeforeLogin";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <MainNav />
+      <NavBeforeLogin />
+      {/* <MainNav /> */}
       <Main>{children}</Main>
     </div>
   );
