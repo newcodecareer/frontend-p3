@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import { btnFontColor, fontFamily, fontSizeXL, primaryThemeColor } from "../common/index.styles";
 
 export const BannerContainer = styled.div`
   width: 100%;
   position: relative;
   height: 80vh;
   width: 100%;
+  padding: 1rem 0;
+  font-family: ${fontFamily};
 
   &:before {
     content: "";
@@ -13,7 +16,7 @@ export const BannerContainer = styled.div`
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-
+    border-radius: 15px;
     background-image: url("https://www.brightonhomes.net.au/sites/default/files/house-plans-brisbane-lp.jpg");
     background-size: cover;
     background-position: center center;
@@ -32,14 +35,14 @@ export const Information = styled.div`
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  padding: 50px 50px;
+  padding: 3rem;
 `;
 
 export const Title = styled.h1`
   position: relative;
   height: auto;
   font-size: 3rem;
-  margin-top: 20px;
+  margin-top: 1.2rem;
 `;
 
 // .banner .info input{
@@ -59,15 +62,16 @@ export const Title = styled.h1`
 // }
 
 export const GetQuoteBtn = styled.button`
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  color: ${btnFontColor};
+  font-size: ${fontSizeXL};
   border: none;
-  background-color: ${(props) => props.inputColor || "#f77f00"};
-  border-radius: 5px;
-  padding: 10px;
-  margin: 25px;
+  background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin: 1.5rem;
   cursor: pointer;
   font-weight: 600;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   &:hover {
     filter: brightness(1.2);
   }

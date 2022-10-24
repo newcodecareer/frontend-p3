@@ -1,49 +1,44 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { fontFamily, fontSizeM, primaryFontColor, thirdFontColor } from "../common/index.styles";
 
 export const Afooter = styled.div`
   display: flex;
   justify-content: center;
-  border-top: 1px solid grey;
-  position: fixed;
+  align-items: center;
+  font-family: ${fontFamily};
+  font-size: ${fontSizeM};
+  border-top: 1px solid ${thirdFontColor};
   width: 100%;
   bottom: 0;
 `;
 export const ParagraphOne = styled.span`
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem;
+  height: 3rem;
+  font-size: 1rem;
   line-height: 55px;
-  background: white;
-  color: black;
+  color: ${primaryFontColor};
   margin-right: 200px;
 `;
 export const ParagraphTwo = styled.span`
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem;
+  height: 3rem;
   line-height: 55px;
-  background: white;
-  color: black;
+  color: ${primaryFontColor};
   margin-right: 200px;
 `;
 export const ParagraphThree = styled.span`
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem;
+  height: 3rem;
   line-height: 55px;
-  background: white;
-  color: black;
+  color: ${primaryFontColor};
 `;
 export const Img = styled.img`
-  width: 130px;
-  height: 33px;
+  width: 120px;
+  height: auto;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-right: 200px;
 `;
 export const StyledLink = styled(Link)`
   color: ${(props) => props.inputColor || "rgb(55,55,55)"};
-  font-weight: ${(props) => props.inputWeight || "510"};
+  font-weight: ${(props) => props.inputWeight || "600"};
   text-decoration: none;
 `;

@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import {
+  fontFamily,
+  fontSizeM,
+  fontSizeXL,
+  primaryThemeColor,
+  thirdFontColor,
+} from "../common/index.styles";
 
 export const Background = styled.div`
   margin-top: 10px;
@@ -29,13 +36,13 @@ export const SearchWrap = styled.div`
 export const Input = styled.input`
   width: 70%;
   ::placeholder {
-    color: #b4b4b4;
+    color: ${thirdFontColor};
   }
 
   border: none;
   outline: none;
 
-  font-family: "Inter";
+  font-family: ${fontFamily};
   font-weight: 500;
   font-size: 10px;
   letter-spacing: -0.6px;
@@ -60,7 +67,6 @@ export const NavBar = styled.ul`
 
 export const NavItem = styled.li`
   margin-right: 50px;
-
   font-family: "Inter";
   font-weight: 600;
   font-size: 10px;
@@ -69,7 +75,7 @@ export const NavItem = styled.li`
 `;
 
 export const DropList = styled.a`
-  color: #f77f00;
+  color: ${primaryThemeColor};
   text-decoration: none;
 `;
 
