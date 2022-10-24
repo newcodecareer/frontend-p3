@@ -6,7 +6,6 @@ import Footer from "../components/Footer/Footer";
 const Homepage = () => {
   return (
     <div>
-    
       Homepage
       <Banner />
       <PostNeed />

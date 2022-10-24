@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Background = styled.div`
   background: #f5f5f5;
   padding: 10px;
-  
+
   display: flex;
   justify-content: flex-end;
 `;
