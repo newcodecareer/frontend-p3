@@ -9,7 +9,8 @@ const PostStepTwo = () => {
     <Background>
       <Heading>Please clarify your details.</Heading>
       <div>
-        <TextArea type="text" placeholder="e.g. Plumber" />
+        <TextArea type="text" placeholder="Please clarify your details. 
+The more specific they are, the more acurate the quotes are. " />
       </div>
       <BreakLine></BreakLine>
       <ButtonContainer>

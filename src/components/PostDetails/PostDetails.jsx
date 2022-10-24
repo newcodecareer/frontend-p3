@@ -2,12 +2,12 @@ import {
   Background,
   DetailContainer,
   HeadingContainer,
+  HeadingRight,
   Status,
   StatusInfoDefault,
   StatusInfo,
   Heading,
   Link,
-  HeadingRight,
   BudgetLabel,
   Budget,
   Button,
@@ -35,7 +35,7 @@ import {
 
 const PostDetails = () => {
   return (
-    <Background>
+    <Background> 
       <DetailContainer>
         <HeadingContainer>
           <div>
@@ -46,45 +46,42 @@ const PostDetails = () => {
             </Status>
             <Heading>Bathroom Elevations CAD - urgently</Heading>
             <Link to="/">&lt; Return to map</Link>
+            <InfoWrapper>
+              <Icon src="/src/images/author_icon.png"></Icon>
+              <div>
+                <Label>POSTED BY</Label>
+                <InfoDefault>Zoe</InfoDefault>
+                <BreakLine></BreakLine>
+              </div>
+            </InfoWrapper>
+            <InfoWrapper>
+              <Icon src="/src/images/location_icon.png"></Icon>
+              <div>
+                <Label>LOCATION</Label>
+                <Info>Hobart</Info>
+                <BreakLine></BreakLine>
+              </div>
+            </InfoWrapper>
+            <InfoWrapper>
+              <Icon src="/src/images/date_icon.png"></Icon>
+              <div>
+                <Label>DUE DATE</Label>
+                <Info>Sunday, 9th Oct 2022 Anytime</Info>
+                <BreakLine></BreakLine>
+              </div>
+            </InfoWrapper>
           </div>
           <HeadingRight>
-            <BudgetLabel>NEED BUDGET</BudgetLabel>
-            <Budget>$350</Budget>
-            <Button>Make an offer</Button>
+              <BudgetLabel>NEED BUDGET</BudgetLabel>
+              <Budget>$350</Budget>
+              <Button>Make an offer</Button>
           </HeadingRight>
         </HeadingContainer>
-        <div>
-          <InfoWrapper>
-            <Icon src="/src/images/author_icon.png"></Icon>
-            <div>
-              <Label>POSTED BY</Label>
-              <InfoDefault>Zoe</InfoDefault>
-              <BreakLine></BreakLine>
-            </div>
-          </InfoWrapper>
-          <InfoWrapper>
-            <Icon src="/src/images/location_icon.png"></Icon>
-            <div>
-              <Label>LOCATION</Label>
-              <Info>Hobart</Info>
-              <BreakLine></BreakLine>
-            </div>
-          </InfoWrapper>
-          <InfoWrapper>
-            <Icon src="/src/images/date_icon.png"></Icon>
-            <div>
-              <Label>DUE DATE</Label>
-              <Info>Sunday, 9th Oct 2022 Anytime</Info>
-              <BreakLine></BreakLine>
-            </div>
-          </InfoWrapper>
-        </div>
         <DescriptionContainer>
-          <Label>DESPRICTION</Label>
+          <Label>DESCRIPTION</Label>
           <Paragraph>
             I require my drawings, product specs and our floor plans to be taken and Bathroom
             elevations drawn up in CAD for our plumbers.
-            <br />
             <br />
             We have x4 bathrooms to complete
             <br />
@@ -95,7 +92,6 @@ const PostDetails = () => {
             Master Ensuite
             <br />
             Boys Bathroom
-            <br />
             <br />-
             <br />
             Due date: Sunday, 9th Oct 2022

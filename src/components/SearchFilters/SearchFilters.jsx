@@ -2,6 +2,7 @@ import {
   Background,
   Input,
   SearchContainer,
+  SearchWrap,
   SearchButton,
   NavBar,
   NavItem,
@@ -13,8 +14,10 @@ const SearchFilters = () => {
   return (
     <Background>
       <SearchContainer>
-        <Input type="text" placeholder="Search for needs"></Input>
-        <SearchButton src="/src/images/search_logo.png"></SearchButton>
+        <SearchWrap>
+          <Input type="text" placeholder="Search for needs"></Input>
+          <SearchButton src="/src/images/search_logo.png"></SearchButton>
+        </SearchWrap>
       </SearchContainer>
       <NavBar>
         <NavItem>

@@ -12,7 +12,8 @@ export const TextArea = styled.textarea`
   background: #ffffff;
   border: 2px solid #b4b4b4;
   border-radius: 7px;
-
+  outline: none;
+  
   padding: 15px;
 
   ::placeholder {
@@ -25,19 +26,21 @@ export const ButtonContainer = styled.div`
 `;
 
 export const BackButton = styled.button`
-  width: 250px;
+  width: 200px;
   height: 40px;
 
   font-family: "Inter";
   font-weight: 600;
   font-size: 15px;
   letter-spacing: -0.6px;
-  color: black;
 
   cursor: pointer;
 
-  border: none;
+  border: 1px solid #b4b4b4;
   background: white;
+  border-radius: 7px;
+
+  margin-right: 15px;
 `;
 
 export const BreakLine = styled.hr`
