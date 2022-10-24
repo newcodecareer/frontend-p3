@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {
   btnFontColor,
+  fontSizeL,
+  fontSizeM,
   primaryFontColor,
   secondaryFontColor,
   thirdFontColor,
@@ -38,14 +40,14 @@ export const DataContainer = styled.div`
 `;
 
 export const Label = styled.label`
-  font-size: 1.1rem;
+  font-size: ${fontSizeL};
   font-weight: 600;
   color: ${primaryFontColor};
 `;
 
 export const VerInputs = styled.div`
   display: flex;
-  font-size: 1rem;
+  font-size: ${fontSizeL};
 `;
 
 export const Input = styled.input`
@@ -53,9 +55,9 @@ export const Input = styled.input`
   border: solid 3px ${thirdFontColor};
   color: ${primaryFontColor};
   box-sizing: border-box;
-  font-size: 1rem;
-  margin: ${(props) => props.inputMargin || "10px 0"};
-  padding: 15px;
+  font-size: ${fontSizeL};
+  margin: ${(props) => props.inputMargin || "0.8rem 0"};
+  padding: 1rem;
   border-radius: 5px;
   text-align: ${(props) => props.inputTextAline};
   ::placeholder {
@@ -64,15 +66,14 @@ export const Input = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: ${fontSizeL};
   width: ${(props) => props.inputWidth || "58.5%"};
   margin: ${(props) => props.inputMargin || "10px 0"};
   resize: none;
   border: solid 3px ${thirdFontColor};
   border-radius: 5px;
-  padding: 15px;
+  padding: 1rem;
   overflow: hidden;
   color: ${primaryFontColor};
   ::placeholder {
@@ -91,11 +92,14 @@ export const Button = styled.button`
   padding: ${(props) => props.inputPadding || "0.5rem 1rem"};
   border-radius: 8px;
   border: none;
-  font-size: 1.1rem;
+  font-size: ${fontSizeL};
   font-weight: 600;
   margin: 1rem 1rem 1rem 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -129,7 +133,7 @@ export const BtnImage = styled.button`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1rem;
+  font-size: ${fontSizeM};
   color: ${(props) => props.inputColor || `${primaryFontColor}`};
 `;
 

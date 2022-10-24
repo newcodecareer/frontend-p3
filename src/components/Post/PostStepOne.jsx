@@ -20,7 +20,7 @@ const PostStepOne = () => {
             <Label>when do you need this done?</Label>
             <Input type="text" placeholder="DD/MM/YYYY" />
           </div>
-          <Link to="/post-step-two">
+          <Link to="/post-steps-two">
             <Button primary>Next</Button>
           </Link>
         </InputGroup>

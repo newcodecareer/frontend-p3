@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NeedsContainerSection = styled.div`
   flex-basis: 35%;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 8rem);
   display: flex;
   justify-content: flex-start;
   align-items: center;

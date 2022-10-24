@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { fontFamily } from "../common/index.styles";
 
 export const Main = styled.main`
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-  font-family: "Inter", sans-serif;
+  font-family: ${fontFamily};
   margin: auto;
   box-sizing: border-box;
   width: 100%;

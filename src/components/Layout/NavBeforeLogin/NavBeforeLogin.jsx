@@ -18,7 +18,7 @@ const NavBeforeLogin = () => {
             <Link to="/login">Log in</Link>
           </li>
           <li>
-            <Link to="/earn-money">Register Tradie</Link>
+            <Link to="/signup">Register Tradie</Link>
           </li>
         </ul>
       </NavList>

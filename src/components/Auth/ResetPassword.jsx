@@ -17,7 +17,7 @@ const ResetPassword = () => {
         <Label inputWeight="500" inputSize="0.9rem" inputColor="rgb(150,150,150)">
           Enter your email address to reset your password.
         </Label>
-        <Input placeholder="Email address" />
+        <Input type="email" placeholder="Email address" />
       </InputContainer>
       <BtnContainer>
         <Button>Reset Password</Button>
