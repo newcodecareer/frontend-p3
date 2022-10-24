@@ -35,7 +35,7 @@ import {
 
 const PostDetails = () => {
   return (
-    <Background> 
+    <Background>
       <DetailContainer>
         <HeadingContainer>
           <div>
@@ -72,9 +72,9 @@ const PostDetails = () => {
             </InfoWrapper>
           </div>
           <HeadingRight>
-              <BudgetLabel>NEED BUDGET</BudgetLabel>
-              <Budget>$350</Budget>
-              <Button>Make an offer</Button>
+            <BudgetLabel>NEED BUDGET</BudgetLabel>
+            <Budget>$350</Budget>
+            <Button>Make an offer</Button>
           </HeadingRight>
         </HeadingContainer>
         <DescriptionContainer>

@@ -13,7 +13,7 @@ export const TextArea = styled.textarea`
   border: 2px solid #b4b4b4;
   border-radius: 7px;
   outline: none;
-  
+
   padding: 15px;
 
   ::placeholder {
