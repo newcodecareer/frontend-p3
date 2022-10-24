@@ -7,9 +7,8 @@ import {
   Img,
   Description,
   Steps,
-  PostNeedBtn
-} 
-from "./PostNeed.styles";
+  PostNeedBtn,
+} from "./PostNeed.styles";
 
 const PostNeed = () => {
   return (
