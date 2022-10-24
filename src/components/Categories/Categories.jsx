@@ -12,6 +12,48 @@ import painting from "../../image/painting.png";
 import gardening from "../../image/gardening.png";
 import cleaning from "../../image/cleaning.png";
 
+const categoriesOne = [
+  { image: brust, linkLabel: "Burst Pipe", href: "brust" },
+  { image: lock, linkLabel: "Locked Out", href: "#" },
+  { image: short, linkLabel: "Short Out", href: "#" },
+  { image: removal, linkLabel: "Removal", href: "#" },
+];
+
+const categoriesTwo = [
+  { image: builder, linkLabel: "Builder", href: "#" },
+  { image: electrician, linkLabel: "Electrician", href: "#" },
+  { image: plumber, linkLabel: "Plumber", href: "#" },
+  { image: handyman, linkLabel: "Handyman", href: "#" },
+];
+
+const categoriesThree = [
+  { image: fenceing, linkLabel: "Fencing", href: "#" },
+  { image: painting, linkLabel: "Painting", href: "#" },
+  { image: gardening, linkLabel: "Gardening", href: "#" },
+  { image: cleaning, linkLabel: "Cleaning", href: "#" },
+];
+
+const listItems = categoriesOne.map((category) => (
+  <div className="card">
+    <img src={category.image} alt="OMG something wrong" />
+    <a href={category.href}>{category.linkLabel}</a>
+  </div>
+));
+
+const listItemsTwo = categoriesTwo.map((category) => (
+  <div className="card">
+    <img src={category.image} alt="OMG something wrong" />
+    <a href={category.href}>{category.linkLabel}</a>
+  </div>
+));
+
+const listItemsThree = categoriesThree.map((category) => (
+  <div className="card">
+    <img src={category.image} alt="OMG something wrong" />
+    <a href={category.href}>{category.linkLabel}</a>
+  </div>
+));
+
 const Categories = () => {
   return (
     <div>
@@ -21,64 +63,15 @@ const Categories = () => {
       <div className="categories-1">
         <h3>Emergency</h3>
       </div>
-      <div className="card-container">
-        <div className="card">
-          <img src={brust} alt="OMG something wrong" />
-          <a href="#">Burst Pipe</a>
-        </div>
-        <div className="card">
-          <img src={lock} alt="OMG something wrong" />
-          <a href="#">Locked Out</a>
-        </div>
-        <div className="card">
-          <img src={short} alt="OMG something wrong" />
-          <a href="#">Short Out</a>
-        </div>
-        <div className="card">
-          <img src={removal} alt="OMG something wrong" />
-          <a href="#">Removal</a>
-        </div>
-      </div>
-      <div></div>
+
+      <ul className="card-container">{listItems}</ul>
+
       <div className="categories-2">
         <h3>Most popular</h3>
       </div>
-      <div className="card-container">
-        <div className="card">
-          <img src={builder} alt="OMG something wrong" />
-          <a href="#">Builder</a>
-        </div>
-        <div className="card">
-          <img src={electrician} alt="OMG something wrong" />
-          <a href="#">Electrician</a>
-        </div>
-        <div className="card">
-          <img src={plumber} alt="OMG something wrong" />
-          <a href="#">Plumber</a>
-        </div>
-        <div className="card">
-          <img src={handyman} alt="OMG something wrong" />
-          <a href="#">Handyman</a>
-        </div>
-      </div>
-      <div className="card-container">
-        <div className="card">
-          <img src={fenceing} alt="OMG something wrong" />
-          <a href="#">Fencing</a>
-        </div>
-        <div className="card">
-          <img src={painting} alt="OMG something wrong" />
-          <a href="#">Painting</a>
-        </div>
-        <div className="card">
-          <img src={gardening} alt="OMG something wrong" />
-          <a href="#">Gardening</a>
-        </div>
-        <div className="card">
-          <img src={cleaning} alt="OMG something wrong" />
-          <a href="#">Cleaning</a>
-        </div>
-      </div>
+
+      <ul className="card-container">{listItemsTwo}</ul>
+      <ul className="card-container">{listItemsThree}</ul>
     </div>
   );
 };
