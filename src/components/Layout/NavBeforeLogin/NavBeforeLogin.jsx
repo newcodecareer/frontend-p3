@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Header, NavLogo, NavList } from "./MainNav.styles";
+import { Header, NavLogo, NavList } from "./NavBeforeLogin.styles";
 
-const MainNav = () => {
+const NavBeforeLogin = () => {
   return (
     <Header>
       <NavLogo>
@@ -12,13 +12,13 @@ const MainNav = () => {
       <NavList>
         <ul>
           <li>
-            <Link to="/postNeeds">Post Needs</Link>
+            <Link to="/signup">Sign up</Link>
           </li>
           <li>
-            <Link to="/browseNeeds">Browse Needs</Link>
+            <Link to="/login">Log in</Link>
           </li>
           <li>
-            <Link to="/myNeeds">My Needs</Link>
+            <Link to="/earn-money">Register Tradie</Link>
           </li>
         </ul>
       </NavList>
@@ -26,4 +26,4 @@ const MainNav = () => {
   );
 };
 
-export default MainNav;
+export default NavBeforeLogin;

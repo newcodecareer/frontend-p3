@@ -13,7 +13,7 @@ export const Header = styled.header`
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   border-bottom: solid 1px ${primaryBorderColor};
   padding: 0 20% 1rem;
 `;
@@ -28,15 +28,18 @@ export const NavList = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+
     li {
-      margin-left: 2rem;
+      margin-left: 1rem;
       cursor: pointer;
+
       a {
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 600;
         color: ${primaryFontColor};
+
         &:link {
           color: ${primaryFontColor};
         }
@@ -45,7 +48,8 @@ export const NavList = styled.nav`
           color: ${primaryThemeColor};
         }
       }
-      &:first-child {
+
+      &:last-child {
         background-color: ${primaryThemeColor};
         padding: 6px 18px;
         border: solid 1px ${primaryThemeColor};
