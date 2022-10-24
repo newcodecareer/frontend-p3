@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {
   fontFamily,
-  fontSizeM,
-  fontSizeXL,
+  // fontSizeM,
+  // fontSizeXL,
   primaryThemeColor,
   thirdFontColor,
 } from "../common/index.styles";

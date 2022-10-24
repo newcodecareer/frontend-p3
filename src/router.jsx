@@ -10,6 +10,8 @@ import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
 import PostDetails from "./components/PostDetails/PostDetails";
+import Category from "./components/SearchFilters/Category";
+import Range from "./components/SearchFilters/Range";
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -62,6 +64,14 @@ const routes = [
   {
     path: "/post-details",
     element: <PostDetails />,
+  },
+  {
+    path: "/drop-down-one",
+    element: <Category />,
+  },
+  {
+    path: "/drop-down-two",
+    element: <Range />,
   },
 ];
 
