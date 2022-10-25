@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { secondaryFontColor } from "../common/index.styles";
+// import { secondaryFontColor } from "../common/index.styles";
 
 export const Category = styled.div`
   margin: 0;
@@ -9,7 +9,7 @@ export const Category = styled.div`
 `;
 
 export const Heading = styled.span`
-  font-size: 45px;
+  font-size: 2.2rem;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -22,6 +22,7 @@ export const SubHeading = styled.span`
   justify-content: center;
   margin-top: 50px;
   font-weight: bold;
+  font-size: 1.5rem;
 `;
 
 export const CardContainer = styled.div`
@@ -30,22 +31,21 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  border-style: groove;
-  padding: 15px;
-  margin: 20px;
+  padding: 20px;
+  margin: 35px;
   border-radius: 5px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 130px;
+  width: 110px;
   height: 100px;
-  border: 2px solid ${secondaryFontColor};
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 `;
 
 export const Img = styled.img`
   height: 65px;
-  width: 80px;
+  width: 75px;
   position: relative;
   top: 30%;
   left: 50%;

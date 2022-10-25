@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { primaryThemeColor } from "../common/index.styles";
 
 export const Error = styled.div`
-  padding-top: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-direction: column;
 `;
 
@@ -21,6 +25,7 @@ export const TextTwo = styled.h1`
 export const Img = styled.img`
   margin: auto;
   display: block;
+  height: 200px;
 `;
 
 export const TextThree = styled.h1`
@@ -35,5 +40,5 @@ export const TextFour = styled.h2`
 `;
 
 export const LinkOne = styled(Link)`
-  color: ${(props) => props.inputColor || "#b84b4b"};
+  color: ${(props) => props.inputColor || `${primaryThemeColor}`};
 `;
