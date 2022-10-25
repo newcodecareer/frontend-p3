@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { secondaryFontColor } from "../common/index.styles";
+
 
 export const Category = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-bottom: 100px;
 `;
 
 export const Heading = styled.span`
@@ -37,16 +40,21 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 130px;
+  height: 100px;
+  border: 2px solid ${secondaryFontColor};
 `;
 
 export const Img = styled.img`
-  height: 60px;
-  padding-left: 15px;
+  height: 65px;
+  width: 80px;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const Text = styled.a`
-  padding-top: 5px;
-  padding-left: 10px;
+  margin-top: 3px;
   text-decoration: none;
   color: black;
   font-weight: bold;

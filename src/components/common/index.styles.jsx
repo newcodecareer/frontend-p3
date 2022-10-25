@@ -6,8 +6,10 @@ export const btnFontColor = "white";
 export const primaryShadowColor = "rgba(0, 0, 0, 0.2)";
 
 export const primaryBorderColor = "lightgray";
+export const secondaryBorderColor = "#a5a5a5";
 
 export const primaryThemeColor = "#f77f00";
+export const secondaryThemeColor = "#F9F6F1";
 
 export const fontFamily = '"Inter", sans-serif';
 

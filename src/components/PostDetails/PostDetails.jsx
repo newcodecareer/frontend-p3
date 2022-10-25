@@ -32,8 +32,17 @@ import {
   ReplyIcon,
   Reply,
 } from "./PostDetails.styles";
+import Offer from "../Offer/Offer";
+import React, {useState} from "react";
 
 const PostDetails = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <Background>
       <DetailContainer>
@@ -74,7 +83,11 @@ const PostDetails = () => {
           <HeadingRight>
             <BudgetLabel>NEED BUDGET</BudgetLabel>
             <Budget>$350</Budget>
-            <Button>Make an offer</Button>
+            <Button onClick={togglePopup}>Make an offer</Button>
+            {isOpen && <Offer
+              handleClose={togglePopup}
+              content={<div></div>}
+            />}
           </HeadingRight>
         </HeadingContainer>
         <DescriptionContainer>

@@ -14,7 +14,6 @@ const Homepage = () => {
       <Categories />
       <Footer />
     </HomeMain>
-
   );
 };
 
