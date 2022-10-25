@@ -25,8 +25,8 @@ export const ParagraphContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 40%;
-  background: #fbfbfb;
-  border: 1px solid #f5f5f5;
+  /* background: #fbfbfb;
+  border: 1px solid #f5f5f5; */
   border-radius: 7px;
   margin-bottom: 50px;
 `;
@@ -56,6 +56,5 @@ export const ParagraphTwo = styled.p`
   line-height: 25px;
   /* letter-spacing: -0.6px; */
   margin: 15px 5px 25px;
-
   color: ${secondaryFontColor};
 `;

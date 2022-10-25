@@ -14,7 +14,7 @@ export const PopUpBox = styled.div`
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const PopUp = styled.div`

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {
   btnFontColor,
-  fontSizeL,
   fontSizeM,
   primaryFontColor,
   secondaryFontColor,
@@ -40,14 +39,14 @@ export const DataContainer = styled.div`
 `;
 
 export const Label = styled.label`
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   font-weight: 600;
   color: ${primaryFontColor};
 `;
 
 export const VerInputs = styled.div`
   display: flex;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
 `;
 
 export const Input = styled.input`
@@ -55,7 +54,7 @@ export const Input = styled.input`
   border: solid 3px ${thirdFontColor};
   color: ${primaryFontColor};
   box-sizing: border-box;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   margin: ${(props) => props.inputMargin || "0.8rem 0"};
   padding: 1rem;
   border-radius: 5px;
@@ -68,7 +67,7 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
   font-family: "Inter", sans-serif;
   height: 8rem;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   width: ${(props) => props.inputWidth || "58.5%"};
   margin: ${(props) => props.inputMargin || "10px 0"};
   resize: none;
@@ -93,7 +92,7 @@ export const Button = styled.button`
   padding: ${(props) => props.inputPadding || "0.5rem 1rem"};
   border-radius: 8px;
   border: none;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   font-weight: 600;
   margin: 1rem 1rem 1rem 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);

@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import {
   fontFamily,
-  fontSizeL,
   fontSizeM,
   primaryFontColor,
   primaryThemeColor,
-  secondaryFontColor,
   thirdFontColor,
 } from "../common/index.styles";
 
@@ -30,7 +28,7 @@ export const Label = styled.label`
   padding: 1rem 0;
   font-family: ${fontFamily};
   font-weight: 600;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   /* letter-spacing: -0.6px; */
 `;
 
@@ -54,7 +52,7 @@ export const Input = styled.input`
   margin-bottom: 30px;
 
   ::placeholder {
-    color: ${secondaryFontColor};
+    color: ${thirdFontColor};
   }
 `;
 
@@ -64,7 +62,7 @@ export const Button = styled.button`
 
   font-family: ${fontFamily};
   font-weight: 600;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   /* letter-spacing: -0.6px; */
   color: white;
 
