@@ -32,12 +32,11 @@ export const Pharagraph = styled.div`
 `;
 
 export const Img = styled.img`
-    border: solid 10px ${primaryBorderColor};
     margin: auto;
     display: block;
-    width: 500px;
-    height: 316px;
-`
+    width: 100%;
+    height: 100%;
+`;
 
 export const Text = styled.p` 
     font-size: ${fontSizeL} ;

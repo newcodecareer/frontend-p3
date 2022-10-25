@@ -19,10 +19,10 @@ const Error404 = () =>{
                     404 Page Not Found!
                 </Text>
             </Pharagraph>
-            <Img src="src/images/dog1.gif" alt = "404 picture"/>
+            <Img src="src/images/404.png" alt = "404 picture"/>
             <Pharagraph>
                 <Text>
-                    Looks like this page went on vacation.
+                    Looks like this page have some problems.
                 </Text>
                 <Text>
                     Try our &nbsp;<LinkOne to = "/">homepage</LinkOne>&nbsp;instead.
