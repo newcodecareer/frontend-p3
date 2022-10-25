@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import {
-  fontFamily,
-  fontSizeM,
-  fontSizeXL,
-  primaryThemeColor,
-  thirdFontColor,
-} from "../common/index.styles";
+import { fontFamily, primaryThemeColor, thirdFontColor } from "../common/index.styles";
 
 export const Background = styled.div`
   margin-top: 10px;
