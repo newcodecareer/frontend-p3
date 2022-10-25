@@ -17,3 +17,4 @@ export const fontSizeS = "0.8rem";
 export const fontSizeM = "1rem";
 export const fontSizeL = "1.2rem";
 export const fontSizeXL = "1.5rem";
+export const fontSizeXXL = "2rem";
