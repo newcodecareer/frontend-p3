@@ -11,6 +11,7 @@ export const Afooter = styled.div`
   border-top: 1px solid ${thirdFontColor};
   width: 100%;
   bottom: 0;
+
 `;
 export const ParagraphOne = styled.span`
   height: 3rem;
