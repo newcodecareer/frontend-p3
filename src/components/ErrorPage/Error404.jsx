@@ -1,31 +1,33 @@
 
 import {
     Error,
-    TextOne,
-    TextTwo,
+    Heading,
+    Text,
     Img,
-    TextThree,
     LinkOne,
-    TextFour,
+    Pharagraph,
 } from "./Error404.style";
 
 const Error404 = () =>{
     return(
         <Error>
-            <TextOne>
+            <Heading>
                 Whoops!
-            </TextOne>
-            <TextTwo>
-                404 Page Not Found!
-            </TextTwo>
+            </Heading>
+            <Pharagraph>
+                <Text>
+                    404 Page Not Found!
+                </Text>
+            </Pharagraph>
             <Img src="src/images/dog1.gif" alt = "404 picture"/>
-            <TextThree>
-                Looks like this page went on vacation.
-            </TextThree>
-            <TextFour>
-                Try our &nbsp;<LinkOne to = "/">homepage</LinkOne>&nbsp;instead.
-            </TextFour>
-            
+            <Pharagraph>
+                <Text>
+                    Looks like this page went on vacation.
+                </Text>
+                <Text>
+                    Try our &nbsp;<LinkOne to = "/">homepage</LinkOne>&nbsp;instead.
+                </Text>
+            </Pharagraph>
         </Error>
     );
 };
