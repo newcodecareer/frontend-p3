@@ -1,27 +1,37 @@
 import styled from "styled-components";
+import {
+  fontFamily,
+  fontSizeL,
+  fontSizeM,
+  primaryFontColor,
+  primaryThemeColor,
+  secondaryFontColor,
+  thirdFontColor,
+} from "../common/index.styles";
 
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: ${primaryFontColor};
 `;
 
 export const Heading = styled.h1`
   margin: 50px 0;
-  font-family: "Inter";
+  font-family: ${fontFamily};
   font-weight: 600;
-  font-size: 30px;
-  letter-spacing: -0.6px;
+  font-size: 1.8rem;
+  text-align: center;
+  /* letter-spacing: -0.6px; */
 `;
 
 export const Label = styled.label`
   display: block;
-  height: 30px;
-
-  font-family: "Inter";
+  padding: 1rem 0;
+  font-family: ${fontFamily};
   font-weight: 600;
-  font-size: 15px;
-  letter-spacing: -0.6px;
+  font-size: ${fontSizeL};
+  /* letter-spacing: -0.6px; */
 `;
 
 export const InputGroup = styled.div`
@@ -31,42 +41,41 @@ export const InputGroup = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 300px;
-  height: 30px;
+  width: 480px;
+  /* height: 30px; */
 
-  font-family: "Inter";
+  font-family: ${fontFamily};
   font-weight: 500;
-  font-size: 13px;
-  letter-spacing: -0.6px;
-
-  background: #ffffff;
-  border: 2px solid #b4b4b4;
+  font-size: ${fontSizeM};
+  /* letter-spacing: -0.6px; */
+  border: 2px solid ${thirdFontColor};
   border-radius: 5px;
-  outline: none;
-
-  padding: 0 15px;
+  padding: 1rem;
   margin-bottom: 30px;
 
   ::placeholder {
-    color: #b4b4b4;
+    color: ${secondaryFontColor};
   }
 `;
 
 export const Button = styled.button`
-  width: 330px;
-  height: 40px;
+  width: ${(props) => props.inputWidth || "520px"};
+  padding: 1.2rem 0;
 
-  font-family: "Inter";
+  font-family: ${fontFamily};
   font-weight: 600;
-  font-size: 15px;
-  letter-spacing: -0.6px;
+  font-size: ${fontSizeL};
+  /* letter-spacing: -0.6px; */
   color: white;
 
-  background-color: ${(props) => props.inputColor || "#f77f00"};
-  box-shadow: 4px 5px 21px rgba(0, 0, 0, 0.16);
-  border-radius: 7px;
+  background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   border: none;
 
-  margin: ${(props) => (props.primary ? "50px auto" : "0")};
+  margin: 0.8rem 0;
   cursor: pointer;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;

@@ -1,6 +1,6 @@
 import { Background, Heading, Button } from "./PostStepOne.styles";
 
-import { BackButton, ButtonContainer } from "./PostStepTwo.styles";
+import { ButtonContainer } from "./PostStepTwo.styles";
 
 import {
   Info,
@@ -13,6 +13,7 @@ import {
 } from "./PostStepThree.styles";
 
 import { Link } from "react-router-dom";
+import { secondaryFontColor } from "../common/index.styles";
 
 const PostStepThree = () => {
   return (
@@ -37,10 +38,12 @@ const PostStepThree = () => {
       </ParagraphContainer>
       <ButtonContainer>
         <Link to="/post-step-two">
-          <BackButton>Back</BackButton>
+          <Button inputWidth="240px" inputColor={secondaryFontColor}>
+            Back
+          </Button>
         </Link>
-        <Link to="/home">
-          <Button>Done</Button>
+        <Link to="/">
+          <Button inputWidth="240px">Done</Button>
         </Link>
       </ButtonContainer>
     </Background>

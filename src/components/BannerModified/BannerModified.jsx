@@ -33,7 +33,7 @@ const BannerModified = () => {
             Right now. Right here.
           </Subtitle>
           <div>
-            <Link to="/post-step-one">
+            <Link to="/post-needs">
               <PostNeedBtn>Post your tasks</PostNeedBtn>
             </Link>
             <Link to="/browse-needs">

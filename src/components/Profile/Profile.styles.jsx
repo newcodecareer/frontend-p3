@@ -67,6 +67,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   font-family: "Inter", sans-serif;
+  height: 8rem;
   font-size: ${fontSizeL};
   width: ${(props) => props.inputWidth || "58.5%"};
   margin: ${(props) => props.inputMargin || "10px 0"};
