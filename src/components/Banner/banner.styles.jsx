@@ -17,7 +17,7 @@ export const BannerContainer = styled.div`
     z-index: -1;
     opacity: 0.5;
     border-radius: 15px;
-    background-image: url("https://www.brightonhomes.net.au/sites/default/files/house-plans-brisbane-lp.jpg");
+    background-image: url("https://www.brightonhomes.net.au/sites/default/files/styles/one_item_block/public/BLK49C-double-storey-home-design-kitchen.jpg?itok=6WxuryTE");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ export const Title = styled.h1`
 //     color: var(--placeholder-color);
 // }
 
-export const GetQuoteBtn = styled.button`
+export const BrowseTaskBtn = styled.button`
   color: ${btnFontColor};
   font-size: ${fontSizeXL};
   border: none;
