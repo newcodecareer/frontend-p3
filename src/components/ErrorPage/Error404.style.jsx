@@ -5,7 +5,6 @@ import {
   fontSizeXXL,
   fontSizeL,
   primaryFontColor,
-  primaryBorderColor,
   primaryThemeColor,
 } from "../common/index.styles";
 
@@ -28,7 +27,7 @@ export const Heading = styled.span`
   font-weight: bold;
 `;
 
-export const Pharagraph = styled.div`
+export const Paragraph = styled.div`
   text-align: center;
   padding: 0.5rem;
   color: ${(props) => props.inputColor || `${primaryFontColor}`};
