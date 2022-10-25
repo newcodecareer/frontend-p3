@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fontSizeXL, primaryThemeColor, secondaryFontColor } from "../common/index.styles";
+import { fontSizeM, primaryThemeColor, secondaryFontColor } from "../common/index.styles";
 
 export const PostContainer = styled.div`
   text-align: center;
@@ -8,7 +8,7 @@ export const PostContainer = styled.div`
 export const StepsTiitle = styled.h1`
   position: relative;
   height: auto;
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-top: 4rem;
   margin-bottom: 20px;
 `;
@@ -16,9 +16,9 @@ export const StepsTiitle = styled.h1`
 export const Subtitle = styled.div`
   position: relative;
   height: auto;
-  font-size: ${fontSizeXL};
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 45px;
+  font-size: 1.5rem;
 `;
 
 export const CardContainer = styled.div`
@@ -28,16 +28,16 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  border: 2px solid ${secondaryFontColor};
   border-radius: 10px;
-  width: 300px;
+  max-width: 250px;
   padding: 20px;
   margin: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 `;
 
 export const Img = styled.img`
   height: auto;
-  width: 250px;
+  max-width: 200px;
 `;
 
 export const Steps = styled.h3``;
@@ -48,7 +48,7 @@ export const Description = styled.p`
 
 export const PostNeedBtn = styled.button`
   color: rgb(255, 255, 255);
-  font-size: ${fontSizeXL};
+  font-size: ${fontSizeM};
   border: none;
   background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
   border-radius: 8px;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 import{fontSizeXXL,fontSizeL,primaryFontColor,primaryBorderColor, primaryThemeColor} from "../common/index.styles"
 
 export const Error = styled.div`
