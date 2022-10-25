@@ -6,6 +6,8 @@ import {
   primaryThemeColor,
   thirdFontColor,
   fontSizeL,
+  fontSizeM,
+  fontSizeS,
 } from "../common/index.styles";
 
 export const Form = styled.form`
@@ -36,7 +38,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   box-sizing: border-box;
   width: 95%;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   margin: 0.8rem;
   padding: 1rem;
   border: solid 2px ${thirdFontColor};
@@ -56,9 +58,9 @@ export const BtnContainer = styled.div`
 export const Button = styled.button`
   width: 95%;
   color: white;
-  font-size: ${fontSizeL};
+  font-size: ${fontSizeM};
   font-weight: 600;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   background-color: ${(props) => props.inputColor || `${primaryThemeColor}`};
   border: none;
   border-radius: 8px;
@@ -80,7 +82,7 @@ export const TermContainer = styled.div`
 export const Paragraph = styled.p`
   width: 95%;
   text-align: center;
-  font-size: ${(props) => props.inputSize || "${fontSizeM}"};
+  font-size: ${(props) => props.inputSize || `${fontSizeS}`};
   font-weight: ${(props) => props.inputWeight || "500"};
   margin-bottom: 0.2rem;
 `;

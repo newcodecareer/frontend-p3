@@ -6,6 +6,7 @@ export const NeedsMapContainer = styled.div`
   height: calc(100vh - 7rem);
   margin: 1rem 0;
   padding-bottom: 1.5rem;
+  z-index: 1;
 `;
 
 export const StyledMapContainer = styled(MapContainer)`

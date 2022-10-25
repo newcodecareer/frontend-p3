@@ -3,18 +3,23 @@ import { BrowseNeedsSection, NeedsSection } from "./BrowseNeeds.styles";
 import NeedsContainer from "./NeedsContainer/NeedsContainer";
 import NeedsMap from "./NeedsMap/NeedsMap";
 import SearchFilters from "../SearchFilters/SearchFilters";
+import { PostContext } from "../../context/PostContext";
+import PostDetails from "../PostDetails/PostDetails";
 
-const BrowseNeeds = (props) => {
+const BrowseNeeds = (props = {}) => {
   const [location, setLocation] = useState("");
+  const [showPost, setShowPost] = useState(false);
 
   return (
-    <BrowseNeedsSection>
-      <SearchFilters />
-      <NeedsSection>
-        <NeedsContainer location={location} setLocation={setLocation} />
-        <NeedsMap location={location} />
-      </NeedsSection>
-    </BrowseNeedsSection>
+    <PostContext.Provider value={{ setShowPost }}>
+      <BrowseNeedsSection>
+        <SearchFilters />
+        <NeedsSection showPost={showPost}>
+          <NeedsContainer location={location} setLocation={setLocation} />
+          {showPost ? <PostDetails /> : <NeedsMap location={location} />}
+        </NeedsSection>
+      </BrowseNeedsSection>
+    </PostContext.Provider>
   );
 };
 
