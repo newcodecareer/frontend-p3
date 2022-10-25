@@ -14,6 +14,7 @@ export const NeedsCardContainer = styled.div`
   padding: 0 1rem 0.5rem;
   display: flex;
   flex-direction: column;
+  border-top: solid 0.1px ${thirdFontColor};
   box-shadow: 0 1px 3px ${primaryShadowColor};
   border-radius: 6px;
   color: ${primaryFontColor};

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
   btnFontColor,
-  fontSizeL,
+  fontSizeM,
   primaryBorderColor,
   primaryFontColor,
   primaryThemeColor,
@@ -37,7 +37,7 @@ export const NavList = styled.nav`
       cursor: pointer;
       a {
         text-decoration: none;
-        font-size: ${fontSizeL};
+        font-size: ${fontSizeM};
         font-weight: 600;
         color: ${primaryFontColor};
         &:link {
@@ -76,7 +76,7 @@ export const NavLogin = styled.nav`
 
       a {
         text-decoration: none;
-        font-size: ${fontSizeL};
+        font-size: ${fontSizeM};
         font-weight: 600;
         color: ${primaryFontColor};
 

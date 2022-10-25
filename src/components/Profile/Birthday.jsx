@@ -34,7 +34,7 @@ const Birthday = () => {
       <div>
         <VerInputs>
           <Input
-            inputWidth="4rem"
+            inputWidth="5rem"
             inputMargin="10px 1% 10px 0"
             inputTextAline="center"
             type="text"
@@ -43,7 +43,7 @@ const Birthday = () => {
             maxLength="2"
           />
           <Input
-            inputWidth="4rem"
+            inputWidth="5rem"
             inputMargin="10px 1% 10px 0"
             inputTextAline="center"
             type="text"
@@ -52,13 +52,13 @@ const Birthday = () => {
             maxLength="2"
           />
           <Input
-            inputWidth="4rem"
+            inputWidth="6rem"
             inputMargin="10px 1% 10px 0"
             inputTextAline="center"
             type="text"
-            placeholder="YY"
-            minLength="2"
-            maxLength="2"
+            placeholder="YYYY"
+            minLength="4"
+            maxLength="4"
           />
         </VerInputs>
         <ButtonContainer>
