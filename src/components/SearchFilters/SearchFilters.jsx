@@ -3,51 +3,54 @@ import {
   Input,
   SearchContainer,
   SearchWrap,
-  SearchButton,
   NavBar,
   NavItem,
   DropList,
-  Arrow,
+  SearchButton,
 } from "./SearchFilters.styles";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { FaSearch } from "react-icons/fa";
 
 const SearchFilters = () => {
   return (
     <Background>
       <SearchContainer>
         <SearchWrap>
-          <Input type="text" placeholder="Search for needs"></Input>
-          <SearchButton src="/src/images/search_logo.png"></SearchButton>
+          <Input type="text" placeholder="Search for needs" />
+          <SearchButton>
+            <FaSearch />
+          </SearchButton>
         </SearchWrap>
       </SearchContainer>
       <NavBar>
         <NavItem>
           <DropList href="#">
             Category
-            <Arrow src="/src/images/arrow.png"></Arrow>
+            <TiArrowSortedDown />
           </DropList>
         </NavItem>
         <NavItem>
           <DropList href="#">
-            50km Hobart TAS & remotely
-            <Arrow src="/src/images/arrow.png"></Arrow>
+            Location
+            <TiArrowSortedDown />
           </DropList>
         </NavItem>
         <NavItem>
           <DropList href="#">
             Price
-            <Arrow src="/src/images/arrow.png"></Arrow>
+            <TiArrowSortedDown />
           </DropList>
         </NavItem>
         <NavItem>
           <DropList href="#">
             Offers
-            <Arrow src="/src/images/arrow.png"></Arrow>
+            <TiArrowSortedDown />
           </DropList>
         </NavItem>
         <NavItem>
           <DropList href="#">
             Preference Sort
-            <Arrow src="/src/images/arrow.png"></Arrow>
+            <TiArrowSortedDown />
           </DropList>
         </NavItem>
       </NavBar>

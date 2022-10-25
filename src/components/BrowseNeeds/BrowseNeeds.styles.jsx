@@ -13,7 +13,7 @@ export const NeedsSection = styled.div`
   box-sizing: border-box;
   flex: 5 3;
   position: fixed;
-  top: 8rem;
+  top: 7rem;
   left: 50%;
   transform: translateX(-50%);
 `;

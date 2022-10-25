@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  background: #f5f5f5;
-  padding: 10px;
+  /* background: #f5f5f5; */
 
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 `;
 
 export const DetailContainer = styled.div`
-  width: 45%;
-  height: 720px;
-  padding: 30px;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
+  padding: 0 2rem;
   background: white;
 
   overflow-y: scroll;
@@ -124,6 +126,10 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const InfoWrapper = styled.div`

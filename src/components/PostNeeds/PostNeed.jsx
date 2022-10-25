@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   PostContainer,
   StepsTiitle,
@@ -8,7 +7,6 @@ import {
   Img,
   Description,
   Steps,
-  PostNeedBtn,
 } from "./PostNeed.styles";
 
 const PostNeed = () => {
@@ -33,11 +31,11 @@ const PostNeed = () => {
           <Description>Select the best buddy and leave reviews and rewards.</Description>
         </Card>
       </CardContainer>
-      <div>
+      {/* <div>
         <Link to="/post-needs">
           <PostNeedBtn>Post Your Need</PostNeedBtn>
         </Link>
-      </div>
+      </div> */}
     </PostContainer>
   );
 };

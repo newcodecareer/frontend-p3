@@ -31,7 +31,7 @@ const About = () => {
   const aboutInputs = () => {
     return (
       <div>
-        <Textarea rows="4" placeholder="Description"></Textarea>
+        <Textarea placeholder="Description"></Textarea>
         <ButtonContainer>
           <Button onClick={() => setAbout(initialAbout)}>Cancel</Button>
           <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
