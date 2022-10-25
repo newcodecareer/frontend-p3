@@ -1,4 +1,4 @@
-import { Error, TextOne, TextTwo, Img, TextThree, LinkOne, TextFour } from "./Error404.style";
+
 
 import {
     Error,
