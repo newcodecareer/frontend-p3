@@ -1,5 +1,6 @@
 import styled from "styled-components";
-// import { secondaryFontColor } from "../common/index.styles";
+
+import { secondaryFontColor } from "../common/index.styles";
 
 export const Category = styled.div`
   margin: 0;
@@ -38,14 +39,15 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 110px;
+
+  width: 130px;
   height: 100px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid ${secondaryFontColor};
 `;
 
 export const Img = styled.img`
   height: 65px;
-  width: 75px;
+  width: 80px;
   position: relative;
   top: 30%;
   left: 50%;

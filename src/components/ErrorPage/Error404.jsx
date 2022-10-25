@@ -1,18 +1,36 @@
-import { Error, TextOne, Img, TextThree, LinkOne, TextFour } from "./Error404.style";
+import { Error, TextOne, TextTwo, Img, TextThree, LinkOne, TextFour } from "./Error404.style";
 
-const Error404 = () => {
-  return (
-    <Error>
-      <TextOne>Whoops!</TextOne>
-      {/* <TextTwo>404 Page Not Found!</TextTwo> */}
-      {/* <Img src="src/images/dog1.gif" alt="404 picture" /> */}
-      <Img src="src/images/404.png" alt="404 picture" />
-      <TextThree>Sorry! Looks like this page went on vacation.</TextThree>
-      <TextFour>
-        Try our &nbsp;<LinkOne to="/">homepage</LinkOne>&nbsp;instead.
-      </TextFour>
-    </Error>
-  );
+import {
+    Error,
+    Heading,
+    Text,
+    Img,
+    LinkOne,
+    Pharagraph,
+} from "./Error404.style";
+
+const Error404 = () =>{
+    return(
+        <Error>
+            <Heading>
+                Whoops!
+            </Heading>
+            <Pharagraph>
+                <Text>
+                    404 Page Not Found!
+                </Text>
+            </Pharagraph>
+            <Img src="src/images/404.png" alt = "404 picture"/>
+            <Pharagraph>
+                <Text>
+                    Looks like this page have some problems.
+                </Text>
+                <Text>
+                    Try our &nbsp;<LinkOne to = "/">homepage</LinkOne>&nbsp;instead.
+                </Text>
+            </Pharagraph>
+        </Error>
+    );
 };
 
 export default Error404;
