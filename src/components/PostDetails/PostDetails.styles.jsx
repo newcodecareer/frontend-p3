@@ -125,7 +125,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
 
-  &:hover{
+  &:hover {
     filter: brightness(1.2);
   }
 `;

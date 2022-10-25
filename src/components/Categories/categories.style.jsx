@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { secondaryFontColor } from "../common/index.styles";
 
-
 export const Category = styled.div`
   margin: 0;
   padding: 0;
