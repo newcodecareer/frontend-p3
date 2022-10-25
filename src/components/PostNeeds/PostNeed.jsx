@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import {
   PostContainer,
   StepsTiitle,
@@ -8,7 +7,6 @@ import {
   Img,
   Description,
   Steps,
-  PostNeedBtn,
 } from "./PostNeed.styles";
 
 const PostNeed = () => {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeMain = styled.div`
-  width: 70%;
+  width: 100%;
   box-sizing: border-box;
   margin: auto;
 `;

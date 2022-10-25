@@ -16,7 +16,7 @@ const Homepage = React.lazy(() => import("./pages/HomePage"));
 
 const routes = [
   {
-    path: "/404",
+    path: "/error",
     element: <ErrorPage />,
   },
   {
@@ -40,7 +40,7 @@ const routes = [
     element: <BrowseNeeds />,
   },
   {
-    path: "/post-step-one",
+    path: "/post-needs",
     element: <PostStepOne />,
   },
   {
