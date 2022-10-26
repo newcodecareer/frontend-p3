@@ -14,7 +14,7 @@ import {
   ChargeBox,
   Line,
   PopUpBox,
-  Sahde
+  Sahde,
 } from "./Offer.styles";
 
 const Offer = (props) => {
