@@ -7,19 +7,19 @@ const Categories = () => {
       <SubHeading>Emergency</SubHeading>
       <CardContainer>
         <Card>
-          <Img src="/src/images/brust.png" alt="OMG something wrong" />
+          <Img src="./src/images/brust.png" alt="OMG something wrong" />
           <Text>Burst Pipe</Text>
         </Card>
         <Card>
-          <Img src="/src/images/lock.png" alt="OMG something wrong" />
+          <Img src="./src/images/lock.png" alt="OMG something wrong" />
           <Text>Locked Out</Text>
         </Card>
         <Card>
-          <Img src="/src/images/short.png" alt="OMG something wrong" />
+          <Img src="./src/images/short.png" alt="OMG something wrong" />
           <Text>Short Out</Text>
         </Card>
         <Card>
-          <Img src="/src/images/removal.png" alt="OMG something wrong" />
+          <Img src="./src/images/removal.png" alt="OMG something wrong" />
           <Text>Removal</Text>
         </Card>
       </CardContainer>
