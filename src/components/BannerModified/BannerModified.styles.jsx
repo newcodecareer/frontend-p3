@@ -111,8 +111,8 @@ export const BackgroundImg1 = styled.div`
   position: absolute;
   height: 150px;
   width: 300px;
-  right: -5rem;
-  top: -5rem;
+  right: -6rem;
+  top: 15rem;
   background-color: #e8dbce;
   z-index: -1;
   border-radius: 70px;
@@ -122,8 +122,8 @@ export const BackgroundImg2 = styled.div`
   position: absolute;
   height: 300px;
   width: 250px;
-  left: -5rem;
-  bottom: -7rem;
+  left: -3.5rem;
+  bottom: -4rem;
   background-color: #f6e6d5;
   z-index: -2;
   border-radius: 20px;
@@ -133,9 +133,9 @@ export const BackgroundImg3 = styled.div`
   position: absolute;
   height: 300px;
   width: 350px;
-  right: -5rem;
-  bottom: -7rem;
+  right: -3rem;
+  bottom: 6rem;
   background-color: #faf3e4;
   z-index: -3;
-  border-radius: 20px;
+  border-radius: 40px;
 `;
