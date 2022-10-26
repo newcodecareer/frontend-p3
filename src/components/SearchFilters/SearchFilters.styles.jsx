@@ -1,85 +1,90 @@
 import styled from "styled-components";
 import {
   fontFamily,
-  // fontSizeM,
-  // fontSizeXL,
+  fontSizeL,
+  fontSizeM,
   primaryThemeColor,
   thirdFontColor,
 } from "../common/index.styles";
 
 export const Background = styled.div`
-  margin-top: 10px;
+  width: 1180px;
+  height: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+  font-size: ${fontSizeM};
+  font-weight: 600;
+  font-family: "Inter";
+  padding-top: 0.4rem;
 `;
 
 export const SearchContainer = styled.div`
-  width: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
 `;
 
 export const SearchWrap = styled.div`
-  width: 70%;
   height: 30px;
-  border: 2px solid #d2d2d2;
-  border-radius: 25px;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  border: 2px solid #d2d2d2;
+  border-radius: 25px;
 `;
 
 export const Input = styled.input`
-  width: 70%;
+  width: 120px;
   ::placeholder {
     color: ${thirdFontColor};
   }
-
   border: none;
-  outline: none;
-
+  font-size: ${fontSizeM};
   font-family: ${fontFamily};
   font-weight: 500;
-  font-size: 10px;
+  padding-left: 1rem;
   letter-spacing: -0.6px;
+  position: relative;
   margin: 0 10px;
+  outline: none;
+  transition: width 0.5s;
+  &:focus {
+    width: 200px;
+  }
 `;
 
-export const SearchButton = styled.img`
-  width: 10%;
-  padding: 0;
-  align-self: center;
+export const SearchButton = styled.button`
+  background: none;
+  color: ${primaryThemeColor};
+  border: none;
+  font-size: ${fontSizeL};
+  padding-right: 0.5rem;
+  cursor: pointer;
 `;
 
 export const NavBar = styled.ul`
-  width: 80%;
+  /* width: 75%; */
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-
   list-style: none;
 `;
 
 export const NavItem = styled.li`
-  margin-right: 50px;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 24px;
+  margin-right: 3rem;
   letter-spacing: -0.6px;
 `;
 
 export const DropList = styled.a`
   color: ${primaryThemeColor};
   text-decoration: none;
-`;
-
-export const Arrow = styled.img`
-  width: 10px;
-  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
