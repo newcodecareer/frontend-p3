@@ -1,4 +1,3 @@
-
 import { Error, Heading, Text, Img, LinkOne, Paragraph } from "./Error404.style";
 
 const Error404 = () => {
