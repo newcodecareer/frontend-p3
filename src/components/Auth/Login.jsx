@@ -20,7 +20,7 @@ const Login = () => {
       </InputContainer>
       <BtnContainer>
         <Button type="submit">
-          <StyledLink to = "/profiles" inputColor="white">Log in</StyledLink>
+          <StyledLink to = "/profiles" inputColor="#fff">Log in</StyledLink>
         </Button>
       </BtnContainer>
       <TermContainer>
