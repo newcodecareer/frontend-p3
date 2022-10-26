@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 import {
   fontFamily,
@@ -78,7 +78,7 @@ export const Background = styled.div`
       width: 160px;
       height: 285px;
       padding: 15px;
-    `};     
+    `};
 `;
 
 export const TopContainer = styled.div`
@@ -102,20 +102,20 @@ export const Breakline = styled.hr`
     props.price &&
     css`
       margin: 35px 0 10px;
-    `}; 
+    `};
 `;
 
 export const BottomContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 
   ${(props) =>
     props.offer &&
     css`
       margin: 20px 0 0 0;
-    `}; 
+    `};
 `;
 
 export const Paragraph = styled.p`
@@ -132,14 +132,14 @@ export const Paragraph = styled.p`
       font-size: ${fontSizeS};
       margin: 0;
       line-height: 18px;
-    `}; 
+    `};
 
   ${(props) =>
     props.bk &&
     css`
       color: black;
       margin: 0;
-    `}; 
+    `};
 `;
 
 export const ApplyBtn = styled.button`
@@ -172,7 +172,7 @@ export const List = styled.ul`
     css`
       columns: 1;
       font-size: ${fontSizeS};
-    `}; 
+    `};
 `;
 
 export const ListItem = styled.li`
@@ -188,13 +188,13 @@ export const ListItem = styled.li`
     props.sort &&
     css`
       margin: 0;
-      &:hover{
-      background-color: ${primaryBackgroundColor};
+      &:hover {
+        background-color: ${primaryBackgroundColor};
       }
       border: none;
       border-radius: 7px;
       width: 150px;
-    `}; 
+    `};
 `;
 
 export const Checkbox = styled.input`
@@ -247,12 +247,12 @@ export const Wrap = styled.div`
     props.price &&
     css`
       margin: 45px 0 0 0;
-    `}; 
+    `};
 
   ${(props) =>
     props.offer &&
     css`
-       justify-content: space-between;
+      justify-content: space-between;
     `};
 `;
 
@@ -263,9 +263,7 @@ export const ParagraphBlock = styled.div`
   align-items: flex-start;
 `;
 
-export const SwitchBtn = styled.button`
-  
-`;
+export const SwitchBtn = styled.button``;
 
 export const Img = styled.img`
   visibility: hidden;
@@ -273,9 +271,9 @@ export const Img = styled.img`
 
 export const ListBtn = styled.button`
   cursor: pointer;
-  border:none;
+  border: none;
   background-color: transparent;
-  &:active{
+  &:active {
     font-weight: 600;
     background-color: ${primaryBackgroundColor};
     & ~ & {

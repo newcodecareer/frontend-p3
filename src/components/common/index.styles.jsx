@@ -9,7 +9,7 @@ export const primaryBorderColor = "lightgray";
 
 export const primaryThemeColor = "#f77f00";
 
-export const primaryBackgroundColor = "#F5F5F5"
+export const primaryBackgroundColor = "#F5F5F5";
 
 export const fontFamily = '"Inter", sans-serif';
 
