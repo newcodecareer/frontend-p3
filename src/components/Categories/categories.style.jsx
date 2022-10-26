@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { secondaryFontColor } from "../common/index.styles";
-
 export const Category = styled.div`
   margin: 0;
   padding: 0;
@@ -42,7 +40,7 @@ export const Card = styled.div`
 
   width: 130px;
   height: 100px;
-  border: 2px solid ${secondaryFontColor};
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 `;
 
 export const Img = styled.img`
