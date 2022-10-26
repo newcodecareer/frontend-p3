@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import {
   fontFamily,
   fontSizeL,
@@ -36,6 +37,9 @@ export const SearchWrap = styled.div`
   justify-content: flex-start;
   border: 2px solid #d2d2d2;
   border-radius: 25px;
+  &:hover {
+    border: 2px solid ${primaryThemeColor};
+  }
 `;
 
 export const Input = styled.input`
@@ -44,6 +48,7 @@ export const Input = styled.input`
     color: ${thirdFontColor};
   }
   border: none;
+  outline: none;
   font-size: ${fontSizeM};
   font-family: ${fontFamily};
   font-weight: 500;
@@ -52,7 +57,7 @@ export const Input = styled.input`
   position: relative;
   margin: 0 10px;
   &:focus {
-    width: 200px;
+    width: 180px;
   }
 `;
 
@@ -76,6 +81,9 @@ export const NavBar = styled.ul`
 export const NavItem = styled.li`
   margin-right: 3rem;
   letter-spacing: -0.6px;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const DropList = styled.a`

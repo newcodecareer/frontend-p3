@@ -3,7 +3,7 @@ import {
   TopContainer,
   Paragraph,
   MiddleContainer,
-  Breakline,
+  BreakLine,
   BottomContainer,
   ApplyBtn,
   Btn,
@@ -71,7 +71,7 @@ const Category = () => {
           </ListItem>
         </List>
       </MiddleContainer>
-      <Breakline></Breakline>
+      <BreakLine></BreakLine>
       <BottomContainer>
         <Btn>Cancel</Btn>
         <ApplyBtn>Apply</ApplyBtn>

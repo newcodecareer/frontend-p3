@@ -4,6 +4,8 @@ export const thirdFontColor = "rgb(215, 215, 215)";
 export const forthFontColor = "#767676";
 export const btnFontColor = "white";
 
+export const bgcColor = "#ffffff";
+
 export const primaryShadowColor = "rgba(0, 0, 0, 0.2)";
 
 export const primaryBorderColor = "lightgray";

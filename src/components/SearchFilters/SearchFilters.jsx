@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Background,
   Input,
@@ -6,12 +7,18 @@ import {
   NavBar,
   NavItem,
   DropList,
-  SearchButton,
+  SearchButton
 } from "./SearchFilters.styles";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";
+import Category from "./Category";
 
 const SearchFilters = () => {
+  const [isShown, setIsShown] = useState(false);
+  const handleClick = (event) => {
+    setIsShown((current) => !current);
+  };
+
   return (
     <Background>
       <SearchContainer>
@@ -24,13 +31,14 @@ const SearchFilters = () => {
       </SearchContainer>
       <NavBar>
         <NavItem>
-          <DropList href="#">
+          <DropList onClick={handleClick}>
             Category
             <TiArrowSortedDown />
+            {isShown && <Category />}
           </DropList>
         </NavItem>
         <NavItem>
-          <DropList href="#">
+          <DropList>
             Location
             <TiArrowSortedDown />
           </DropList>
