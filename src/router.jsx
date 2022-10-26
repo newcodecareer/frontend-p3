@@ -12,7 +12,7 @@ import Profile from "./components/Profile/Profile";
 import PostDetails from "./components/PostDetails/PostDetails";
 
 import Category from "./components/SearchFilters/DropDownList/Category";
-import Range from "./components/SearchFilters/DropDownList/Range";
+import Range from "./components/SearchFilters/DropDownList/Location";
 import Price from "./components/SearchFilters/DropDownList/Price";
 import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";

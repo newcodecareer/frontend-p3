@@ -4,8 +4,8 @@ import { createGlobalStyle } from "styled-components";
 import {
   fontFamily,
   fontSizeS,
-  fontSizeM,
-  //   fontSizeXL,
+  // fontSizeM,
+  // fontSizeXL,
   primaryThemeColor,
   secondaryFontColor,
   thirdFontColor,
@@ -13,31 +13,33 @@ import {
   primaryBackgroundColor,
 } from "../../common/index.styles";
 
-export const CreateStyle = createGlobalStyle`
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+export const GlobalStyle = createGlobalStyle`
+  body, button, input{
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: ${fontSizeS};
     font-family: ${fontFamily};
-    vertical-align: baseline;
-};
+  }
 `;
 
-export const Background = styled.div`
-  border: 1px solid black;
+export const Content = styled.div``;
+
+export const Shade = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 71.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400vw;
+  height: 100%;
+`;
+
+export const PopUp = styled.div`
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 
   ${(props) =>
     props.category &&
@@ -45,15 +47,19 @@ export const Background = styled.div`
       width: 500px;
       height: 225px;
       padding: 20px 15px;
+      top: 23%;
+      left: 25%;
     `};
 
   ${(props) =>
-    props.range &&
+    props.location &&
     css`
       width: 300px;
       height: 280px;
       padding: 0 15px 15px 15px;
       overflow-y: scroll;
+      top: 25.5%;
+      left: 57%;
     `};
 
   ${(props) =>
@@ -62,6 +68,8 @@ export const Background = styled.div`
       width: 300px;
       height: 180px;
       padding: 0 15px 15px 15px;
+      top: 17%;
+      left: 67%;
     `};
 
   ${(props) =>
@@ -70,6 +78,8 @@ export const Background = styled.div`
       width: 300px;
       height: 240px;
       padding: 0 15px 15px 15px;
+      top: 22%;
+      left: 75%;
     `};
 
   ${(props) =>
@@ -78,7 +88,20 @@ export const Background = styled.div`
       width: 160px;
       height: 285px;
       padding: 15px;
+      top: 27%;
+      left: 78%;
     `};
+`;
+
+export const Background = styled.div`
+  position: fixed;
+  left: 0;
+  top: 125px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 `;
 
 export const TopContainer = styled.div`
@@ -103,6 +126,12 @@ export const Breakline = styled.hr`
     css`
       margin: 35px 0 10px;
     `};
+
+  ${(props) =>
+    props.location &&
+    css`
+      margin: 40px 0 10px 0;
+    `};
 `;
 
 export const BottomContainer = styled.div`
@@ -116,20 +145,22 @@ export const BottomContainer = styled.div`
     css`
       margin: 20px 0 0 0;
     `};
+
+  ${(props) =>
+    props.location &&
+    css`
+      margin: 20px 0 10px 0;
+    `};
 `;
 
 export const Paragraph = styled.p`
-  font-family: ${fontFamily};
   font-weight: 500;
-  font-size: ${fontSizeM};
-
   color: ${secondaryFontColor};
   margin: ${(props) => (props.category ? 0 : "20px 0")};
 
   ${(props) =>
     props.sml &&
     css`
-      font-size: ${fontSizeS};
       margin: 0;
       line-height: 18px;
     `};
@@ -176,13 +207,18 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  margin-bottom: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 9px;
+  padding: 10px;
+
+  ${(props) =>
+    props.category &&
+    css`
+      justify-content: flex-start;
+      margin-bottom: 8px;
+    `};
 
   ${(props) =>
     props.sort &&
@@ -224,12 +260,15 @@ export const Option = styled.input`
 
   padding: 5px 10px;
 
-  font-size: ${fontSizeS};
-
   width: 80px;
   height: 30px;
 
   cursor: pointer;
+  &:focus {
+    background-color: ${primaryThemeColor};
+    border: none;
+    color: white;
+  }
 `;
 
 export const RangeScroll = styled.input`
@@ -273,6 +312,7 @@ export const ListBtn = styled.button`
   cursor: pointer;
   border: none;
   background-color: transparent;
+
   &:active {
     font-weight: 600;
     background-color: ${primaryBackgroundColor};

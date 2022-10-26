@@ -126,14 +126,10 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   cursor: pointer;
-=======
-
   &:hover {
     filter: brightness(1.2);
   }
->>>>>>> ee03b69d8b3105b751e59bdd6650905e8d8a50b9
 `;
 
 export const InfoWrapper = styled.div`
