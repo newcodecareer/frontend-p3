@@ -7,7 +7,7 @@ const Error404 = () => {
       <Paragraph>
         <Text>404 Page Not Found!</Text>
       </Paragraph>
-      <Img src="src/images/404.png" alt="404 picture" />
+      <Img src="/images/404.png" alt="404 picture" />
       <Paragraph>
         <Text>Looks like this page have some problems.</Text>
         <Text>

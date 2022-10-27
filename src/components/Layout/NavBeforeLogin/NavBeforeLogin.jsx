@@ -6,7 +6,7 @@ const NavBeforeLogin = () => {
     <Header>
       <NavLogo>
         <Link to="/">
-          <img src="../src/images/logo.png" alt="Houddy logo" />
+          <img src="/images/logo.png" alt="Houddy logo" />
         </Link>
       </NavLogo>
       <NavList>
