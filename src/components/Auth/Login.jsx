@@ -19,11 +19,13 @@ const Login = () => {
         <Input type="password" placeholder="Create password" />
       </InputContainer>
       <BtnContainer>
-        <Button type="submit">Log in</Button>
+        <Button type="submit">
+          <StyledLink to = "/profiles" inputColor="#fff">Log in</StyledLink>
+        </Button>
       </BtnContainer>
       <TermContainer>
         <Paragraph>
-          <StyledLink to="/reset-password">Forgot your password?</StyledLink>
+          <StyledLink to="/reset-password" >Forgot your password?</StyledLink>
         </Paragraph>
         <Paragraph>
           Are you a new user? <StyledLink to="/signup">Create a free account</StyledLink>

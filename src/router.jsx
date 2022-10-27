@@ -66,11 +66,11 @@ const routes = [
     element: <PostDetails />,
   },
   {
-    path: "/drop-down-one",
+    path: "/drop-down-category",
     element: <Category />,
   },
   {
-    path: "/drop-down-two",
+    path: "/drop-down-range",
     element: <Range />,
   },
 ];

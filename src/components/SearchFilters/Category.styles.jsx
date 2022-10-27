@@ -9,10 +9,16 @@ import {
   secondaryFontColor,
   thirdFontColor,
   btnFontColor,
+  bgcColor,
 } from "../common/index.styles";
 
 export const Background = styled.div`
+  position: absolute;
+  top: 8rem;
   border: 1px solid black;
+  z-index: 99;
+  background-color: ${bgcColor};
+
 
   ${(props) =>
     props.category &&
@@ -46,7 +52,7 @@ export const MiddleContainer = styled.div`
   overflow-y: scroll;
 `;
 
-export const Breakline = styled.hr`
+export const BreakLine = styled.hr`
   border: 0.5px solid ${thirdFontColor};
   margin: 20px 0 10px;
 `;
@@ -139,7 +145,7 @@ export const Option = styled.input`
 
 export const RangeScroll = styled.input`
   width: 90%;
-  margin: 0 atuo;
+  margin: 0 auto;
 `;
 
 export const Wrap = styled.div`

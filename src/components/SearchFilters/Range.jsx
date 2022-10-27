@@ -2,7 +2,7 @@ import {
   Background,
   BottomContainer,
   Option,
-  Breakline,
+  BreakLine,
   Paragraph,
   Btn,
   ApplyBtn,
@@ -34,7 +34,7 @@ const Range = () => {
           <RangeScroll type="range" min="5" max="100" />
         </Wrap>
       </div>
-      <Breakline></Breakline>
+      <BreakLine></BreakLine>
       <BottomContainer>
         <Btn>Cancel</Btn>
         <ApplyBtn>Apply</ApplyBtn>
