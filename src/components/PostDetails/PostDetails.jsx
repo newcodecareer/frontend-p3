@@ -55,7 +55,7 @@ const PostDetails = () => {
             <Heading>Bathroom Elevations CAD - urgently</Heading>
             <Link to="/">&lt; Return to map</Link>
             <InfoWrapper>
-              <Icon src="/src/images/author_icon.png"></Icon>
+              <Icon src="/images/author_icon.png"></Icon>
               <div>
                 <Label>POSTED BY</Label>
                 <InfoDefault>Zoe</InfoDefault>
@@ -63,7 +63,7 @@ const PostDetails = () => {
               </div>
             </InfoWrapper>
             <InfoWrapper>
-              <Icon src="/src/images/location_icon.png"></Icon>
+              <Icon src="/images/location_icon.png"></Icon>
               <div>
                 <Label>LOCATION</Label>
                 <Info>Hobart</Info>
@@ -71,7 +71,7 @@ const PostDetails = () => {
               </div>
             </InfoWrapper>
             <InfoWrapper>
-              <Icon src="/src/images/date_icon.png"></Icon>
+              <Icon src="/images/date_icon.png"></Icon>
               <div>
                 <Label>DUE DATE</Label>
                 <Info>Sunday, 9th Oct 2022 Anytime</Info>
@@ -106,18 +106,18 @@ const PostDetails = () => {
             Due date: Sunday, 9th Oct 2022
           </Paragraph>
           <ImageContainer>
-            <PostImg src="/src/images/example_1.png"></PostImg>
-            <PostImg src="/src/images/example_2.png"></PostImg>
-            <PostImg src="/src/images/example_3.png"></PostImg>
-            <PostImg src="/src/images/example_4.png"></PostImg>
-            <PostImg src="/src/images/example_5.png"></PostImg>
+            <PostImg src="/images/example_1.png"></PostImg>
+            <PostImg src="/images/example_2.png"></PostImg>
+            <PostImg src="/images/example_3.png"></PostImg>
+            <PostImg src="/images/example_4.png"></PostImg>
+            <PostImg src="/images/example_5.png"></PostImg>
           </ImageContainer>
           <SectionLine></SectionLine>
         </DescriptionContainer>
         <div>
           <Label>OFFERS</Label>
           <TradieWrapper>
-            <Avatar src="/src/images/tradie_avatar.png"></Avatar>
+            <Avatar src="/images/tradie_avatar.png"></Avatar>
             <TradieName>Jack</TradieName>
           </TradieWrapper>
           <OfferParagraph>
@@ -129,7 +129,7 @@ const PostDetails = () => {
           <TimeReply>
             <Time>30 minutes ago</Time>
             <ReplyWrapper>
-              <ReplyIcon src="/src/images/reply.png"></ReplyIcon>
+              <ReplyIcon src="/images/reply.png"></ReplyIcon>
               <Reply>Reply</Reply>
             </ReplyWrapper>
           </TimeReply>

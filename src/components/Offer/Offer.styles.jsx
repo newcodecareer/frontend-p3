@@ -10,19 +10,31 @@ import {
 
 export const PopUpBox = styled.div`
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 `;
 
-export const PopUp = styled.div`
-  position: relative;
+export const Sahde = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 400vw;
+  height: 200vh;
+`;
+
+export const PopUp = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
@@ -33,8 +45,8 @@ export const CloseBtn = styled.div`
   top: 10px;
   right: 10px;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
   color: ${(props) => props.inputColor || `${primaryThemeColor}`};
   border: none;
   background: #ffffff;
@@ -108,7 +120,7 @@ export const Intro = styled.textarea`
   border: 2px solid ${(props) => props.inputColor || `${secondaryBorderColor}`};
   border-radius: 5px;
   width: 95%;
-  height: 150px;
+  height: 100px;
   text-align: left;
   margin-bottom: 20px;
   outline: none;

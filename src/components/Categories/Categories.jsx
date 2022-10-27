@@ -7,56 +7,57 @@ const Categories = () => {
       <SubHeading>Emergency</SubHeading>
       <CardContainer>
         <Card>
-          <Img src="./src/images/brust.png" alt="OMG something wrong" />
+
+          <Img src="/images/brust.png" alt="OMG something wrong" />
           <Text>Burst Pipe</Text>
         </Card>
         <Card>
-          <Img src="./src/images/lock.png" alt="OMG something wrong" />
+          <Img src="/images/lock.png" alt="OMG something wrong" />
           <Text>Locked Out</Text>
         </Card>
         <Card>
-          <Img src="./src/images/short.png" alt="OMG something wrong" />
+          <Img src="/images/short.png" alt="OMG something wrong" />
           <Text>Short Out</Text>
         </Card>
         <Card>
-          <Img src="./src/images/removal.png" alt="OMG something wrong" />
+          <Img src="/images/removal.png" alt="OMG something wrong" />
           <Text>Removal</Text>
         </Card>
       </CardContainer>
       <SubHeading>Most Popular</SubHeading>
       <CardContainer>
         <Card>
-          <Img src="/src/images/builder.png" alt="OMG something wrong" />
+          <Img src="/images/builder.png" alt="OMG something wrong" />
           <Text>Builder</Text>
         </Card>
         <Card>
-          <Img src="/src/images/electrican.png" alt="OMG something wrong" />
+          <Img src="/images/electrican.png" alt="OMG something wrong" />
           <Text>Electrician</Text>
         </Card>
         <Card>
-          <Img src="/src/images/plumber.png" alt="OMG something wrong" />
+          <Img src="/images/plumber.png" alt="OMG something wrong" />
           <Text>Plumber</Text>
         </Card>
         <Card>
-          <Img src="/src/images/handyman.png" alt="OMG something wrong" />
+          <Img src="/images/handyman.png" alt="OMG something wrong" />
           <Text>Handyman</Text>
         </Card>
       </CardContainer>
       <CardContainer>
         <Card>
-          <Img src="/src/images/fenceing.png" alt="OMG something wrong" />
+          <Img src="/images/fenceing.png" alt="OMG something wrong" />
           <Text>Fencing</Text>
         </Card>
         <Card>
-          <Img src="/src/images/painting.png" alt="OMG something wrong" />
+          <Img src="/images/painting.png" alt="OMG something wrong" />
           <Text>Painting</Text>
         </Card>
         <Card>
-          <Img src="/src/images/gardening.png" alt="OMG something wrong" />
+          <Img src="/images/gardening.png" alt="OMG something wrong" />
           <Text>Gardening</Text>
         </Card>
         <Card>
-          <Img src="/src/images/cleaning.png" alt="OMG something wrong" />
+          <Img src="/images/cleaning.png" alt="OMG something wrong" />
           <Text>Cleaning</Text>
         </Card>
       </CardContainer>

@@ -56,6 +56,8 @@ export const Input = styled.input`
   letter-spacing: -0.6px;
   position: relative;
   margin: 0 10px;
+  outline: none;
+  transition: width 0.5s;
   &:focus {
     width: 180px;
   }
@@ -67,6 +69,7 @@ export const SearchButton = styled.button`
   border: none;
   font-size: ${fontSizeL};
   padding-right: 0.5rem;
+  cursor: pointer;
 `;
 
 export const NavBar = styled.ul`

@@ -14,11 +14,13 @@ import {
   ChargeBox,
   Line,
   PopUpBox,
+  Sahde,
 } from "./Offer.styles";
 
 const Offer = (props) => {
   return (
     <PopUpBox>
+      <Sahde></Sahde>
       <PopUp>
         <CloseBtn onClick={props.handleClose}>&times;</CloseBtn>
         <OfferPageTitle>Make an Offer</OfferPageTitle>

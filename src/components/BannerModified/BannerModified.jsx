@@ -42,7 +42,7 @@ const BannerModified = () => {
           </div>
         </Information>
         <Picture>
-          <DisplayImg src="./src/images/picture-of-home.jpg" alt="picture of a home" />
+          <DisplayImg src="/images/picture-of-home.jpg" alt="picture of a home" />
           <BackgroundImg1></BackgroundImg1>
           <BackgroundImg2></BackgroundImg2>
           <BackgroundImg3></BackgroundImg3>
