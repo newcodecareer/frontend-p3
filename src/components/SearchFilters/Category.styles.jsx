@@ -19,7 +19,6 @@ export const Background = styled.div`
   z-index: 99;
   background-color: ${bgcColor};
 
-
   ${(props) =>
     props.category &&
     css`

@@ -4,6 +4,7 @@ import routes from "./router";
 import LoadingPage from "./pages/LoadingPage";
 import Layout from "./components/Layout/Layout";
 import Homepage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           })}
           <Route path="/loading" element={<LoadingPage />} />
           <Route path="*" element={<Navigate to="/error" replace />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
