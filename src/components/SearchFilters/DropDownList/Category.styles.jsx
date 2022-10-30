@@ -22,8 +22,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Content = styled.div``;
-
 export const Shade = styled.div`
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
@@ -40,13 +38,13 @@ export const PopUp = styled.div`
   border-radius: 5px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  padding: 20px 15px;
 
   ${(props) =>
     props.category &&
     css`
       width: 500px;
-      height: 225px;
-      padding: 20px 15px;
+      height: 230px;
       top: 23%;
       left: 25%;
     `};
@@ -56,9 +54,8 @@ export const PopUp = styled.div`
     css`
       width: 300px;
       height: 280px;
-      padding: 0 15px 15px 15px;
       overflow-y: scroll;
-      top: 25.5%;
+      top: 27.5%;
       left: 57%;
     `};
 
@@ -66,9 +63,8 @@ export const PopUp = styled.div`
     props.price &&
     css`
       width: 300px;
-      height: 180px;
-      padding: 0 15px 15px 15px;
-      top: 17%;
+      height: 165px;
+      top: 17.5%;
       left: 67%;
     `};
 
@@ -76,9 +72,8 @@ export const PopUp = styled.div`
     props.offer &&
     css`
       width: 300px;
-      height: 240px;
-      padding: 0 15px 15px 15px;
-      top: 22%;
+      height: 210px;
+      top: 21.5%;
       left: 75%;
     `};
 
@@ -87,8 +82,7 @@ export const PopUp = styled.div`
     css`
       width: 160px;
       height: 285px;
-      padding: 15px;
-      top: 27%;
+      top: 28%;
       left: 78%;
     `};
 `;
@@ -119,18 +113,12 @@ export const MiddleContainer = styled.div`
 
 export const Breakline = styled.hr`
   border: 0.5px solid ${thirdFontColor};
-  margin: 20px 0 10px;
-
-  ${(props) =>
-    props.price &&
-    css`
-      margin: 35px 0 10px;
-    `};
+  margin: 15px 0;
 
   ${(props) =>
     props.location &&
     css`
-      margin: 40px 0 10px 0;
+      margin-top: 40px;
     `};
 `;
 
@@ -143,20 +131,21 @@ export const BottomContainer = styled.div`
   ${(props) =>
     props.offer &&
     css`
-      margin: 20px 0 0 0;
-    `};
-
-  ${(props) =>
-    props.location &&
-    css`
-      margin: 20px 0 10px 0;
+      margin-top: 20px;
     `};
 `;
 
 export const Paragraph = styled.p`
   font-weight: 500;
   color: ${secondaryFontColor};
-  margin: ${(props) => (props.category ? 0 : "20px 0")};
+  margin: 0 0 20px 0;
+  line-height: 18px;
+  
+  ${(props) =>
+    props.category &&
+    css`
+      margin: 0;
+    `};
 
   ${(props) =>
     props.sml &&
@@ -217,7 +206,7 @@ export const ListItem = styled.li`
     props.category &&
     css`
       justify-content: flex-start;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     `};
 
   ${(props) =>
@@ -234,9 +223,40 @@ export const ListItem = styled.li`
 `;
 
 export const Checkbox = styled.input`
-  margin-right: 15px;
-  width: 18px;
-  height: 18px;
+  display: none;
+  
+  + label {
+    padding-left: 40px;
+    position: relative;
+  }
+
+  + label::before {
+    border: 1px solid ${primaryThemeColor};
+    border-radius: 3px;
+    left: 3px;
+    height: 18px;
+    width: 18px;
+    content: "";
+    position: absolute;
+    cursor: pointer;
+  }
+
+  :checked + label::before {
+    content: "✓";
+    border: none;
+    background-color: ${primaryThemeColor};
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+  }
+`;
+
+export const Label = styled.label`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Input = styled.input`
@@ -274,6 +294,7 @@ export const Option = styled.input`
 export const RangeScroll = styled.input`
   width: 90%;
   margin: 0 atuo;
+  cursor: pointer;
 `;
 
 export const Wrap = styled.div`
@@ -283,9 +304,15 @@ export const Wrap = styled.div`
   align-items: center;
 
   ${(props) =>
+    props.location &&
+    css`
+      margin-bottom: 20px;
+    `};
+
+  ${(props) =>
     props.price &&
     css`
-      margin: 45px 0 0 0;
+      margin: 40px 0;
     `};
 
   ${(props) =>

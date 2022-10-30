@@ -21,8 +21,8 @@ const Location = () => {
       <Shade />
       <PopUp location>
         <div>
-          <Paragraph>TO BE DONE</Paragraph>
-          <Wrap>
+          <Paragraph location>TO BE DONE</Paragraph>
+          <Wrap location>
             <Option type="button" value="In Person" />
             <Option type="button" value="Remotely" />
             <Option type="button" value="All" />
@@ -30,7 +30,7 @@ const Location = () => {
         </div>
         <div>
           <Paragraph>SUBURB</Paragraph>
-          <Wrap>
+          <Wrap location>
             <Input type="text" placeholder="Hobart TAS, Australia" />
           </Wrap>
         </div>

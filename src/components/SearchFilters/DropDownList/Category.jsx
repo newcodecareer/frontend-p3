@@ -13,6 +13,7 @@ import {
   GlobalStyle,
   Shade,
   PopUp,
+  Label,
 } from "./Category.styles";
 
 const Category = () => {
@@ -28,52 +29,52 @@ const Category = () => {
         <MiddleContainer>
           <List>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="builder" />
-              Builder
+              <Checkbox id="builder" type="checkbox" name="categories" value="builder" />
+              <Label htmlFor="builder">Builder</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="burst_pipe" />
-              Burst Pipe
+              <Checkbox id="pipe" type="checkbox" name="categories" value="burst_pipe" />
+              <Label htmlFor="pipe">Burst Pipe</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="cleaning" />
-              Cleaning
+              <Checkbox id="cleaning" type="checkbox" name="categories" value="cleaning" />
+              <Label htmlFor="cleaning">Cleaning</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="electrician" />
-              Electrician
+              <Checkbox id="electrician" type="checkbox" name="categories" value="electrician" />
+              <Label htmlFor="electrician">Electrician</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="fencing" />
-              Fencing
+              <Checkbox id="fencing" type="checkbox" name="categories" value="fencing" />
+              <Label htmlFor="fencing">Fencing</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="gardening" />
-              Gardening
+              <Checkbox id="gardening" type="checkbox" name="categories" value="gardening" />
+              <Label htmlFor="gardening">Gardening</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="handyman" />
-              Handyman
+              <Checkbox id="handyman" type="checkbox" name="categories" value="handyman" />
+              <Label htmlFor="handyman">Handyman</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="locked_out" />
-              Locked Out
+              <Checkbox id="locked" type="checkbox" name="categories" value="locked_out" />
+              <Label htmlFor="locked">Locked Out</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="painting" />
-              Painting
+              <Checkbox id="painting" type="checkbox" name="categories" value="painting" />
+              <Label htmlFor="painting">Painting</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="plumber" />
-              Plumber
+              <Checkbox id="plumber" type="checkbox" name="categories" value="plumber" />
+              <Label htmlFor="plumber">Plumber</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="removal" />
-              Removal
+              <Checkbox id="removal" type="checkbox" name="categories" value="removal" />
+              <Label htmlFor="removal">Removal</Label>
             </ListItem>
             <ListItem category>
-              <Checkbox type="checkbox" name="categories" value="short_out" />
-              Short Out
+              <Checkbox id="short" type="checkbox" name="categories" value="short_out" />
+              <Label htmlFor="short">Short Out</Label>
             </ListItem>
           </List>
         </MiddleContainer>

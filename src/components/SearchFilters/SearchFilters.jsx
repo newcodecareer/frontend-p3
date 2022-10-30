@@ -25,30 +25,46 @@ const SearchFilters = () => {
   const [isOpenCategory, setIsOpenCategory] = useState(false);
   const togglePopupCategory = () => {
     setIsOpenCategory(!isOpenCategory);
-    // setIsOpenLocation(isOpenLocation);
-    // setIsOpenOffers(isOpenOffers);
-    // setIsOpenPrice(isOpenPrice);
-    // setIsOpenSort(isOpenSort);
+    setIsOpenLocation(false);
+    setIsOpenPrice(false);
+    setIsOpenOffers(false);
+    setIsOpenSort(false);
   };
 
   const [isOpenLocation, setIsOpenLocation] = useState(false);
   const togglePopupLocation = () => {
     setIsOpenLocation(!isOpenLocation);
+    setIsOpenCategory(false);
+    setIsOpenPrice(false);
+    setIsOpenOffers(false);
+    setIsOpenSort(false);
   };
 
   const [isOpenPrice, setIsOpenPrice] = useState(false);
   const togglePopupPrice = () => {
     setIsOpenPrice(!isOpenPrice);
+    setIsOpenCategory(false);
+    setIsOpenLocation(false);
+    setIsOpenOffers(false);
+    setIsOpenSort(false);
   };
 
   const [isOpenOffers, setIsOpenOffers] = useState(false);
   const togglePopupOffers = () => {
     setIsOpenOffers(!isOpenOffers);
+    setIsOpenCategory(false);
+    setIsOpenLocation(false);
+    setIsOpenPrice(false);
+    setIsOpenSort(false);
   };
 
   const [isOpenSort, setIsOpenSort] = useState(false);
   const togglePopupSort = () => {
     setIsOpenSort(!isOpenSort);
+    setIsOpenCategory(false);
+    setIsOpenLocation(false);
+    setIsOpenPrice(false);
+    setIsOpenOffers(false);
   };
 
   return (
