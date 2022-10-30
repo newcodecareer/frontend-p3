@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <Afooter>
-      <Img src="/src/images/logo.png" alt="Houddy Logo" />
+      <Img src="/images/logo.png" alt="Houddy Logo" />
       <ParagraphOne>&copy; 2022 Houddy Pty Ltd. All Rights Reserved.</ParagraphOne>
       <ParagraphTwo>
         <StyledLink to="#">Privacy Policy</StyledLink>

@@ -25,7 +25,7 @@ const PostStepThree = () => {
       </InfoContainer>
       <ParagraphContainer>
         <ImgBox>
-          <img src="/src/images/houddy logo-02 4.png" alt="logo" />
+          <img src="/images/houddy logo-02 4.png" alt="logo" />
         </ImgBox>
         <ParagraphBox>
           <ParagraphOne>

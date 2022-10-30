@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Background,
   Input,
@@ -18,8 +19,6 @@ import Range from "./DropDownList/Location";
 import Price from "../SearchFilters/DropDownList/Price";
 import Offers from "../SearchFilters/DropDownList/Offers";
 import Sort from "../SearchFilters/DropDownList/Sort";
-
-import React, { useState } from "react";
 
 const SearchFilters = () => {
   const [isOpenCategory, setIsOpenCategory] = useState(false);

@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 
 const icon = L.icon({
-  iconUrl: "../src/images/placeholder.png",
+  iconUrl: "/images/placeholder.png",
   iconSize: [38, 38],
 });
 
