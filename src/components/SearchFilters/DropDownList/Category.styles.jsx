@@ -140,7 +140,7 @@ export const Paragraph = styled.p`
   color: ${secondaryFontColor};
   margin: 0 0 20px 0;
   line-height: 18px;
-  
+
   ${(props) =>
     props.category &&
     css`
@@ -224,7 +224,7 @@ export const ListItem = styled.li`
 
 export const Checkbox = styled.input`
   display: none;
-  
+
   + label {
     padding-left: 40px;
     position: relative;
