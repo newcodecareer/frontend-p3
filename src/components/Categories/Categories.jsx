@@ -7,7 +7,6 @@ const Categories = () => {
       <SubHeading>Emergency</SubHeading>
       <CardContainer>
         <Card>
-
           <Img src="/images/brust.png" alt="OMG something wrong" />
           <Text>Burst Pipe</Text>
         </Card>

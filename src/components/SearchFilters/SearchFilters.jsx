@@ -7,7 +7,7 @@ import {
   NavBar,
   NavItem,
   DropList,
-  SearchButton
+  SearchButton,
 } from "./SearchFilters.styles";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { FaSearch } from "react-icons/fa";

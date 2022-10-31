@@ -9,9 +9,11 @@ import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
 import PostDetails from "./components/PostDetails/PostDetails";
 import Category from "./components/SearchFilters/Category";
 import Range from "./components/SearchFilters/Range";
+
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -60,6 +62,10 @@ const routes = [
   {
     path: "/profiles",
     element: <Profile />,
+  },
+  {
+    path: "/change-password",
+    element: <ChangePassword />,
   },
   {
     path: "/post-details",
