@@ -18,11 +18,13 @@ import{
     FooterTop,
     FooterUnder,
     Text,
+    Wave,
 } from "./NewFooter.style";
 
 const NewFooter = ()=>{
     return(
         <AnewFooter>
+            <Wave></Wave>
             <FooterTop>
                 <FooterTopLeft>
                     <StyledLink to = "/">

@@ -13,11 +13,16 @@ import {
 
 export const AnewFooter = styled.div`
     flex-direction: column; 
+    
 `;
 
+export const Wave = styled.div`
+    width: 100%;
+    height: 270px;
+    background-image: url("../../../public/images/svg1.png");
+`;
 
 export const FooterTop = styled.div`
-    border-top: 2px solid ${thirdFontColor};
     border-bottom: 2px solid ${thirdFontColor};
     display: flex;
     padding-top: 45px;
