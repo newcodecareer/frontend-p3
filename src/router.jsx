@@ -10,8 +10,13 @@ import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
 import PostDetails from "./components/PostDetails/PostDetails";
-import Category from "./components/SearchFilters/Category";
-import Range from "./components/SearchFilters/Range";
+
+import Category from "./components/SearchFilters/DropDownList/Category";
+import Range from "./components/SearchFilters/DropDownList/Location";
+import Price from "./components/SearchFilters/DropDownList/Price";
+import Offers from "./components/SearchFilters/DropDownList/Offers";
+import Sort from "./components/SearchFilters/DropDownList/Sort";
+
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -72,6 +77,18 @@ const routes = [
   {
     path: "/drop-down-range",
     element: <Range />,
+  },
+  {
+    path: "/drop-down-three",
+    element: <Price />,
+  },
+  {
+    path: "/drop-down-four",
+    element: <Offers />,
+  },
+  {
+    path: "/drop-down-five",
+    element: <Sort />,
   },
 ];
 
