@@ -6,6 +6,7 @@ import {
   fontSizeL,
   primaryThemeColor,
   fontFamily,
+  secondaryThemeColor,
 } from "../common/index.styles";
 
 export const AboutPage = styled.div`
@@ -96,4 +97,85 @@ export const FAQ = styled.div`
   right: 0;
   margin-top: 10px;
   margin-bottom: 20px;
+`;
+
+//TeamMemebers div
+export const TeamMembers = styled.div`
+  flex-direction: column;
+`;
+
+export const MemberTitle = styled.h2`
+  margin-top: 20px;
+  color: ${primaryThemeColor};
+  font-size: ${fontSizeXXL};
+  text-align: center;
+  margin-top: 100px;
+`;
+
+export const TeamMembersUp = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const TeamMembersMid = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Photo = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  overflow: hidden;
+  transition: 0.4s;
+`;
+
+export const MemberH1 = styled.h1`
+  position: absolute;
+  top: 300px;
+  color: ${primaryThemeColor};
+  transition: 0.4s;
+`;
+
+export const Card = styled.div`
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px;
+  background-color: ${secondaryThemeColor};
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 30px #2c2c2c;
+  color: var(--font_color);
+  &:hover{
+    ${Photo}{
+      width: 150px;
+      height: 200px;
+      top: 30px;
+      border-radius: 50%;
+    }  
+    ${MemberH1}{
+      position: absolute;
+      top: 210px;
+    } 
+  }
+
+`;
+
+export const Img2 = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+export const MemberH2 = styled.h2`
+  margin-top:280px;
+  width: 80%;
+  text-align: center; 
 `;

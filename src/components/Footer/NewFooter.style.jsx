@@ -101,6 +101,7 @@ export const StyledLink = styled(Link)`
 
 //FooterTopRight div
 export const FooterTopRight = styled.div`
+    
     width:25%;
 `;
 export const Img3 = styled.img`

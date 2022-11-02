@@ -6,11 +6,20 @@ import {
   Text,
   AboutTwo,
   Img,
+  Img2,
   AboutTwoText,
   TextControl,
   Heading,
   SubHeading,
   FAQ,
+  TeamMembers,
+  TeamMembersUp,
+  TeamMembersMid,
+  Card,
+  Photo,
+  MemberH1,
+  MemberH2,
+  MemberTitle,
 } from "./About.style";
 
 const About = () => {
@@ -63,6 +72,69 @@ const About = () => {
           additional costs.
         </Text>
       </FAQ>
+      <TeamMembers>
+        <MemberTitle>Team Members</MemberTitle>
+        <TeamMembersUp>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>She is a good person</MemberH2>
+          </Card>
+        </TeamMembersUp>
+        <TeamMembersMid>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+          <Card>
+            <Photo>
+              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+            </Photo>
+            <MemberH1>Zhang Haoyu</MemberH1>
+            <MemberH2>He is a good person</MemberH2>
+          </Card>
+        </TeamMembersMid>
+      </TeamMembers>
     </AboutPage>
   );
 };

@@ -109,6 +109,7 @@ const NewFooter = ()=>{
                         <StyledLink as="a" href="https://www.junglemeetforum.com/#">
                             <Img3 src="https://www.junglemeetforum.com/footerLogo.svg" alt="Houddy Logo" />
                         </StyledLink>
+                        <br/>
                         <StyledLink as="a" href="https://jiangren.com.au/">
                             <Img3 src="https://dfxq4uecljgnp.cloudfront.net/images/logo-jr-academy-transparent-md.webp"/>
                         </StyledLink>
