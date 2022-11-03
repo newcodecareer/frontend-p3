@@ -84,10 +84,10 @@ const About = () => {
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/Zoe.jpg"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Zoe</MemberH1>
+            <MemberH2>She is a good person</MemberH2>
           </Card>
           <Card>
             <Photo>
