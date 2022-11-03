@@ -126,7 +126,7 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   &:hover {
     filter: brightness(1.2);
   }

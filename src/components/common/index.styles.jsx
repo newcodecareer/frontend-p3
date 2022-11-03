@@ -14,6 +14,8 @@ export const secondaryBorderColor = "#a5a5a5";
 export const primaryThemeColor = "#f77f00";
 export const secondaryThemeColor = "#F9F6F1";
 
+export const primaryBackgroundColor = "#F5F5F5";
+
 export const fontFamily = '"Inter", sans-serif';
 
 export const fontSizeS = "0.8rem";
