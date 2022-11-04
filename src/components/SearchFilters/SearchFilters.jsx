@@ -7,14 +7,8 @@ import {
   NavBar,
   NavItem,
   DropList,
-<<<<<<< HEAD
-  SearchButton,
-||||||| fb38fe2
-  SearchButton
-=======
   SearchButton,
   GlobalStyle,
->>>>>>> ee29e4407b70f15f423165d06faf1ecb6261cf8b
 } from "./SearchFilters.styles";
 
 import { TiArrowSortedDown } from "react-icons/ti";
