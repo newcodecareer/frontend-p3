@@ -106,11 +106,11 @@ const NewFooter = ()=>{
                 </FooterTopMid>
                 <FooterTopRight>
                     <Pharagraph>Sponsor</Pharagraph>
-                        <StyledLink as="a" href="https://www.junglemeetforum.com/#">
+                        <StyledLink as="a" href="https://www.junglemeetforum.com/#" target={'_blank'}>
                             <Img3 src="https://www.junglemeetforum.com/footerLogo.svg" alt="Houddy Logo" />
                         </StyledLink>
                         <br/>
-                        <StyledLink as="a" href="https://jiangren.com.au/">
+                        <StyledLink as="a" href="https://jiangren.com.au/" target={'_blank'}>
                             <Img3 src="https://dfxq4uecljgnp.cloudfront.net/images/logo-jr-academy-transparent-md.webp"/>
                         </StyledLink>
                 </FooterTopRight>

@@ -1,3 +1,5 @@
+import {BsLinkedin} from 'react-icons/Bs';
+
 import {
   AboutPage,
   AboutOne,
@@ -20,6 +22,7 @@ import {
   MemberH1,
   MemberH2,
   MemberTitle,
+  Button,
 } from "./About.style";
 
 const About = () => {
@@ -77,61 +80,59 @@ const About = () => {
         <TeamMembersUp>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/haoyu3.jpg"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Alex</MemberH1>
+            <Button onClick= {()=>{window.open('https://www.linkedin.com/in/haoyu-zhang-alex/')}}>
+              <BsLinkedin/>
+            </Button>
           </Card>
           <Card>
             <Photo>
               <Img2 src = "../../../public/images/Zoe.jpg"/>
             </Photo>
             <MemberH1>Zoe</MemberH1>
-            <MemberH2>She is a good person</MemberH2>
+            <Button onClick={()=>{window.open('https://www.linkedin.com/in/chenhe512/')}}>
+              <BsLinkedin/>
+            </Button>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/Rebecca.jpg"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Rebecca</MemberH1>
+            <Button onClick={()=>{window.open('https://www.linkedin.com/in/rebecca-shuo-yang/')}}>
+              <BsLinkedin/>
+            </Button>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/Tairan.jpg"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>She is a good person</MemberH2>
+            <MemberH1>Tairan</MemberH1>
+            <Button onClick={()=>{window.open('https://www.linkedin.com/in/tairan-liang-240a99179/')}}>
+              <BsLinkedin/>
+            </Button>
           </Card>
         </TeamMembersUp>
         <TeamMembersMid>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/dog1.gif"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/dog1.gif"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
+              <Img2 src = "../../../public/images/dog1.gif"/>
             </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
-          </Card>
-          <Card>
-            <Photo>
-              <Img2 src = "../../../public/images/haoyu2.jpg"/>
-            </Photo>
-            <MemberH1>Zhang Haoyu</MemberH1>
-            <MemberH2>He is a good person</MemberH2>
+            <MemberH1>Comming Soon</MemberH1>
           </Card>
         </TeamMembersMid>
       </TeamMembers>
