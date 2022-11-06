@@ -22,19 +22,27 @@ export const ParagraphOne = styled.span`
   font-size: 1rem;
   line-height: 55px;
   color: ${primaryFontColor};
-  margin-right: 200px;
+  margin-right: 100px;
 `;
 export const ParagraphTwo = styled.span`
   height: 2rem;
   font-size: 1rem;
   line-height: 55px;
   color: ${primaryFontColor};
-  margin-right: 200px;
+  margin-right: 100px;
 `;
 export const ParagraphThree = styled.span`
   height: 2rem;
   line-height: 55px;
   color: ${primaryFontColor};
+  margin-right: 100px;
+`;
+
+export const ParagraphFour = styled.span`
+  height: 2rem;
+  line-height: 55px;
+  color: ${primaryFontColor};
+  margin-right: 50px;
 `;
 export const Img = styled.img`
   width: 120px;
