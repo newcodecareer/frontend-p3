@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+
 import {
   fontSizeM,
   primaryThemeColor,
@@ -52,6 +53,7 @@ export const Button = styled.button`
   cursor: pointer;
   &:hover {
     color: ${primaryThemeColor};
+
     filter: brightness(1);
   }
 `;
