@@ -12,7 +12,6 @@ export const Input = styled.input`
   display: flex;
   margin: auto;
   width: 15rem;
-
   border: solid 3px ${thirdFontColor};
   color: ${primaryFontColor};
   box-sizing: border-box;
