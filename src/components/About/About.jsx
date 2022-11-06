@@ -1,4 +1,4 @@
-import {BsLinkedin} from 'react-icons/Bs';
+import { BsLinkedin } from "react-icons/Bs";
 
 import {
   AboutPage,
@@ -20,7 +20,6 @@ import {
   Card,
   Photo,
   MemberH1,
-  MemberH2,
   MemberTitle,
   Button,
 } from "./About.style";
@@ -31,7 +30,7 @@ const About = () => {
       <Heading>About Us</Heading>
       <AboutOne>
         <Text>
-          <Title>We are here to make people's lives better</Title>
+          <Title>We are here to make people&#39;s lives better</Title>
           <SubTitle>
             Creating a way to connect people ready to work, with people who need work done
           </SubTitle>
@@ -49,7 +48,7 @@ const About = () => {
             From simple to complicated tasks, Houddy can help you complete your home cleaning,
             handyman jobs, admin work, photography, graphic design or even build a website.
           </AboutTwoText>
-          <AboutTwoText>"The only way to do great work is to love what you do"</AboutTwoText>
+          <AboutTwoText>The only way to do great work is to love what you do</AboutTwoText>
         </TextControl>
       </AboutTwo>
       <FAQ>
@@ -65,8 +64,8 @@ const About = () => {
         </Text>
         <SubTitle>Who will I be working with?</SubTitle>
         <Text>
-          It's totally up to you! When browsing tasks, you can check out profiles, reviews and
-          recommendations to determine who you'll be working with.
+          It&#39;s totally up to you! When browsing tasks, you can check out profiles, reviews and
+          recommendations to determine who you&#39;ll be working with.
         </Text>
         <SubTitle>How much does it cost?</SubTitle>
         <Text>
@@ -80,57 +79,73 @@ const About = () => {
         <TeamMembersUp>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/haoyu3.jpg"/>
+              <Img2 src="../../../public/images/haoyu3.jpg" />
             </Photo>
             <MemberH1>Alex</MemberH1>
-            <Button onClick= {()=>{window.open('https://www.linkedin.com/in/haoyu-zhang-alex/')}}>
-              <BsLinkedin/>
+            <Button
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/haoyu-zhang-alex/");
+              }}
+            >
+              <BsLinkedin />
             </Button>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/Zoe.jpg"/>
+              <Img2 src="../../../public/images/Zoe.jpg" />
             </Photo>
             <MemberH1>Zoe</MemberH1>
-            <Button onClick={()=>{window.open('https://www.linkedin.com/in/chenhe512/')}}>
-              <BsLinkedin/>
+            <Button
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/chenhe512/");
+              }}
+            >
+              <BsLinkedin />
             </Button>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/Rebecca.jpg"/>
+              <Img2 src="../../../public/images/Rebecca.jpg" />
             </Photo>
             <MemberH1>Rebecca</MemberH1>
-            <Button onClick={()=>{window.open('https://www.linkedin.com/in/rebecca-shuo-yang/')}}>
-              <BsLinkedin/>
+            <Button
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/rebecca-shuo-yang/");
+              }}
+            >
+              <BsLinkedin />
             </Button>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/Tairan.jpg"/>
+              <Img2 src="../../../public/images/Tairan.jpg" />
             </Photo>
             <MemberH1>Tairan</MemberH1>
-            <Button onClick={()=>{window.open('https://www.linkedin.com/in/tairan-liang-240a99179/')}}>
-              <BsLinkedin/>
+            <Button
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/tairan-liang-240a99179/");
+              }}
+            >
+              <BsLinkedin />
             </Button>
           </Card>
         </TeamMembersUp>
         <TeamMembersMid>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/dog1.gif"/>
+              <Img2 src="../../../public/images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/dog1.gif"/>
+              <Img2 src="../../../public/images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src = "../../../public/images/dog1.gif"/>
+              <Img2 src="../../../public/images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>

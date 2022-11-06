@@ -3,7 +3,7 @@ import React from "react";
 // import Banner from "../components/Banner/Banner";
 import BannerModified from "../components/BannerModified/BannerModified";
 import PostNeed from "../components/PostNeeds/PostNeed";
-import JoinUs from "../components/JoinUs/JoinUs"; 
+import JoinUs from "../components/JoinUs/JoinUs";
 import { HomeMain } from "./Homepage.styles";
 import Categories from "../components/Categories/Categories";
 import NewFooter from "../components/Footer/NewFooter";
@@ -15,7 +15,7 @@ const Homepage = () => {
       <BannerModified />
       <PostNeed />
       <Categories />
-      <JoinUs /> 
+      <JoinUs />
       <NewFooter />
     </HomeMain>
   );
