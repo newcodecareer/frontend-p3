@@ -13,39 +13,31 @@ import {
 } from "./Profile.styles";
 
 const ABNInfo = () => {
-  const initialAbn = () => {
-    return (
-      <DataContainer>
-        <div>
-          <Paragraph>Add Your ABN, start make money.</Paragraph>
-        </div>
-        <div>
-          <BtnImage onClick={() => setAbn(abnInputs)}>
-            <FiEdit2 />
-          </BtnImage>
-        </div>
-      </DataContainer>
-    );
-  };
-
-  const abnInputs = () => {
-    return (
-      <div>
-        <Input inputWidth="26%" type="text" placeholder="Your ABN" />
-        <ButtonContainer>
-          <Button onClick={() => setAbn(initialAbn)}>Cancel</Button>
-          <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
-        </ButtonContainer>
-      </div>
-    );
-  };
-
-  const [abn, setAbn] = useState(initialAbn);
+  const [abn, setAbn] = useState(false);
 
   return (
     <SectionContainer>
       <Label>ABN</Label>
-      {abn}
+      {abn ? (
+        <div>
+          <Input inputWidth="26%" type="text" placeholder="Your ABN" />
+          <ButtonContainer>
+            <Button onClick={() => setAbn(false)}>Cancel</Button>
+            <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
+          </ButtonContainer>
+        </div>
+      ) : (
+        <DataContainer>
+          <div>
+            <Paragraph>Add Your ABN, start to make money.</Paragraph>
+          </div>
+          <div>
+            <BtnImage onClick={() => setAbn(true)}>
+              <FiEdit2 />
+            </BtnImage>
+          </div>
+        </DataContainer>
+      )}
     </SectionContainer>
   );
 };

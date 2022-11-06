@@ -33,7 +33,7 @@ export const Information = styled.div`
   margin: 3rem;
 `;
 
-export const Tick = styled.text`
+export const Tick = styled.span`
   color: ${(props) => props.inputColor || `${primaryThemeColor}`};
 `;
 

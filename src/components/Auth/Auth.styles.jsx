@@ -88,7 +88,7 @@ export const Paragraph = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${(props) => props.inputColor || `${primaryFontColor}`};
+  color: ${(props) => props.inputcolor || `${primaryFontColor}`};
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
   &:hover {
