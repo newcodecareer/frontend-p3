@@ -4,7 +4,6 @@ import {
   fontSizeM,
   primaryFontColor,
   primaryThemeColor,
-  secondaryFontColor,
   thirdFontColor,
   fontFamily,
 } from "../common/index.styles";
@@ -12,7 +11,8 @@ import {
 export const Input = styled.input`
   display: flex;
   margin: auto;
-  width: 25%;
+  width: 15rem;
+
   border: solid 3px ${thirdFontColor};
   color: ${primaryFontColor};
   box-sizing: border-box;
