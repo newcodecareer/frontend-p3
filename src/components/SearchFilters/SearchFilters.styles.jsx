@@ -1,25 +1,36 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 import {
   fontFamily,
-  fontSizeL,
   fontSizeM,
+  fontSizeS,
   primaryThemeColor,
   thirdFontColor,
 } from "../common/index.styles";
 
+export const GlobalStyle = createGlobalStyle`
+  body, button, ul, li{
+    margin: 0;
+    padding: 0;
+    font-size: ${fontSizeS};
+    font-family: ${fontFamily};
+  }
+
+  button.nav, input{
+    font-size: ${fontSizeM};
+  }
+`;
+
 export const Background = styled.div`
-  width: 1180px;
+  width: 100%;
   height: 3rem;
+
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  box-sizing: border-box;
-  font-size: ${fontSizeM};
-  font-weight: 600;
-  font-family: "Inter";
+
   padding-top: 0.4rem;
 `;
 
@@ -28,6 +39,9 @@ export const SearchContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   padding-left: 0.5rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 25px;
+  margin-right: 85px;
 `;
 
 export const SearchWrap = styled.div`
@@ -35,6 +49,7 @@ export const SearchWrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
   border: 2px solid #d2d2d2;
   border-radius: 25px;
   &:hover {
@@ -56,6 +71,7 @@ export const Input = styled.input`
   letter-spacing: -0.6px;
   position: relative;
   margin: 0 10px;
+  padding: 0;
   outline: none;
   transition: width 0.5s;
   &:focus {
@@ -67,7 +83,6 @@ export const SearchButton = styled.button`
   background: none;
   color: ${primaryThemeColor};
   border: none;
-  font-size: ${fontSizeL};
   padding-right: 0.5rem;
   cursor: pointer;
 `;
@@ -89,10 +104,15 @@ export const NavItem = styled.li`
   }
 `;
 
-export const DropList = styled.a`
+export const DropList = styled.button`
   color: ${primaryThemeColor};
-  text-decoration: none;
+  border: none;
+  background-color: white;
+
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 `;
