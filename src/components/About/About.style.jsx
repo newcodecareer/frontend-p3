@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 import {
   fontSizeXXL,
@@ -18,7 +17,7 @@ export const AboutPage = styled.div`
   flex-direction: column;
 `;
 
-//AboutPage div1
+// AboutPage div1
 export const Heading = styled.h1`
   text-align: center;
   line-height: 700px;
@@ -32,7 +31,7 @@ export const Heading = styled.h1`
   margin-top: 0;
 `;
 
-//AboutPage div2
+// AboutPage div2
 export const AboutOne = styled.div`
   width: 80%;
   text-align: center;
@@ -55,7 +54,7 @@ export const SubTitle = styled.h4`
   font-size: ${fontSizeL};
 `;
 
-//AboutPage div3
+// AboutPage div3
 export const AboutTwo = styled.div`
   width: 100%;
   height: auto;
@@ -92,7 +91,7 @@ export const AboutTwoText = styled.h2`
   margin-left: 0;
 `;
 
-//AboutPage div4
+// AboutPage div4
 export const FAQ = styled.div`
   text-align: center;
   left: 0;
@@ -101,7 +100,7 @@ export const FAQ = styled.div`
   margin-bottom: 20px;
 `;
 
-//TeamMemebers div
+// TeamMemebers div
 export const TeamMembers = styled.div`
   flex-direction: column;
 `;
@@ -130,29 +129,28 @@ export const Photo = styled.div`
   height: 100%;
   border-radius: 0%;
   overflow: hidden;
-  
 `;
 
 export const Button = styled.button`
-  margin-top:280px;
+  margin-top: 280px;
   padding-top: 5px;
-  
+
   margin-bottom: 20px;
   background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
-  border-radius:100%;
+  border-radius: 100%;
   cursor: pointer;
   &:hover {
-  color:${primaryThemeColor};
-  filter: brightness(1);
+    color: ${primaryThemeColor};
+    filter: brightness(1);
   }
-  text-align: center; `;
+  text-align: center;
+`;
 
 export const MemberH1 = styled.h1`
   font-size: 1.5rem;
   position: absolute;
   top: 260px;
-  color:${bgcColor};
- 
+  color: ${bgcColor};
 `;
 
 export const Card = styled.div`
@@ -171,18 +169,18 @@ export const Card = styled.div`
   flex-direction: column;
   box-shadow: 0 0 30px #2c2c2c;
   color: var(--font_color);
-  &:hover{
-    ${Photo}{
+  &:hover {
+    ${Photo} {
       width: 200px;
       height: 200px;
       top: 30px;
       border-radius: 50%;
-    }  
-    ${MemberH1}{
+    }
+    ${MemberH1} {
       position: absolute;
       top: 220px;
       color: black;
-    } 
+    }
   }
 `;
 
@@ -191,5 +189,4 @@ export const Img2 = styled.img`
   height: 100%;
   object-fit: cover;
 `;
-export const MemberH2 = styled.h2`
-`;
+export const MemberH2 = styled.h2``;
