@@ -1,5 +1,8 @@
 import React from "react";
-import { ChangePasswordContextStyle, ChangePasswordEmailAddress } from "./ChangePassword.styles";
+import {
+  ChangePasswordContextStyle,
+  ChangePasswordEmailAddress,
+} from "../ChangePassword/ChangePassword.styles";
 
 export default function ChangePasswordContext() {
   return (
