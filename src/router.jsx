@@ -18,6 +18,8 @@ import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 
+import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
+
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -94,6 +96,10 @@ const routes = [
   {
     path: "/drop-down-five",
     element: <Sort />,
+  },
+  {
+    path: "/Mobile-Verification",
+    element: <MobileVerificationStepOne />,
   },
 ];
 
