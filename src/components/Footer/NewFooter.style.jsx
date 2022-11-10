@@ -18,7 +18,7 @@ export const Wave = styled.div`
   background-image: url("../../../public/images/svg1.png");
 `;
 
-//FooterTop div
+// FooterTop div
 export const FooterTop = styled.div`
   border-bottom: 2px solid ${thirdFontColor};
   display: flex;
@@ -27,7 +27,7 @@ export const FooterTop = styled.div`
   background-color: ${secondaryThemeColor};
 `;
 
-//footerTopleft div
+// footerTopleft div
 export const FooterTopLeft = styled.div`
   width: 20%;
   height: auto;
@@ -56,7 +56,7 @@ export const Button = styled.button`
   }
 `;
 
-//footerToprMid div
+// footerToprMid div
 export const FooterTopMid = styled.div`
   width: 45%;
   height: auto;
@@ -95,7 +95,7 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-//FooterTopRight div
+// FooterTopRight div
 export const FooterTopRight = styled.div`
   width: 25%;
 `;
@@ -109,7 +109,7 @@ export const Pharagraph = styled.h4`
   margin-bottom: 3px;
 `;
 
-//footerUnder div
+// footerUnder div
 export const FooterUnder = styled.div`
   width: 100%;
   height: 30px;

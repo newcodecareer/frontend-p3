@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 import {
   fontSizeXXL,
@@ -18,7 +17,7 @@ export const AboutPage = styled.div`
   flex-direction: column;
 `;
 
-//AboutPage div1
+// AboutPage div1
 export const Heading = styled.h1`
   text-align: center;
   line-height: 700px;
@@ -32,7 +31,7 @@ export const Heading = styled.h1`
   margin-top: 0;
 `;
 
-//AboutPage div2
+// AboutPage div2
 export const AboutOne = styled.div`
   width: 80%;
   text-align: center;
@@ -55,7 +54,7 @@ export const SubTitle = styled.h4`
   font-size: ${fontSizeL};
 `;
 
-//AboutPage div3
+// AboutPage div3
 export const AboutTwo = styled.div`
   width: 100%;
   height: auto;
@@ -92,7 +91,7 @@ export const AboutTwoText = styled.h2`
   margin-left: 0;
 `;
 
-//AboutPage div4
+// AboutPage div4
 export const FAQ = styled.div`
   text-align: center;
   left: 0;
@@ -101,7 +100,7 @@ export const FAQ = styled.div`
   margin-bottom: 20px;
 `;
 
-//TeamMemebers div
+// TeamMemebers div
 export const TeamMembers = styled.div`
   flex-direction: column;
 `;

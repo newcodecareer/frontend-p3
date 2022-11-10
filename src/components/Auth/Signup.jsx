@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer, useState } from "react";
-import { axiosInstance } from "../../utils/axios";
+import { api } from "../../utils/axios";
 import {
   BtnContainer,
   Button,
@@ -12,56 +12,56 @@ import {
   TermContainer,
 } from "./Auth.styles";
 
-const nameValidator = (value) => {
+const firstNameValidator = (value) => {
   if (value === "") {
     return false;
   }
-  return value;
-  // return value.trim().length > 1;
+  // return value;
+  return value.trim().length > 1;
+};
+
+const lastNameValidator = (value) => {
+  if (value === "") {
+    return false;
+  }
+  // return value;
+  return value.trim().length > 9;
 };
 
 const emailValidator = (value) => {
   if (value === "") {
     return false;
   }
-  return value;
-  // return value.includes("@");
-};
-
-const mobileValidator = (value) => {
-  if (value === "") {
-    return false;
-  }
-  return value;
-  // return value.trim().length > 9;
+  // return value;
+  return value.includes("@");
 };
 
 const passwordValidator = (value) => {
   if (value === "") {
     return false;
   }
-  return value;
-  // return value.trim().length > 7;
+  // return value;
+  return value.trim().length > 7;
 };
 
 const actions = {
-  update_name: "update_name",
-  validate_name: "validate_name",
+  update_firstName: "update_firstName",
+  validate_firstName: "validate_firstName",
+  update_lastName: "update_lastName",
+  validate_lastName: "validate_lastName",
   update_email: "update_email",
   validate_email: "validate_email",
-  update_mobile: "update_mobile",
-  validate_mobile: "validate_mobile",
   update_password: "update_password",
   validate_password: "validate_password",
 };
 
 const initialState = {
-  name: "",
-  isNameValid: true,
+  firstName: "",
+  isFirstNameValid: true,
+  lastName: "",
+  isLastNameValid: true,
   email: "",
   isEmailValid: true,
-  mobile: "",
-  isMobileValid: true,
   password: "",
   isPasswordValid: true,
 };
@@ -69,16 +69,27 @@ const initialState = {
 // AuthReducer
 export const reducer = (state, action) => {
   switch (action.type) {
-    case actions.update_name:
+    case actions.update_firstName:
       return {
         ...state,
-        name: action.payload,
-        isNameValid: nameValidator(action.payload),
+        firstName: action.payload,
+        isFirstNameValid: firstNameValidator(action.payload),
       };
-    case actions.validate_name:
+    case actions.validate_firstName:
       return {
         ...state,
-        isNameValid: nameValidator(action.payload),
+        isFirstNameValid: firstNameValidator(action.payload),
+      };
+    case actions.update_lastName:
+      return {
+        ...state,
+        lastName: action.payload,
+        isLastNameValid: lastNameValidator(action.payload),
+      };
+    case actions.validate_lastName:
+      return {
+        ...state,
+        isLastNameValid: lastNameValidator(action.payload),
       };
     case actions.update_email:
       return {
@@ -90,17 +101,6 @@ export const reducer = (state, action) => {
       return {
         ...state,
         isEmailValid: emailValidator(action.payload),
-      };
-    case actions.update_mobile:
-      return {
-        ...state,
-        mobile: action.payload,
-        isMobileValid: mobileValidator(action.payload),
-      };
-    case actions.validate_mobile:
-      return {
-        ...state,
-        isMobileValid: mobileValidator(action.payload),
       };
     case actions.update_password:
       return {
@@ -125,15 +125,25 @@ const Signup = () => {
   useEffect(() => {
     const debounce = setTimeout(() => {
       setFormIsValid(
-        state.isNameValid && state.isEmailValid && state.isMobileValid && state.isPasswordValid
+        state.isFirstNameValid &&
+          state.isLastNameValid &&
+          state.isEmailValid &&
+          state.isPasswordValid
       );
     }, 500);
     return () => clearTimeout(debounce);
-  }, [state.isNameValid, state.isEmailValid, state.isMobileValid, state.isPasswordValid]);
+  }, [state.isFirstNameValid, state.isLastNameValid, state.isEmailValid, state.isPasswordValid]);
 
-  const nameChangeHandler = (e) => {
+  const firstNameChangeHandler = (e) => {
     dispatch({
-      type: actions.update_name,
+      type: actions.update_firstName,
+      payload: e.target.value,
+    });
+  };
+
+  const lastNameChangeHandler = (e) => {
+    dispatch({
+      type: actions.update_lastName,
       payload: e.target.value,
     });
   };
@@ -145,13 +155,6 @@ const Signup = () => {
     });
   };
 
-  const mobileChangeHandler = (e) => {
-    dispatch({
-      type: actions.update_mobile,
-      payload: e.target.value,
-    });
-  };
-
   const passwordChangeHandler = (e) => {
     dispatch({
       type: actions.update_password,
@@ -159,37 +162,44 @@ const Signup = () => {
     });
   };
 
-  const validateNameHandler = () => {
+  const validateFirstNameHandler = (e) => {
     dispatch({
-      type: actions.validate_name,
+      type: actions.validate_firstName,
+      payload: e.target.value,
     });
   };
 
-  const validateEmailHandler = () => {
+  const validateLastNameHandler = (e) => {
+    dispatch({
+      type: actions.validate_lastName,
+      payload: e.target.value,
+    });
+  };
+
+  const validateEmailHandler = (e) => {
     dispatch({
       type: actions.validate_email,
+      payload: e.target.value,
     });
   };
 
-  const validateMobileHandler = () => {
-    dispatch({
-      type: actions.validate_mobile,
-    });
-  };
-
-  const validatePasswordHandler = () => {
+  const validatePasswordHandler = (e) => {
     dispatch({
       type: actions.validate_password,
+      payload: e.target.value,
     });
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    axiosInstance.post("/auth/signup", {
-      name: state.name,
-      email: state.email,
-      mobile: state.mobile,
-      password: state.password,
+    await api("/auth/signup", {
+      method: "post",
+      requestData: {
+        firstName: state.firstName,
+        lastName: state.lastName,
+        email: state.email,
+        password: state.password,
+      },
     });
   };
 
@@ -199,10 +209,17 @@ const Signup = () => {
         <Label>Create a new account</Label>
         <Input
           type="text"
-          value={state.name}
-          onChange={nameChangeHandler}
-          onBlur={validateNameHandler}
-          placeholder="Your name"
+          value={state.firstName}
+          onChange={firstNameChangeHandler}
+          onBlur={validateFirstNameHandler}
+          placeholder="Your first name"
+        />
+        <Input
+          type="text"
+          value={state.lastName}
+          onChange={lastNameChangeHandler}
+          onBlur={validateLastNameHandler}
+          placeholder="Your last name"
         />
         <Input
           type="email"
@@ -210,13 +227,6 @@ const Signup = () => {
           onChange={emailChangeHandler}
           onBlur={validateEmailHandler}
           placeholder="Email address"
-        />
-        <Input
-          type="text"
-          value={state.mobile}
-          onChange={mobileChangeHandler}
-          onBlur={validateMobileHandler}
-          placeholder="Mobile number"
         />
         <Input
           type="password"
@@ -227,7 +237,9 @@ const Signup = () => {
         />
       </InputContainer>
       <BtnContainer>
-        <Button type="submit">Sign up</Button>
+        <Button type="submit" disabled={formIsValid}>
+          Sign up
+        </Button>
       </BtnContainer>
       <TermContainer>
         <Paragraph>
