@@ -5,6 +5,7 @@ import {
   ParagraphOne,
   ParagraphTwo,
   ParagraphThree,
+  ParagraphFour,
 } from "./footer.style";
 
 const Footer = () => {
@@ -18,6 +19,9 @@ const Footer = () => {
       <ParagraphThree>
         <StyledLink to="#">Terms of Use</StyledLink>
       </ParagraphThree>
+      <ParagraphFour>
+        <StyledLink to="/about">About us</StyledLink>
+      </ParagraphFour>
     </Afooter>
   );
 };
