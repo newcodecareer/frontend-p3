@@ -10,13 +10,19 @@ import {
 export const Header = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
   font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
   max-width: 100%;
+  z-index:2;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: solid 1px ${primaryBorderColor};
-  padding: 0 10% 1rem;
+  padding: 0 0 0.6rem;
+  padding-top:10px;
 `;
 
 export const NavLogo = styled.div`
