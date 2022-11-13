@@ -7,6 +7,7 @@ import JoinUs from "../components/JoinUs/JoinUs";
 import Footer from "../components/Footer/Footer";
 import { HomeMain } from "./Homepage.styles";
 import Categories from "../components/Categories/Categories";
+import NewFooter from "../components/Footer/NewFooter";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Categories />
       <JoinUs />
       <Footer />
+      <NewFooter />
     </HomeMain>
   );
 };

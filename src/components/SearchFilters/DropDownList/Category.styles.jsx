@@ -14,6 +14,7 @@ import {
 } from "../../common/index.styles";
 
 export const GlobalStyle = createGlobalStyle`
+
   body, button, input, output{
     margin: 0;
     padding: 0;
@@ -63,8 +64,13 @@ export const PopUp = styled.div`
     props.price &&
     css`
       width: 300px;
+<<<<<<< HEAD
       height: 185px;
       top: 19.5%;
+=======
+      height: 165px;
+      top: 17.5%;
+>>>>>>> 927d2d9486cb96d12b04c20a3e43892772f9faf7
       left: 67%;
     `};
 
@@ -298,7 +304,6 @@ export const Option = styled.input`
     color: white;
   }
 `;
-
 export const Slider = styled.div``;
 
 export const RangeScroll = styled.input`
