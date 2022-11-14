@@ -17,7 +17,7 @@ const MainNav = () => {
               <Link to="/browse-needs">Browse Needs</Link>
             </li>
             <li>
-              <Link to="/myNeeds">My Needs</Link>
+              <Link to="/my-needs">My Needs</Link>
             </li>
           </ul>
         </NavList>

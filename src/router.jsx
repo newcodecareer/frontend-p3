@@ -19,6 +19,7 @@ import Sort from "./components/SearchFilters/DropDownList/Sort";
 import ChangePassword from "./components/ChangePassword/ChangePassword";
 
 import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
+import MyNeeds from "./components/MyNeeds/MyNeeds";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -100,6 +101,10 @@ const routes = [
   {
     path: "/Mobile-Verification",
     element: <MobileVerificationStepOne />,
+  },
+  {
+    path: "/my-needs",
+    element: <MyNeeds />,
   },
 ];
 
