@@ -64,4 +64,3 @@ export const Instagram = styled.div`
     justify-content: center;
     
 `;
-

@@ -1,9 +1,6 @@
 import{Link} from "react-router-dom";
 import * as React from 'react';
 import { useEffect, useRef } from "react";
-
-
-
 import {
     Header,
     NavLogo,
@@ -37,7 +34,6 @@ function useOnClickOutside(ref, handler) {
     );
 };
 
-
 const NavAfterLogin = () =>{
     const ref = useRef();
     const [open, setOpen] = React.useState(false);
@@ -45,7 +41,6 @@ const NavAfterLogin = () =>{
         setOpen(!open);
     };
     useOnClickOutside(ref, () => setOpen(false));
-
     return(
         <Header>
             <NavLogo>
@@ -91,12 +86,9 @@ const NavAfterLogin = () =>{
                     ) : null}
                 </UserIcon>
             </HeaderMid>
-            
-            
+   
         </Header>
     );
 };
 
 export default NavAfterLogin;
-
-

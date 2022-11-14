@@ -26,15 +26,12 @@ const FollowUs = () =>{
                 <StyledLink to = "#">
                     <Img src = "../../../public/images/Ins.png"/>
                 </StyledLink>
-                
             </Instagram>
             <Twiter>
                 <StyledLink to = "#">
                     <Img src = "../../../public/images/Twiter.png"/>
                 </StyledLink>
-                
             </Twiter>
-            
         </FollowPage>
     );  
 };
