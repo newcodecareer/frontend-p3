@@ -17,7 +17,7 @@ export const ChangePasswordUserIcon = styled.div`
   }
 `;
 
-export const ChangePasswordLockIcon = styled.div`
+export const ChangePasswordSecondIcon = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
