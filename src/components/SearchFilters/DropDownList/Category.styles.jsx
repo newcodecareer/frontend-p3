@@ -14,7 +14,8 @@ import {
 } from "../../common/index.styles";
 
 export const GlobalStyle = createGlobalStyle`
-  body, button, input{
+
+  body, button, input, output{
     margin: 0;
     padding: 0;
     font-size: ${fontSizeS};
@@ -63,8 +64,8 @@ export const PopUp = styled.div`
     props.price &&
     css`
       width: 300px;
-      height: 165px;
-      top: 17.5%;
+      height: 185px;
+      top: 19.5%;
       left: 67%;
     `};
 
@@ -96,6 +97,7 @@ export const Background = styled.div`
   width: 100%;
   height: 100%;
   z-index: 10;
+  cursor: auto;
 `;
 
 export const TopContainer = styled.div`
@@ -170,6 +172,9 @@ export const ApplyBtn = styled.button`
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  &:hover {
+    filter: brightness(1.2);
+  }
 `;
 
 export const Btn = styled.button`
@@ -284,17 +289,75 @@ export const Option = styled.input`
   height: 30px;
 
   cursor: pointer;
+  &:hover {
+    background-color: ${primaryThemeColor};
+    color: white;
+  }
   &:focus {
     background-color: ${primaryThemeColor};
     border: none;
     color: white;
   }
 `;
+export const Slider = styled.div``;
 
 export const RangeScroll = styled.input`
   width: 90%;
   margin: 0 atuo;
   cursor: pointer;
+
+  ${(props) =>
+    props.price &&
+    css`
+      position: absolute;
+      background: none;
+      left: 15px;
+      pointer-events: none;
+      -webkit-appearance: none;
+
+      ::-webkit-slider-runnable-track {
+        /* background:
+        linear-gradient(to right,  calc(1% * var(--from)),  calc(1% * var(--from)) calc(1% * var(--to)),  0%); */
+      }
+      ::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        margin-top: -4px;
+        background: ${primaryThemeColor};
+        pointer-events: auto;
+      }
+    `};
+
+  ${(props) =>
+    props.top &&
+    css`
+      width: 300px;
+      height: 5px;
+      background: linear-gradient(
+        to right,
+        #ddd calc(1% * var(--from)),
+        red calc(1% * var(--from)) calc(1% * var(--to)),
+        #ddd calc(1% * var(--to))
+      );
+      border-radius: 3px;
+
+      ::-webkit-slider-thumb {
+        margin-top: 4px;
+        pointer-events: auto;
+      }
+    `};
+`;
+
+export const SelectedValue = styled.output`
+  margin-bottom: 10px;
+  ${(props) =>
+    props.price &&
+    css`
+      margin-bottom: 25px;
+    `};
 `;
 
 export const Wrap = styled.div`
@@ -310,8 +373,19 @@ export const Wrap = styled.div`
     `};
 
   ${(props) =>
+    props.location_distance &&
+    css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    `};
+
+  ${(props) =>
     props.price &&
     css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin: 40px 0;
     `};
 

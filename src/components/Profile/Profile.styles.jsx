@@ -10,6 +10,7 @@ import {
 export const ProfileContainer = styled.div`
   max-width: 1080px;
   margin: auto;
+  margin-top: 30px;
   box-sizing: border-box;
   padding: 30px 25px;
 `;

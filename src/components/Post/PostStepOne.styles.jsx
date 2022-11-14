@@ -8,6 +8,7 @@ import {
 } from "../common/index.styles";
 
 export const Background = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
