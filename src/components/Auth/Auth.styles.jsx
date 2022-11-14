@@ -8,6 +8,8 @@ import {
   fontSizeL,
   fontSizeM,
   fontSizeS,
+  primaryShadowColor,
+  btnFontColor,
 } from "../common/index.styles";
 
 export const Form = styled.form`
@@ -70,6 +72,9 @@ export const Button = styled.button`
   &:hover {
     filter: brightness(1.2);
   }
+  &:active {
+    box-shadow: 0 5px 15px ${primaryShadowColor};
+  }
 `;
 
 export const TermContainer = styled.div`
@@ -92,6 +97,6 @@ export const StyledLink = styled(Link)`
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
   &:hover {
-    color: ${primaryThemeColor};
+    color: ${btnFontColor};
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useReducer } from "react";
 import { api } from "../../utils/axios";
 import {
   BtnContainer,
@@ -67,7 +67,7 @@ const initialState = {
 };
 
 // AuthReducer
-export const reducer = (state, action) => {
+const reducer = (state, action) => {
   switch (action.type) {
     case actions.update_firstName:
       return {
@@ -119,20 +119,20 @@ export const reducer = (state, action) => {
 };
 
 const Signup = () => {
-  const [formIsValid, setFormIsValid] = useState(false);
+  // const [formIsValid, setFormIsValid] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState, undefined);
 
-  useEffect(() => {
-    const debounce = setTimeout(() => {
-      setFormIsValid(
-        state.isFirstNameValid &&
-          state.isLastNameValid &&
-          state.isEmailValid &&
-          state.isPasswordValid
-      );
-    }, 500);
-    return () => clearTimeout(debounce);
-  }, [state.isFirstNameValid, state.isLastNameValid, state.isEmailValid, state.isPasswordValid]);
+  // useEffect(() => {
+  //   const debounce = setTimeout(() => {
+  //     setFormIsValid(
+  //       state.isFirstNameValid &&
+  //         state.isLastNameValid &&
+  //         state.isEmailValid &&
+  //         state.isPasswordValid
+  //     );
+  //   }, 500);
+  //   return () => clearTimeout(debounce);
+  // }, [state.isFirstNameValid, state.isLastNameValid, state.isEmailValid, state.isPasswordValid]);
 
   const firstNameChangeHandler = (e) => {
     dispatch({
@@ -237,9 +237,7 @@ const Signup = () => {
         />
       </InputContainer>
       <BtnContainer>
-        <Button type="submit" disabled={formIsValid}>
-          Sign up
-        </Button>
+        <Button type="submit">Sign up</Button>
       </BtnContainer>
       <TermContainer>
         <Paragraph>
