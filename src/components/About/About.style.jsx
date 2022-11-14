@@ -54,7 +54,6 @@ export const SubTitle = styled.h4`
   font-size: ${fontSizeL};
 `;
 
-
 // AboutPage div3
 export const AboutTwo = styled.div`
   width: 100%;
@@ -92,7 +91,6 @@ export const AboutTwoText = styled.h2`
   margin-left: 0;
 `;
 
-
 // AboutPage div4
 export const FAQ = styled.div`
   text-align: center;
@@ -101,7 +99,6 @@ export const FAQ = styled.div`
   margin-top: 10px;
   margin-bottom: 20px;
 `;
-
 
 // TeamMemebers div
 export const TeamMembers = styled.div`
@@ -149,7 +146,6 @@ export const Button = styled.button`
   text-align: center;
 `;
 
-
 export const MemberH1 = styled.h1`
   font-size: 1.5rem;
   position: absolute;
@@ -185,7 +181,6 @@ export const Card = styled.div`
       top: 220px;
       color: black;
     }
-
   }
 `;
 

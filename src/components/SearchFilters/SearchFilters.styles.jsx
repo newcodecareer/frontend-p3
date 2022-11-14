@@ -39,14 +39,14 @@ export const SearchContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
   padding-left: 0.5rem;
-  border: 1px solid #d2d2d2;
-  border-radius: 25px;
   margin-right: 85px;
 `;
 
 export const SearchWrap = styled.div`
   height: 30px;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
