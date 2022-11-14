@@ -117,3 +117,17 @@ export const DropList = styled.button`
 
   cursor: pointer;
 `;
+
+export const Button = styled.button`
+  color: black;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  :hover {
+    color: ${primaryThemeColor};
+  }
+  :focus {
+    color: ${primaryThemeColor};
+    font-weight: bold;
+  }
+`;
