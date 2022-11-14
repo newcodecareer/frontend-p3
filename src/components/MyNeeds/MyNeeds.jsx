@@ -9,7 +9,7 @@ import PostDetails from "../PostDetails/PostDetails";
 const MyNeeds = () => {
   const [location, setLocation] = useState("");
   const [showPost, setShowPost] = useState(false);
-  
+
   return (
     <PostContext.Provider value={{ setShowPost }}>
       <BrowseNeedsSection>
@@ -22,5 +22,5 @@ const MyNeeds = () => {
     </PostContext.Provider>
   );
 };
-    
+
 export default MyNeeds;
