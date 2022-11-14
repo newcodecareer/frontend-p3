@@ -67,7 +67,7 @@ const NavAfterLogin = () =>{
                 </NavList>
             </NavLogo>
             <HeaderMid>
-                <StyledLink to = "./about">Contact us</StyledLink>
+                <StyledLink to = "/about">About Us</StyledLink>
                 <UserIcon>
                     <Button onClick={handleOpen}>
                         <Icon src = "../../../../public/images/author_icon.png" />
@@ -83,9 +83,9 @@ const NavAfterLogin = () =>{
                             <MenuButton>Payment</MenuButton>
                             <MenuButton 
                                 onClick={()=>{
-                                    window.location.href = "/about";
+                                    window.location.href = "/follow";
                             }}
-                            >About us</MenuButton>
+                            >Follow us</MenuButton>
                             <MenuButton>Logout</MenuButton> 
                         </MenuControl>
                     ) : null}
