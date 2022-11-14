@@ -1,11 +1,14 @@
-import { environment } from "@/constants/environment";
+// import { environment } from "@/constants/environment";
 import axios from "axios";
 import omit from "lodash/omit";
 
 const REQUEST_TIMEOUT = 10000;
 
+// export const baseURL = "localhost:3000/v1";
+
 const axiosInstance = axios.create({
-  baseURL: environment.apiBaseUrl,
+  // baseURL: environment.apiBaseUrl,
+  baseURL: "http://localhost:3000/v1",
   timeout: REQUEST_TIMEOUT,
 });
 

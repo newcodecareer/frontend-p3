@@ -6,7 +6,7 @@ import SearchFilters from "../SearchFilters/SearchFilters";
 import { PostContext } from "../../context/PostContext";
 import PostDetails from "../PostDetails/PostDetails";
 
-const BrowseNeeds = (props = {}) => {
+const BrowseNeeds = () => {
   const [location, setLocation] = useState("");
   const [showPost, setShowPost] = useState(false);
 

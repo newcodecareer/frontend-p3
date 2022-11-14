@@ -9,8 +9,9 @@ import {
   UserIcon,
   ParagraphContainer,
 } from "./NeedsCard.styles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faCalendar, faClock, faUser } from "@fortawesome/free-solid-svg-icons";
+import { SlLocationPin } from "react-icons/sl";
+import { AiOutlineCalendar, AiOutlineClockCircle } from "react-icons/ai";
+import { HiUser } from "react-icons/hi2";
 import { useContext } from "react";
 import { PostContext } from "../../../../context/PostContext";
 import PostDetails from "../../../PostDetails/PostDetails";
@@ -31,22 +32,22 @@ const NeedsCard = () => {
           <NeedsInfoContainer>
             <Title>Need Plumbers to fix residential toilet pipe blocked</Title>
             <ParagraphContainer>
-              <FontAwesomeIcon icon={faLocationDot} />
+              <SlLocationPin />
               <p>{location}</p>
             </ParagraphContainer>
             <ParagraphContainer>
-              <FontAwesomeIcon icon={faCalendar} />
+              <AiOutlineCalendar />
               <p>Sun, 11 Oct</p>
             </ParagraphContainer>
             <ParagraphContainer>
-              <FontAwesomeIcon icon={faClock} />
+              <AiOutlineClockCircle />
               <p>Anytime</p>
             </ParagraphContainer>
           </NeedsInfoContainer>
           <PriceContainer>
             <p>$300</p>
             <UserIcon>
-              <FontAwesomeIcon icon={faUser} />
+              <HiUser />
             </UserIcon>
           </PriceContainer>
         </TitleContainer>

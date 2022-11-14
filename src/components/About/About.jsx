@@ -30,7 +30,7 @@ const About = () => {
       <Heading>About Us</Heading>
       <AboutOne>
         <Text>
-          <Title>We are here to make people&#39;s lives better</Title>
+          <Title>We are here to make people&apos;s lives better</Title>
           <SubTitle>
             Creating a way to connect people ready to work, with people who need work done
           </SubTitle>
@@ -48,7 +48,9 @@ const About = () => {
             From simple to complicated tasks, Houddy can help you complete your home cleaning,
             handyman jobs, admin work, photography, graphic design or even build a website.
           </AboutTwoText>
-          <AboutTwoText>The only way to do great work is to love what you do</AboutTwoText>
+          <AboutTwoText>
+            &quot;The only way to do great work is to love what you do&quot;
+          </AboutTwoText>
         </TextControl>
       </AboutTwo>
       <FAQ>
@@ -64,8 +66,8 @@ const About = () => {
         </Text>
         <SubTitle>Who will I be working with?</SubTitle>
         <Text>
-          It&#39;s totally up to you! When browsing tasks, you can check out profiles, reviews and
-          recommendations to determine who you&#39;ll be working with.
+          It&apos;s totally up to you! When browsing tasks, you can check out profiles, reviews and
+          recommendations to determine who you&apos;ll be working with.
         </Text>
         <SubTitle>How much does it cost?</SubTitle>
         <Text>

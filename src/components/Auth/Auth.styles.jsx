@@ -8,6 +8,8 @@ import {
   fontSizeL,
   fontSizeM,
   fontSizeS,
+  primaryShadowColor,
+  btnFontColor,
 } from "../common/index.styles";
 
 export const Form = styled.form`
@@ -71,6 +73,9 @@ export const Button = styled.button`
   &:hover {
     filter: brightness(1.2);
   }
+  &:active {
+    box-shadow: 0 5px 15px ${primaryShadowColor};
+  }
 `;
 
 export const TermContainer = styled.div`
@@ -89,10 +94,10 @@ export const Paragraph = styled.p`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${(props) => props.inputColor || `${primaryFontColor}`};
+  color: ${(props) => props.inputcolor || `${primaryFontColor}`};
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
   &:hover {
-    color: ${primaryThemeColor};
+    color: ${btnFontColor};
   }
 `;
