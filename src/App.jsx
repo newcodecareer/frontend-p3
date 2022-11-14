@@ -6,6 +6,7 @@ import Layout from "./components/Layout/Layout";
 import Homepage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import FollowUsPage from "./pages/FollowUsPage";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/loading" element={<LoadingPage />} />
             <Route path="*" element={<Navigate to="/error" replace />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/follow" element={<FollowUsPage />} />
           </Routes>
         </Layout>
       </ScrollToTop>

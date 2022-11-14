@@ -8,6 +8,19 @@ const NavBeforeLogin = () => {
         <Link to="/">
           <img src="/images/logo.png" alt="Houddy logo" />
         </Link>
+        <NavList>
+          <ul>
+            <li>
+              <Link to="/post-needs">Post Needs</Link>
+            </li>
+            <li>
+              <Link to="/browse-needs">Browse Needs</Link>
+            </li>
+            <li>
+              <Link to="/myNeeds">My Needs</Link>
+            </li>
+            </ul>
+          </NavList>
       </NavLogo>
       <NavList>
         <ul>
@@ -16,9 +29,6 @@ const NavBeforeLogin = () => {
           </li>
           <li>
             <Link to="/login">Log in</Link>
-          </li>
-          <li>
-            <Link to="/signup">Register Tradie</Link>
           </li>
         </ul>
       </NavList>

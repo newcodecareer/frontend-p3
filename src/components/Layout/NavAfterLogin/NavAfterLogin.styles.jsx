@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
   btnFontColor,
@@ -5,7 +6,10 @@ import {
   primaryBorderColor,
   primaryFontColor,
   primaryThemeColor,
-} from "../../common/index.styles";
+  bgcColor,
+  fontFamily,
+  } from "../../common/index.styles";
+
 
 export const Header = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -21,7 +25,7 @@ export const Header = styled.header`
   justify-content: space-around;
   border-bottom: solid 1px ${primaryBorderColor};
   padding: 0 0 0.6rem;
-  padding-top:10px;
+  padding-top:10px; 
 `;
 
 export const NavLogo = styled.div`
@@ -69,3 +73,72 @@ export const NavList = styled.nav`
     }
   }
 `;
+
+export const HeaderMid = styled.div`
+  display: flex;
+`;
+
+export const UserIcon = styled.div`
+`;
+
+export const StyledLink = styled(Link)`
+  align-items: center;
+  text-decoration: none;
+  font-size: ${fontSizeM};
+  font-weight: 600;
+  color: ${primaryFontColor};
+  padding: 1rem 1.5rem;
+  &:hover,
+  :active {
+    color: ${primaryThemeColor};
+  }
+`;
+
+export const Button = styled.button`
+  background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: ${primaryThemeColor};
+    filter: brightness(1);
+  }
+`;
+
+export const MenuControl = styled.div`
+  background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
+  flex-direction: column;
+  position: fixed;
+  z-index:2;
+  margin-top: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 140px;
+  height: auto;
+  list-style-type: none;
+  padding-left:0px;
+  box-shadow: 0 0 10px grey;
+`;
+
+export const Icon = styled.img`
+`;
+
+export const MenuButton = styled.button`
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  margin: 0;
+  font-family: ${fontFamily};
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: ${primaryThemeColor};
+    filter: brightness(1);
+  }
+`;
+

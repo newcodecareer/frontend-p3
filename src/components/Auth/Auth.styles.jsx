@@ -20,6 +20,7 @@ export const Form = styled.form`
 export const InputContainer = styled.div`
   width: 100%;
   height: auto;
+  margin-top: 30px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
