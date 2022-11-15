@@ -15,6 +15,7 @@ export const BannerContainer = styled.div`
 `;
 
 export const BannerBox = styled.div`
+  margin-top: 50px ;
   font-family: ${fontFamily};
   display: flex;
   justify-content: center;
@@ -33,7 +34,7 @@ export const Information = styled.div`
   margin: 3rem;
 `;
 
-export const Tick = styled.text`
+export const Tick = styled.span`
   color: ${(props) => props.inputColor || `${primaryThemeColor}`};
 `;
 

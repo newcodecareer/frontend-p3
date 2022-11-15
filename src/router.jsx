@@ -9,13 +9,16 @@ import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
 import PostDetails from "./components/PostDetails/PostDetails";
-
 import Category from "./components/SearchFilters/DropDownList/Category";
 import Range from "./components/SearchFilters/DropDownList/Location";
 import Price from "./components/SearchFilters/DropDownList/Price";
 import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";
+import ChangePassword from "./components/ChangePassword/ChangePassword";
+import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
+import MyNeeds from "./components/MyNeeds/MyNeeds";
 
 import MyNeed from "./components/MyNeed/MyNeed";
 
@@ -69,6 +72,10 @@ const routes = [
     element: <Profile />,
   },
   {
+    path: "/change-password",
+    element: <ChangePassword />,
+  },
+  {
     path: "/post-details",
     element: <PostDetails />,
   },
@@ -93,9 +100,6 @@ const routes = [
     element: <Sort />,
   },
   {
-    path: "/my-need",
-    element: <MyNeed />,
-  }
 ];
 
 export default routes;

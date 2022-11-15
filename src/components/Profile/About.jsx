@@ -13,38 +13,30 @@ import {
 } from "./Profile.styles";
 
 const About = () => {
-  const initialAbout = () => {
-    return (
-      <DataContainer>
-        <div>
-          <Paragraph>Edit your description now.</Paragraph>
-        </div>
-        <div>
-          <BtnImage onClick={() => setAbout(aboutInputs)}>
-            <FiEdit2 />
-          </BtnImage>
-        </div>
-      </DataContainer>
-    );
-  };
-
-  const aboutInputs = () => {
-    return (
-      <div>
-        <Textarea placeholder="Description"></Textarea>
-        <ButtonContainer>
-          <Button onClick={() => setAbout(initialAbout)}>Cancel</Button>
-          <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
-        </ButtonContainer>
-      </div>
-    );
-  };
-
-  const [about, setAbout] = useState(initialAbout);
+  const [about, setAbout] = useState(false);
   return (
     <SectionContainer>
       <Label>About</Label>
-      {about}
+      {about ? (
+        <div>
+          <Textarea placeholder="Description"></Textarea>
+          <ButtonContainer>
+            <Button onClick={() => setAbout(false)}>Cancel</Button>
+            <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
+          </ButtonContainer>
+        </div>
+      ) : (
+        <DataContainer>
+          <div>
+            <Paragraph>Edit your description now.</Paragraph>
+          </div>
+          <div>
+            <BtnImage onClick={() => setAbout(true)}>
+              <FiEdit2 />
+            </BtnImage>
+          </div>
+        </DataContainer>
+      )}
     </SectionContainer>
   );
 };

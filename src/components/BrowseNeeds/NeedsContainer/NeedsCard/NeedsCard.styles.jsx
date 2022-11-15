@@ -65,10 +65,11 @@ export const PriceContainer = styled.div`
 `;
 
 export const UserIcon = styled.div`
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: ${thirdFontColor};
   border: solid 3px ${thirdFontColor};
-  padding: 4px 6px;
+  display: flex;
+  /* padding: 4px 6px; */
   border-radius: 50%;
 `;
 

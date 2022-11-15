@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useRef } from "react";
+import { useClickAway } from "react-use";
+
 import {
   Background,
   Input,
@@ -21,6 +24,15 @@ import Offers from "../SearchFilters/DropDownList/Offers";
 import Sort from "../SearchFilters/DropDownList/Sort";
 
 const SearchFilters = () => {
+  const ref = useRef(null);
+  useClickAway(ref, () => {
+    setIsOpenCategory(false);
+    setIsOpenLocation(false);
+    setIsOpenPrice(false);
+    setIsOpenOffers(false);
+    setIsOpenSort(false);
+  });
+
   const [isOpenCategory, setIsOpenCategory] = useState(false);
   const togglePopupCategory = () => {
     setIsOpenCategory(!isOpenCategory);
@@ -77,36 +89,36 @@ const SearchFilters = () => {
           </SearchButton>
         </SearchWrap>
       </SearchContainer>
-      <NavBar>
-        <NavItem>
+      <NavBar ref={ref}>
+        <NavItem className="navitem">
           <DropList className="nav" onClick={togglePopupCategory}>
             Category
             <TiArrowSortedDown />
           </DropList>
           {isOpenCategory && <Category handleClose={togglePopupCategory} content={<div></div>} />}
         </NavItem>
-        <NavItem>
+        <NavItem className="navitem">
           <DropList className="nav" onClick={togglePopupLocation}>
             Location
             <TiArrowSortedDown />
           </DropList>
           {isOpenLocation && <Range handleClose={togglePopupLocation} content={<div></div>} />}
         </NavItem>
-        <NavItem>
+        <NavItem className="navitem">
           <DropList className="nav" onClick={togglePopupPrice}>
             Price
             <TiArrowSortedDown />
           </DropList>
           {isOpenPrice && <Price handleClose={togglePopupPrice} content={<div></div>} />}
         </NavItem>
-        <NavItem>
+        <NavItem className="navitem">
           <DropList className="nav" onClick={togglePopupOffers}>
             Offers
             <TiArrowSortedDown />
           </DropList>
           {isOpenOffers && <Offers handleClose={togglePopupOffers} content={<div></div>} />}
         </NavItem>
-        <NavItem>
+        <NavItem className="navitem">
           <DropList className="nav" onClick={togglePopupSort}>
             Preference Sort
             <TiArrowSortedDown />

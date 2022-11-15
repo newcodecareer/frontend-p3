@@ -25,12 +25,13 @@ export const GlobalStyle = createGlobalStyle`
 export const Background = styled.div`
   width: 100%;
   height: 3rem;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  position: absolute;
+  width: 100%;
+  top: 67px;
   padding-top: 0.4rem;
 `;
 
@@ -38,14 +39,14 @@ export const SearchContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+
   padding-left: 0.5rem;
-  border: 1px solid #d2d2d2;
-  border-radius: 25px;
   margin-right: 85px;
 `;
 
 export const SearchWrap = styled.div`
   height: 30px;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -115,4 +116,18 @@ export const DropList = styled.button`
   justify-content: center;
 
   cursor: pointer;
+`;
+
+export const Button = styled.button`
+  color: black;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  :hover {
+    color: ${primaryThemeColor};
+  }
+  :focus {
+    color: ${primaryThemeColor};
+    font-weight: bold;
+  }
 `;

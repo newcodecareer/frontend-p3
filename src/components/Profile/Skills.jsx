@@ -13,42 +13,34 @@ import {
 } from "./Profile.styles";
 
 const Skills = () => {
-  const initialSkills = () => {
-    return (
-      <DataContainer>
-        <div>
-          <Paragraph>Add Your skills or services.</Paragraph>
-        </div>
-        <div>
-          <BtnImage onClick={() => setSkills(skillsInputs)}>
-            <FiEdit2 />
-          </BtnImage>
-        </div>
-      </DataContainer>
-    );
-  };
-
-  const skillsInputs = () => {
-    return (
-      <div>
-        <Input type="text" placeholder="Certificate" />
-        <Input type="text" placeholder="Specialties" />
-        <Input type="text" placeholder="Languages" />
-        <Input type="text" placeholder="Company" />
-        <ButtonContainer>
-          <Button onClick={() => setSkills(initialSkills)}>Cancel</Button>
-          <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
-        </ButtonContainer>
-      </div>
-    );
-  };
-
-  const [skills, setSkills] = useState(initialSkills);
+  const [skills, setSkills] = useState(false);
 
   return (
     <SectionContainer>
       <Label>Skills</Label>
-      {skills}
+      {skills ? (
+        <div>
+          <Input type="text" placeholder="Certificate" />
+          <Input type="text" placeholder="Specialties" />
+          <Input type="text" placeholder="Languages" />
+          <Input type="text" placeholder="Company" />
+          <ButtonContainer>
+            <Button onClick={() => setSkills(false)}>Cancel</Button>
+            <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
+          </ButtonContainer>
+        </div>
+      ) : (
+        <DataContainer>
+          <div>
+            <Paragraph>Add Your skills or services.</Paragraph>
+          </div>
+          <div>
+            <BtnImage onClick={() => setSkills(true)}>
+              <FiEdit2 />
+            </BtnImage>
+          </div>
+        </DataContainer>
+      )}
     </SectionContainer>
   );
 };

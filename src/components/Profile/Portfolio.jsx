@@ -14,48 +14,40 @@ import {
 } from "./Profile.styles";
 
 const Portfolio = () => {
-  const initialPortfolio = () => {
-    return (
-      <DataContainer>
-        <div>
-          <Paragraph>Add items to your portfolio.</Paragraph>
-        </div>
-        <div>
-          <BtnImage onClick={() => setPortfolio(PortfolioInputs)}>
-            <FiEdit2 />
-          </BtnImage>
-        </div>
-      </DataContainer>
-    );
-  };
-
-  const PortfolioInputs = () => {
-    return (
-      <div>
-        <Paragraph>
-          Upload a maximum of 20 items.
-          <br />
-          File formats accepted include JPG/PNG and must not be larger than 5MB.
-        </Paragraph>
-        <ButtonContainer>
-          <BtnAdd>
-            <AiOutlinePlusSquare />
-          </BtnAdd>
-        </ButtonContainer>
-        <ButtonContainer>
-          <Button onClick={() => setPortfolio(initialPortfolio)}>Cancel</Button>
-          <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
-        </ButtonContainer>
-      </div>
-    );
-  };
-
-  const [portfolio, setPortfolio] = useState(initialPortfolio);
+  const [portfolio, setPortfolio] = useState(false);
 
   return (
     <SectionContainer>
       <Label>Portfolio</Label>
-      {portfolio}
+      {portfolio ? (
+        <div>
+          <Paragraph>
+            Upload a maximum of 20 items.
+            <br />
+            File formats accepted include JPG/PNG and must not be larger than 5MB.
+          </Paragraph>
+          <ButtonContainer>
+            <BtnAdd>
+              <AiOutlinePlusSquare />
+            </BtnAdd>
+          </ButtonContainer>
+          <ButtonContainer>
+            <Button onClick={() => setPortfolio(false)}>Cancel</Button>
+            <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
+          </ButtonContainer>
+        </div>
+      ) : (
+        <DataContainer>
+          <div>
+            <Paragraph>Add items to your portfolio.</Paragraph>
+          </div>
+          <div>
+            <BtnImage onClick={() => setPortfolio(true)}>
+              <FiEdit2 />
+            </BtnImage>
+          </div>
+        </DataContainer>
+      )}
     </SectionContainer>
   );
 };

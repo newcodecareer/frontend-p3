@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
   btnFontColor,
-  fontSizeL,
+  fontSizeM,
   primaryBorderColor,
   primaryFontColor,
   primaryThemeColor,
@@ -9,20 +9,24 @@ import {
 
 export const Header = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:2;
   font-family: "Inter", sans-serif;
-  max-width: 100%;
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: solid 1px ${primaryBorderColor};
-  padding: 0 20% 1rem;
+  padding: 0 0 0.6rem;
+  padding-top:10px;
 `;
 
 export const NavLogo = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
   img {
     width: 150px;
   }
@@ -32,18 +36,15 @@ export const NavList = styled.nav`
   ul {
     list-style: none;
     display: flex;
-    align-items: baseline;
-
+    align-items: center;
     li {
-      margin-left: 1rem;
+      margin-left: 2rem;
       cursor: pointer;
-
       a {
         text-decoration: none;
-        font-size: ${fontSizeL};
+        font-size: ${fontSizeM};
         font-weight: 600;
         color: ${primaryFontColor};
-
         &:link {
           color: ${primaryFontColor};
         }
@@ -52,12 +53,12 @@ export const NavList = styled.nav`
           color: ${primaryThemeColor};
         }
       }
-
-      &:last-child {
+      &:first-child {
         background-color: ${primaryThemeColor};
-        padding: 6px 18px;
+        padding: 0.5rem 1.5rem;
         border: solid 1px ${primaryThemeColor};
-        border-radius: 5px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
         a {
           color: ${btnFontColor};
         }
