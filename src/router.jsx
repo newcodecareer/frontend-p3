@@ -17,6 +17,8 @@ import Price from "./components/SearchFilters/DropDownList/Price";
 import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";
 
+import MyNeed from "./components/MyNeed/MyNeed";
+
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -90,6 +92,10 @@ const routes = [
     path: "/drop-down-five",
     element: <Sort />,
   },
+  {
+    path: "/my-need",
+    element: <MyNeed />,
+  }
 ];
 
 export default routes;
