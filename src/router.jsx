@@ -20,6 +20,8 @@ import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
 import MyNeeds from "./components/MyNeeds/MyNeeds";
 
+import MyNeed from "./components/MyNeed/MyNeed";
+
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
 const Homepage = React.lazy(() => import("./pages/HomePage"));
@@ -98,13 +100,6 @@ const routes = [
     element: <Sort />,
   },
   {
-    path: "/Mobile-Verification",
-    element: <MobileVerificationStepOne />,
-  },
-  {
-    path: "/my-needs",
-    element: <MyNeeds />,
-  },
 ];
 
 export default routes;
