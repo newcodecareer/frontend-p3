@@ -42,12 +42,19 @@ export const Img = styled.img`
     align-items: center;
 `;
 
+export const Img1 = styled.img`
+    width: 100%;
+    height: auto;
+    align-items: center;
+`;
+
 export const FaceBook = styled.div`
     width: 20%;
     background-color: #3b5998;
     display: flex;
     align-items: center;
 `;
+
 export const Twiter = styled.div`
     background-color: #00acee;
     width: 20%;
