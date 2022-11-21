@@ -8,7 +8,7 @@ const NavBeforeLogin = () => {
         <Link to="/">
           <img src="/images/logo.png" alt="Houddy logo" />
         </Link>
-        <NavList>
+        {/* <NavList>
           <ul>
             <li>
               <Link to="/post-needs">Post Needs</Link>
@@ -19,8 +19,8 @@ const NavBeforeLogin = () => {
             <li>
               <Link to="/myNeeds">My Needs</Link>
             </li>
-            </ul>
-          </NavList>
+          </ul>
+        </NavList> */}
       </NavLogo>
       <NavList>
         <ul>

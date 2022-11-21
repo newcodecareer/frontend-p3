@@ -15,7 +15,7 @@ export const BannerContainer = styled.div`
 `;
 
 export const BannerBox = styled.div`
-  margin-top: 50px ;
+  margin-top: 50px;
   font-family: ${fontFamily};
   display: flex;
   justify-content: center;

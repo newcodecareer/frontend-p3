@@ -15,14 +15,14 @@ export const Header = styled.header`
   width: 100%;
   top: 0;
   max-width: 100%;
-  z-index:2;
+  z-index: 2;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: solid 1px ${primaryBorderColor};
   padding: 0 0 0.6rem;
-  padding-top:10px;
+  padding-top: 10px;
 `;
 
 export const NavLogo = styled.div`

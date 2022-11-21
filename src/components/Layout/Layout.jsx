@@ -1,16 +1,23 @@
+import React, { useState } from "react";
 import { Main } from "./Layout.styles";
-import MainNav from "./MainNav/MainNav";
+import { AuthContext } from "../../context/AuthContext";
+
 import NavAfterLogin from "./NavAfterLogin/NavAfterLogin";
 import NavBeforeLogin from "./NavBeforeLogin/NavBeforeLogin";
 
 const Layout = ({ children }) => {
+  const login = localStorage.getItem("is login");
+
+  const [isLogin, setIsLogin] = useState(login === "true");
+
   return (
-    <div>
+    <AuthContext.Provider value={{ setIsLogin }}>
+      {isLogin ? <NavAfterLogin /> : <NavBeforeLogin />}
+
       {/* <NavBeforeLogin /> */}
-      {/* <MainNav /> */}
-      <NavAfterLogin />
+      {/* <NavAfterLogin /> */}
       <Main>{children}</Main>
-    </div>
+    </AuthContext.Provider>
   );
 };
 
