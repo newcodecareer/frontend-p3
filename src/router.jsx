@@ -16,9 +16,9 @@ import Range from "./components/SearchFilters/DropDownList/Location";
 import Price from "./components/SearchFilters/DropDownList/Price";
 import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";
-import ChangePassword from "./components/ChangePassword/ChangePassword";
 import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
 import MyNeeds from "./components/MyNeeds/MyNeeds";
+import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
 
 import MyNeed from "./components/MyNeed/MyNeed";
 
@@ -100,6 +100,17 @@ const routes = [
     element: <Sort />,
   },
   {
+    path: "/Mobile-Verification",
+    element: <MobileVerificationStepOne />,
+  },
+  {
+    path: "/my-needs",
+    element: <MyNeeds />,
+  },
+  {
+    path: "/avatar",
+    element:<UploadAvatar />
+  }
 ];
 
 export default routes;
