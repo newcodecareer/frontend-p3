@@ -20,6 +20,8 @@ import MobileVerificationStepOne from "./components/MobileVerification/MobileVer
 import MyNeeds from "./components/MyNeeds/MyNeeds";
 import MobileVerificationStepTwo from "./components/MobileVerification/MobileVerificationStepTwo";
 import MobileVerificationStepThree from "./components/MobileVerification/MobileVerificationStepThree";
+import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
+import MyNeed from "./components/MyNeed/MyNeed";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -114,6 +116,10 @@ const routes = [
     path: "/Mobile-Verification-step-three",
     element: <MobileVerificationStepThree />,
   },
+  {
+    path: "/avatar",
+    element:<UploadAvatar />
+  }
 ];
 
 export default routes;
