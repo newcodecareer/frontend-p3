@@ -150,9 +150,7 @@ const Login = () => {
         />
       </InputContainer>
       <BtnContainer>
-
         <Button type="submit">Log in</Button>
-
       </BtnContainer>
       <TermContainer>
         <Paragraph>

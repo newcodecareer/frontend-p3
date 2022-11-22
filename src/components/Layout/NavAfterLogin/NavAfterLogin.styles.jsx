@@ -8,8 +8,7 @@ import {
   primaryThemeColor,
   bgcColor,
   fontFamily,
-  } from "../../common/index.styles";
-
+} from "../../common/index.styles";
 
 export const Header = styled.header`
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -17,7 +16,7 @@ export const Header = styled.header`
   position: fixed;
   width: 100%;
   top: 0;
-  z-index:2;
+  z-index: 2;
   font-family: "Inter", sans-serif;
   height: 3rem;
   display: flex;
@@ -25,7 +24,7 @@ export const Header = styled.header`
   justify-content: space-around;
   border-bottom: solid 1px ${primaryBorderColor};
   padding: 0 0 0.6rem;
-  padding-top:10px; 
+  padding-top: 10px;
 `;
 
 export const NavLogo = styled.div`
@@ -78,8 +77,7 @@ export const HeaderMid = styled.div`
   display: flex;
 `;
 
-export const UserIcon = styled.div`
-`;
+export const UserIcon = styled.div``;
 
 export const StyledLink = styled(Link)`
   align-items: center;
@@ -108,25 +106,24 @@ export const MenuControl = styled.div`
   background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
   flex-direction: column;
   position: fixed;
-  z-index:2;
+  z-index: 2;
   margin-top: 5px;
   border: 1px solid;
   border-radius: 5px;
   width: 140px;
   height: auto;
   list-style-type: none;
-  padding-left:0px;
+  padding-left: 0px;
   box-shadow: 0 0 10px grey;
 `;
 
-export const Icon = styled.img`
-`;
+export const Icon = styled.img``;
 
 export const MenuButton = styled.button`
   width: 100%;
   height: 100%;
   text-align: left;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -141,4 +138,3 @@ export const MenuButton = styled.button`
     filter: brightness(1);
   }
 `;
-
