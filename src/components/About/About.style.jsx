@@ -24,7 +24,7 @@ export const Heading = styled.h1`
   font-size: 3.5rem;
   -webkit-text-stroke: 3px ${primaryThemeColor};
   height: 700px;
-  background-image: url("../../../public/images/aboutPage_Three.png");
+  background-image: url("../../../images/aboutPage_Three.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

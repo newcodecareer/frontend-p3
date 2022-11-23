@@ -15,7 +15,7 @@ export const AnewFooter = styled.div`
 export const Wave = styled.div`
   width: 100%;
   height: 270px;
-  background-image: url("../../../public/images/svg1.png");
+  background-image: url("../../../images/svg1.png");
 `;
 
 // FooterTop div
