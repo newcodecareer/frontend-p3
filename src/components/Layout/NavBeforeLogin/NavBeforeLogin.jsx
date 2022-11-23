@@ -19,8 +19,8 @@ const NavBeforeLogin = () => {
             <li>
               <Link to="/myNeeds">My Needs</Link>
             </li>
-            </ul>
-          </NavList>
+          </ul>
+        </NavList>
       </NavLogo>
       <NavList>
         <ul>

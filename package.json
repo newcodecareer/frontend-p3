@@ -16,6 +16,9 @@
     "pre-commit": "npm run prettier && npm run lint && npx --no-install lint-staged"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.2",
     "classnames": "^2.3.1",

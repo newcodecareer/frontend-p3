@@ -1,10 +1,6 @@
-import { useState } from "react";
-import UploadAvatar from "../UploadAvatar/UploadAvatar";
 import { HiUser } from "react-icons/hi2";
 import { FiEdit2 } from "react-icons/fi";
-import { primaryThemeColor } from "../common/index.styles";
-import { BtnImage, ImageContainer, Button,ButtonContainer,DataContainer} from "./Profile.styles";
-
+import { BtnImage, ImageContainer } from "./Profile.styles";
 
 const ProfileImage = () => {
   // const showIcon = (preview) =>{
@@ -13,7 +9,7 @@ const ProfileImage = () => {
   // const [avatar, setAvatar] = useState(false);
   return (
     <ImageContainer>
-        {/* {avatar ? (
+      {/* {avatar ? (
           <div>
             <UploadAvatar />
             <ButtonContainer>
@@ -39,7 +35,12 @@ const ProfileImage = () => {
       <span>
         <HiUser />
       </span>
-      <BtnImage inputPosition="absolute" onClick={() => {window.location.href="/avatar"}}>
+      <BtnImage
+        inputPosition="absolute"
+        onClick={() => {
+          window.location.href = "/avatar";
+        }}
+      >
         <FiEdit2 />
       </BtnImage>
       {/* // <Button onClick={() => {window.location.href="/avatar"}}>

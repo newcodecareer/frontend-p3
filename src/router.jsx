@@ -108,9 +108,13 @@ const routes = [
     element: <MyNeeds />,
   },
   {
+    path: "/my-need",
+    element: <MyNeed />,
+  },
+  {
     path: "/avatar",
-    element:<UploadAvatar />
-  }
+    element: <UploadAvatar />,
+  },
 ];
 
 export default routes;
