@@ -1,4 +1,5 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { api } from "../../utils/axios";
 import {
   BtnContainer,
@@ -121,6 +122,7 @@ const reducer = (state, action) => {
 const Signup = () => {
   // const [formIsValid, setFormIsValid] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState, undefined);
+  const [isSignup, setIsSignup] = useState(false);
 
   // useEffect(() => {
   //   const debounce = setTimeout(() => {
@@ -201,54 +203,63 @@ const Signup = () => {
         password: state.password,
       },
     });
+    setIsSignup(true);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <Form onSubmit={submitHandler}>
-      <InputContainer>
-        <Label>Create a new account</Label>
-        <Input
-          type="text"
-          value={state.firstName}
-          onChange={firstNameChangeHandler}
-          onBlur={validateFirstNameHandler}
-          placeholder="Your first name"
-        />
-        <Input
-          type="text"
-          value={state.lastName}
-          onChange={lastNameChangeHandler}
-          onBlur={validateLastNameHandler}
-          placeholder="Your last name"
-        />
-        <Input
-          type="email"
-          value={state.email}
-          onChange={emailChangeHandler}
-          onBlur={validateEmailHandler}
-          placeholder="Email address"
-        />
-        <Input
-          type="password"
-          value={state.password}
-          onChange={passwordChangeHandler}
-          onBlur={validatePasswordHandler}
-          placeholder="Create password"
-        />
-      </InputContainer>
-      <BtnContainer>
-        <Button type="submit">Sign up</Button>
-      </BtnContainer>
-      <TermContainer>
-        <Paragraph>
-          By registering with Houddy, you agree to our
-          <StyledLink to="#"> Privacy Policy & Terms & Conditions</StyledLink>
-        </Paragraph>
-        <Paragraph>
-          Already have an account ? <StyledLink to="/login">Log in</StyledLink>
-        </Paragraph>
-      </TermContainer>
-    </Form>
+    <>
+      {isSignup ? (
+        navigate("/login")
+      ) : (
+        <Form onSubmit={submitHandler}>
+          <InputContainer>
+            <Label>Create a new account</Label>
+            <Input
+              type="text"
+              value={state.firstName}
+              onChange={firstNameChangeHandler}
+              onBlur={validateFirstNameHandler}
+              placeholder="Your first name"
+            />
+            <Input
+              type="text"
+              value={state.lastName}
+              onChange={lastNameChangeHandler}
+              onBlur={validateLastNameHandler}
+              placeholder="Your last name"
+            />
+            <Input
+              type="email"
+              value={state.email}
+              onChange={emailChangeHandler}
+              onBlur={validateEmailHandler}
+              placeholder="Email address"
+            />
+            <Input
+              type="password"
+              value={state.password}
+              onChange={passwordChangeHandler}
+              onBlur={validatePasswordHandler}
+              placeholder="Create password"
+            />
+          </InputContainer>
+          <BtnContainer>
+            <Button type="submit">Sign up</Button>
+          </BtnContainer>
+          <TermContainer>
+            <Paragraph>
+              By registering with Houddy, you agree to our
+              <StyledLink to="#"> Privacy Policy & Terms & Conditions</StyledLink>
+            </Paragraph>
+            <Paragraph>
+              Already have an account ? <StyledLink to="/login">Log in</StyledLink>
+            </Paragraph>
+          </TermContainer>
+        </Form>
+      )}
+    </>
   );
 };
 

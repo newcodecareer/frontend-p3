@@ -6,6 +6,8 @@ import { MdSwitchAccount } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
 import { MdOutlineLogout } from "react-icons/md";
+import { useEffect, useRef, useContext } from "react";
+import { AuthContext } from "../../../context/AuthContext";
 
 import {
   Header,
@@ -48,6 +50,13 @@ const NavAfterLogin = () => {
     setOpen(!open);
   };
   useOnClickOutside(ref, () => setOpen(false));
+  
+  const { setIsLogin } = useContext(AuthContext);
+  const logoutHandler = () => {
+    localStorage.removeItem("token");
+    localStorage.setItem("is login", false);
+    setIsLogin(false);
+  };
 
   return (
     <Header>
@@ -111,7 +120,7 @@ const NavAfterLogin = () => {
                 </IconControl>
                 <TextControl>Contact us</TextControl>
               </MenuButton>
-              <MenuButton>
+              <MenuButton onClick={logoutHandler}>
                 <IconControl>
                   <MdOutlineLogout />
                 </IconControl>

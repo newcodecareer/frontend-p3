@@ -155,6 +155,7 @@ export const IconControl = styled.div`
   margin-top: 5px;
   margin-right: 10px;
 `;
+
 export const TextControl = styled.div`
   text-align: center;
 `;
