@@ -18,6 +18,10 @@ import Offers from "./components/SearchFilters/DropDownList/Offers";
 import Sort from "./components/SearchFilters/DropDownList/Sort";
 import MobileVerificationStepOne from "./components/MobileVerification/MobileVerificationStepOne";
 import MyNeeds from "./components/MyNeeds/MyNeeds";
+import MobileVerificationStepTwo from "./components/MobileVerification/MobileVerificationStepTwo";
+import MobileVerificationStepThree from "./components/MobileVerification/MobileVerificationStepThree";
+import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
+import MyNeed from "./components/MyNeed/MyNeed";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -104,6 +108,18 @@ const routes = [
     path: "/my-needs",
     element: <MyNeeds />,
   },
+  {
+    path: "/Mobile-Verification-step-two",
+    element: <MobileVerificationStepTwo />,
+  },
+  {
+    path: "/Mobile-Verification-step-three",
+    element: <MobileVerificationStepThree />,
+  },
+  {
+    path: "/avatar",
+    element:<UploadAvatar />
+  }
 ];
 
 export default routes;

@@ -13,8 +13,8 @@ import Skills from "./Skills";
 const Profile = () => {
   return (
     <ProfileContainer>
+      <ProfileImage />
       <Form>
-        <ProfileImage />
         <ProfileInfo />
         <Address />
         {/* <About /> */}

@@ -39,6 +39,7 @@ const NavAfterLogin = () => {
     setOpen(!open);
   };
   useOnClickOutside(ref, () => setOpen(false));
+  
   const { setIsLogin } = useContext(AuthContext);
   const logoutHandler = () => {
     localStorage.removeItem("token");
