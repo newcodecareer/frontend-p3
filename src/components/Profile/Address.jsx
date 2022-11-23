@@ -1,5 +1,6 @@
 import { primaryThemeColor } from "../common/index.styles";
 import { FiEdit2 } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
 import {
   ButtonContainer,
   VerInputs,
@@ -13,35 +14,32 @@ import {
 } from "./Profile.styles";
 import { useState } from "react";
 
-const ProfileInfo = () => {
-  const [info, setInfo] = useState(false);
+const Address = () => {
+  const [address, setAddress] = useState(false);
 
   return (
     <SectionContainer>
-      <Label>Personal Information</Label>
-      {info ? (
+      <Label>Address</Label>
+      {address ? (
         <div>
           <VerInputs>
-            <Input
-              inputWidth="30%"
-              inputMargin="10px 2% 10px 0"
-              type="text"
-              placeholder="First name"
-            />
-            <Input inputWidth="30%" type="text" placeholder="Last Name" />
+            <Input inputMargin="10px 2% 10px 0" type="text" placeholder="Your address" />
           </VerInputs>
           <ButtonContainer>
-            <Button onClick={() => setInfo(false)}>Cancel</Button>
+            <Button onClick={() => setAddress(false)}>Cancel</Button>
             <Button inputBackgroundColor={`${primaryThemeColor}`}>Save</Button>
           </ButtonContainer>
         </div>
       ) : (
         <DataContainer>
           <div>
-            <Paragraph>Rebecca Yang</Paragraph>
+            <Paragraph inputColor={`${primaryThemeColor}`}>
+              <SlLocationPin />
+              &nbsp; Narangba
+            </Paragraph>
           </div>
           <div>
-            <BtnImage onClick={() => setInfo(true)}>
+            <BtnImage onClick={() => setAddress(true)}>
               <FiEdit2 />
             </BtnImage>
           </div>
@@ -51,4 +49,4 @@ const ProfileInfo = () => {
   );
 };
 
-export default ProfileInfo;
+export default Address;

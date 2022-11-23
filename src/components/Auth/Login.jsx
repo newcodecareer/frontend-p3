@@ -1,4 +1,6 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 import { api } from "../../utils/axios";
 import {
   BtnContainer,
@@ -108,6 +110,9 @@ const Login = () => {
     });
   };
 
+  const { setIsLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const submitHandler = async (e) => {
     e.preventDefault();
     await api("/auth/signin", {
@@ -119,51 +124,54 @@ const Login = () => {
     })
       .then((response) => {
         const { token } = response.data;
-        console.log(token);
         localStorage.setItem("token", token);
-        localStorage.getItem("token");
+        setIsLogin(true);
+        localStorage.setItem("is login", true);
       })
       .catch((err) => {
         if (err) {
           console.log(err);
         }
       });
+    navigate("/");
   };
 
   return (
-    <Form onSubmit={submitHandler}>
-      <InputContainer>
-        <Label>Log into your account</Label>
-        <Input
-          type="email"
-          value={state.email}
-          onChange={emailChangeHandler}
-          onBlur={validateEmailHandler}
-          placeholder="Email address"
-        />
-        <Input
-          type="password"
-          value={state.password}
-          onChange={passwordChangeHandler}
-          onBlur={validatePasswordHandler}
-          placeholder="Create password"
-        />
-      </InputContainer>
-      <BtnContainer>
-        <Button type="submit">Log in</Button>
-      </BtnContainer>
-      <TermContainer>
-        <Paragraph>
-          <StyledLink to="/reset-password">Forgot your password?</StyledLink>
-        </Paragraph>
-        <Paragraph>
-          Are you a new user? <StyledLink to="/signup">Create a free account</StyledLink>
-        </Paragraph>
-        <Paragraph>
-          A new tradie? <StyledLink to="#">List your business here</StyledLink>
-        </Paragraph>
-      </TermContainer>
-    </Form>
+    <>
+      <Form onSubmit={submitHandler}>
+        <InputContainer>
+          <Label>Log into your account</Label>
+          <Input
+            type="email"
+            value={state.email}
+            onChange={emailChangeHandler}
+            onBlur={validateEmailHandler}
+            placeholder="Email address"
+          />
+          <Input
+            type="password"
+            value={state.password}
+            onChange={passwordChangeHandler}
+            onBlur={validatePasswordHandler}
+            placeholder="Create password"
+          />
+        </InputContainer>
+        <BtnContainer>
+          <Button type="submit">Log in</Button>
+        </BtnContainer>
+        <TermContainer>
+          <Paragraph>
+            <StyledLink to="/reset-password">Forgot your password?</StyledLink>
+          </Paragraph>
+          <Paragraph>
+            Are you a new user? <StyledLink to="/signup">Create a free account</StyledLink>
+          </Paragraph>
+          <Paragraph>
+            A new tradie? <StyledLink to="#">List your business here</StyledLink>
+          </Paragraph>
+        </TermContainer>
+      </Form>
+    </>
   );
 };
 

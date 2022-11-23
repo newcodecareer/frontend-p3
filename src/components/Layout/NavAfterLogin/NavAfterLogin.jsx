@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
-import { useEffect, useRef } from "react";
-
+import { useEffect, useRef, useContext } from "react";
+import { AuthContext } from "../../../context/AuthContext";
 import {
   Header,
   NavLogo,
@@ -39,6 +39,13 @@ const NavAfterLogin = () => {
     setOpen(!open);
   };
   useOnClickOutside(ref, () => setOpen(false));
+  
+  const { setIsLogin } = useContext(AuthContext);
+  const logoutHandler = () => {
+    localStorage.removeItem("token");
+    localStorage.setItem("is login", false);
+    setIsLogin(false);
+  };
 
   return (
     <Header>
@@ -84,7 +91,7 @@ const NavAfterLogin = () => {
               >
                 Follow us
               </MenuButton>
-              <MenuButton>Logout</MenuButton>
+              <MenuButton onClick={logoutHandler}>Logout</MenuButton>
             </MenuControl>
           ) : null}
         </UserIcon>

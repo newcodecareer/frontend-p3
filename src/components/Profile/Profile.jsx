@@ -1,8 +1,10 @@
+import React from "react";
 import { primaryThemeColor } from "../common/index.styles";
 import ABNInfo from "./ABNInfo";
-import About from "./About";
+// import About from "./About";
+import Address from "./Address";
 import Birthday from "./Birthday";
-import Portfolio from "./Portfolio";
+// import Portfolio from "./Portfolio";
 import { Button, Form, ProfileContainer } from "./Profile.styles";
 import ProfileImage from "./ProfileImage";
 import ProfileInfo from "./ProfileInfo";
@@ -14,8 +16,9 @@ const Profile = () => {
       <ProfileImage />
       <Form>
         <ProfileInfo />
-        <About />
-        <Portfolio />
+        <Address />
+        {/* <About /> */}
+        {/* <Portfolio /> */}
         <Skills />
         <Birthday />
         <ABNInfo />
