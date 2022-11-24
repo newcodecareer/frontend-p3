@@ -37,7 +37,7 @@ const About = () => {
         </Text>
       </AboutOne>
       <AboutTwo>
-        <Img src="../../../public/images/aboutPage_Two.png" alt="Houddy Logo" />
+        <Img src="../../../images/aboutPage_Two.png" alt="Houddy Logo" />
         <TextControl>
           <SubHeading>The Houddy Vision</SubHeading>
           <AboutTwoText>
@@ -81,7 +81,7 @@ const About = () => {
         <TeamMembersUp>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/haoyu3.jpg" />
+              <Img2 src="../../../images/haoyu3.jpg" />
             </Photo>
             <MemberH1>Alex</MemberH1>
             <Button
@@ -94,7 +94,7 @@ const About = () => {
           </Card>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/Zoe.jpg" />
+              <Img2 src="../../../images/Zoe.jpg" />
             </Photo>
             <MemberH1>Zoe</MemberH1>
             <Button
@@ -107,7 +107,7 @@ const About = () => {
           </Card>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/Rebecca.jpg" />
+              <Img2 src="../../../images/Rebecca.jpg" />
             </Photo>
             <MemberH1>Rebecca</MemberH1>
             <Button
@@ -120,7 +120,7 @@ const About = () => {
           </Card>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/Tairan.jpg" />
+              <Img2 src="../../../images/Tairan.jpg" />
             </Photo>
             <MemberH1>Tairan</MemberH1>
             <Button
@@ -135,19 +135,19 @@ const About = () => {
         <TeamMembersMid>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/dog1.gif" />
+              <Img2 src="../../../images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/dog1.gif" />
+              <Img2 src="../../../images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>
           <Card>
             <Photo>
-              <Img2 src="../../../public/images/dog1.gif" />
+              <Img2 src="../../../images/dog1.gif" />
             </Photo>
             <MemberH1>Comming Soon</MemberH1>
           </Card>

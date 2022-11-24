@@ -18,17 +18,17 @@ const FollowUs = () => {
       </Follow>
       <FaceBook>
         <StyledLink to="#">
-          <Img1 src="../../../public/images/facebook2.png" />
+          <Img1 src="../../../images/facebook2.png" />
         </StyledLink>
       </FaceBook>
       <Instagram>
         <StyledLink to="#">
-          <Img src="../../../public/images/Ins.png" />
+          <Img src="../../../images/Ins.png" />
         </StyledLink>
       </Instagram>
       <Twiter>
         <StyledLink to="#">
-          <Img src="../../../public/images/Twiter.png" />
+          <Img src="../../../images/Twiter.png" />
         </StyledLink>
       </Twiter>
     </FollowPage>

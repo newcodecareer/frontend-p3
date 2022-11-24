@@ -82,7 +82,7 @@ const NavAfterLogin = () => {
         <StyledLink to="/about">About Us</StyledLink>
         <UserIcon ref={ref}>
           <Button onClick={handleOpen}>
-            <Icon src="../../../../public/images/favpng_button.png" />
+            <Icon src="../../../../images/author_icon.png" />
           </Button>
           {open ? (
             <MenuControl>

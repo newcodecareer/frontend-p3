@@ -35,7 +35,7 @@ const NewFooter = () => {
       <FooterTop>
         <FooterTopLeft>
           <StyledLink to="/">
-            <Img src="../../../public/images/logo-origin.png" alt="Houddy Logo" />
+            <Img src="../../../images/logo-origin.png" alt="Houddy Logo" />
           </StyledLink>
           <Pharagraph>Follow Us</Pharagraph>
           <ButtonContainer>
@@ -127,7 +127,7 @@ const NewFooter = () => {
         </FooterTopRight>
       </FooterTop>
       <FooterUnder>
-        <Img2 src="../../../public/images/favicon.png" />
+        <Img2 src="../../../images/favicon.png" />
         <Text>&copy; 2022 Houddy Pty Ltd. All Rights Reserved.</Text>
       </FooterUnder>
     </AnewFooter>

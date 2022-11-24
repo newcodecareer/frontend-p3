@@ -23,12 +23,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const OfferCard = () => {
+
   return (
     <CardContainer>
       <OfferDetails>
         <InfoBox>
           <PortraitBox>
-            <RoundPortrait src="../../../public/images/cat.jpeg" />
+            <RoundPortrait src="../../../images/cat.jpeg" />
           </PortraitBox>
           <Username>Gurpreet S.</Username>
           <RatingBox>
