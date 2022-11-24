@@ -16,9 +16,7 @@ const MainNav = () => {
             <li>
               <Link to="/browse-needs">Browse Needs</Link>
             </li>
-            <li>
-
-            </li>
+            <li></li>
           </ul>
         </NavList>
       </NavLogo>

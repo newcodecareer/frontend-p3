@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
+import { useEffect, useRef } from "react";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdSwitchAccount } from "react-icons/md";
+import { MdPayment } from "react-icons/md";
+import { GrContactInfo } from "react-icons/gr";
+import { MdOutlineLogout } from "react-icons/md";
 import { useEffect, useRef, useContext } from "react";
 import { AuthContext } from "../../../context/AuthContext";
+
 import {
   Header,
   NavLogo,
@@ -13,6 +20,10 @@ import {
   MenuButton,
   StyledLink,
   HeaderMid,
+  IconControl,
+  TextControl,
+  TriangleOne,
+  TriangleTwo,
 } from "./NavAfterLogin.styles";
 
 function useOnClickOutside(ref, handler) {
@@ -69,29 +80,52 @@ const NavAfterLogin = () => {
       </NavLogo>
       <HeaderMid>
         <StyledLink to="/about">About Us</StyledLink>
-        <UserIcon>
+        <UserIcon ref={ref}>
           <Button onClick={handleOpen}>
-            <Icon src="../../../../public/images/author_icon.png" />
+            <Icon src="../../../../public/images/favpng_button.png" />
           </Button>
           {open ? (
-            <MenuControl ref={ref}>
+            <MenuControl>
+              <TriangleOne></TriangleOne>
+              <TriangleTwo></TriangleTwo>
               <MenuButton
                 onClick={() => {
                   window.location.href = "/profiles";
                 }}
               >
-                Profile
+                <IconControl>
+                  <FaRegUserCircle />
+                </IconControl>
+                <TextControl>Profile</TextControl>
               </MenuButton>
-              <MenuButton>Account</MenuButton>
-              <MenuButton>Payment</MenuButton>
+              <MenuButton>
+                <IconControl>
+                  <MdSwitchAccount />
+                </IconControl>
+                <TextControl>Account</TextControl>
+              </MenuButton>
+              <MenuButton>
+                <IconControl>
+                  <MdPayment />
+                </IconControl>
+                <TextControl>Payment</TextControl>
+              </MenuButton>
               <MenuButton
                 onClick={() => {
                   window.location.href = "/follow";
                 }}
               >
-                Follow us
+                <IconControl>
+                  <GrContactInfo />
+                </IconControl>
+                <TextControl>Contact us</TextControl>
               </MenuButton>
-              <MenuButton onClick={logoutHandler}>Logout</MenuButton>
+              <MenuButton onClick={logoutHandler}>
+                <IconControl>
+                  <MdOutlineLogout />
+                </IconControl>
+                <TextControl>Logout</TextControl>
+              </MenuButton>
             </MenuControl>
           ) : null}
         </UserIcon>

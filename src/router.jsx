@@ -118,8 +118,8 @@ const routes = [
   },
   {
     path: "/avatar",
-    element:<UploadAvatar />
-  }
+    element: <UploadAvatar />,
+  },
 ];
 
 export default routes;
