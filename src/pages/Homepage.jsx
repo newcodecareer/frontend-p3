@@ -1,5 +1,3 @@
-import React from "react";
-
 // import Banner from "../components/Banner/Banner";
 import BannerModified from "../components/BannerModified/BannerModified";
 import PostNeed from "../components/PostNeeds/PostNeed";
@@ -9,6 +7,7 @@ import Categories from "../components/Categories/Categories";
 import NewFooter from "../components/Footer/NewFooter";
 
 const Homepage = () => {
+  // window.location.reload(false);
   return (
     <HomeMain>
       {/* <Banner /> */}

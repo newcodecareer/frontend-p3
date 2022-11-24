@@ -40,9 +40,9 @@ export const Img = styled.img`
 `;
 
 export const Img1 = styled.img`
-    width: 100%;
-    height: auto;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  align-items: center;
 `;
 
 export const FaceBook = styled.div`
