@@ -4,7 +4,13 @@ import { Button } from "./MobileVerification.Styles";
 export default function MobileVerificationStepThreeBtn() {
   return (
     <div>
-      <Button>Return</Button>
+      <Button
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
+        Done
+      </Button>
     </div>
   );
 }

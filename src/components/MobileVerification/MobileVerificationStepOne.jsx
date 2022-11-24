@@ -21,6 +21,7 @@ export default function MobileVerificationStepOne() {
       </ChangePasswordSecondIcon>
       <MobileVerificationStepOneContext />
       <MobileNumberInput />
+
       <MobileVerificationSendBtn />
     </div>
   );

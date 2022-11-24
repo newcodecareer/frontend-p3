@@ -3,12 +3,12 @@ import {
   btnFontColor,
   fontSizeM,
   primaryThemeColor,
-  primaryShadowColor
+  primaryShadowColor,
 } from "../../common/index.styles";
 
 export const CardContainer = styled.div`
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-  padding:1.5rem;
+  padding: 1.5rem;
   margin: 1.5rem;
   margin-top: 2rem;
   border-radius: 10px;
@@ -16,26 +16,26 @@ export const CardContainer = styled.div`
   &:hover {
     box-shadow: 0 5px 15px ${primaryShadowColor};
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 `;
 
 export const OfferDetails = styled.div`
-  display:flex;
+  display: flex;
 `;
 
 export const InfoBox = styled.div`
   margin-left: 1rem;
   margin-right: 2rem;
-  flex:1;
+  flex: 1;
   border-right: 2px solid ${(props) => props.inputColor || `${primaryThemeColor}`};
 `;
 
 export const PortraitBox = styled.div`
-  width:60px;
-  height:60px;
-  overflow:hidden;
-  Border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
   // position: relative;
   margin-bottom: 1rem;
 `;
@@ -46,48 +46,45 @@ export const RoundPortrait = styled.img`
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  width:60px;
-  height:60px;
-  overflow:hidden;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 `;
-
 
 export const Username = styled.p`
   font-weight: bold;
   font-size: 1.2rem;
-  margin:0;
+  margin: 0;
 `;
 
 export const RatingBox = styled.div`
-  display:flex;
-  margin:0;
+  display: flex;
+  margin: 0;
 `;
 
-export const Rating = styled.p`
-`;
+export const Rating = styled.p``;
 
 export const StarIcon = styled.div`
-  margin-right:0.5rem;
-  color: #FFB542;
+  margin-right: 0.5rem;
+  color: #ffb542;
   float: left;
 `;
 
 export const TickIcon = styled.div`
-  margin-right:0.5rem;
+  margin-right: 0.5rem;
   color: #097969;
   float: left;
 `;
 
 export const CompletionRate = styled.p`
   margin-left: 1rem;
-
 `;
 
 export const Verification = styled.div`
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 `;
 
 export const AcceptButton = styled.button`
@@ -114,12 +111,12 @@ export const PriceBox = styled.div`
 
 export const Price = styled.p`
   font-weight: bold;
-  margin:0;
+  margin: 0;
 `;
 
 export const PriceDescription = styled.p`
-  margin:0;
-  font-size:0.9rem;
+  margin: 0;
+  font-size: 0.9rem;
 `;
 
 export const BtnBox = styled.div`
@@ -129,9 +126,9 @@ export const BtnBox = styled.div`
 export const CommentBox = styled.div`
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  flex:1.5;
+  flex: 1.5;
 `;
 
 export const Comment = styled.p`
-margin: 1rem;
+  margin: 1rem;
 `;

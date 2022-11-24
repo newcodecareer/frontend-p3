@@ -3,7 +3,7 @@ import { Main } from "./Layout.styles";
 import { AuthContext } from "../../context/AuthContext";
 
 import NavAfterLogin from "./NavAfterLogin/NavAfterLogin";
-// import NavBeforeLogin from "./NavBeforeLogin/NavBeforeLogin";
+import NavBeforeLogin from "./NavBeforeLogin/NavBeforeLogin";
 
 const Layout = ({ children }) => {
   const login = localStorage.getItem("is login");

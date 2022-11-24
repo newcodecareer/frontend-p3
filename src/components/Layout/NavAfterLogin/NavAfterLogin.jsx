@@ -39,7 +39,7 @@ const NavAfterLogin = () => {
     setOpen(!open);
   };
   useOnClickOutside(ref, () => setOpen(false));
-  
+
   const { setIsLogin } = useContext(AuthContext);
   const logoutHandler = () => {
     localStorage.removeItem("token");
@@ -82,8 +82,21 @@ const NavAfterLogin = () => {
               >
                 Profile
               </MenuButton>
-              <MenuButton>Account</MenuButton>
+              <MenuButton
+                onClick={() => {
+                  window.location.href = "/account-security";
+                }}
+              >
+                Account
+              </MenuButton>
               <MenuButton>Payment</MenuButton>
+              <MenuButton
+                onClick={() => {
+                  window.location.href = "/mobile-verification";
+                }}
+              >
+                Notification
+              </MenuButton>
               <MenuButton
                 onClick={() => {
                   window.location.href = "/follow";
