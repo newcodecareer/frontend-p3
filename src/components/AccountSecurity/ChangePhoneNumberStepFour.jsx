@@ -12,7 +12,7 @@ export default function ChangePhoneNumberStepFour() {
         <img src="public\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
-        <p>You have changed your security phone number.</p>
+        <p>Your security phone number has been changed.</p>
       </ChangePasswordContextStyle>
       <ChangePasswordBtn
         onClick={() => {

@@ -28,7 +28,7 @@ const OfferCard = () => {
       <OfferDetails>
         <InfoBox>
           <PortraitBox>
-            <RoundPortrait src="../../../public/images/cat.jpeg" />
+            <RoundPortrait src="../../../images/cat.jpeg" />
           </PortraitBox>
           <Username>Gurpreet S.</Username>
           <RatingBox>

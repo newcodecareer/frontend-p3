@@ -13,7 +13,7 @@ export default function ChangePhoneNumber() {
         <img src="public\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
-        <p>Please enter the verification code</p>
+        <p>A verification code has been sent to your current security phone number.</p>
       </ChangePasswordContextStyle>
       <Input type="text" placeholder="Enter your verification code" />
       <ChangePasswordBtn
@@ -21,7 +21,7 @@ export default function ChangePhoneNumber() {
           window.location.href = "/change-phone-number-step-two";
         }}
       >
-        Send
+        Verify
       </ChangePasswordBtn>
     </div>
   );

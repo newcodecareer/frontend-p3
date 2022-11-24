@@ -12,7 +12,7 @@ export default function ChangePhoneNumberStepThree() {
         <img src="public\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
-        <p>Please enter the verification code</p>
+        <p>A verification code has been sent to your new security phone number.</p>
       </ChangePasswordContextStyle>
       <Input type="text" placeholder="Enter your verification code" />
       <Button

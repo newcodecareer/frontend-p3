@@ -12,6 +12,7 @@ export default function ChangePhoneNumberStepTwo() {
         <img src="public\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
+        <p>Please provide your new security phone number.</p>
         <p>We&#39;ll send you a verification code.</p>
       </ChangePasswordContextStyle>
       <Input type="text" placeholder="Enter your mobile number" />

@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
+// import { useEffect, useRef } from "react";
+import { FaRegUserCircle, FaTelegramPlane } from "react-icons/fa";
+import { MdSwitchAccount } from "react-icons/md";
+import { MdPayment } from "react-icons/md";
+import { GrContactInfo } from "react-icons/gr";
+import { MdOutlineLogout } from "react-icons/md";
 import { useEffect, useRef, useContext } from "react";
 import { AuthContext } from "../../../context/AuthContext";
+
 import {
   Header,
   NavLogo,
@@ -13,6 +20,10 @@ import {
   MenuButton,
   StyledLink,
   HeaderMid,
+  IconControl,
+  TextControl,
+  TriangleOne,
+  TriangleTwo,
 } from "./NavAfterLogin.styles";
 
 function useOnClickOutside(ref, handler) {
@@ -69,42 +80,68 @@ const NavAfterLogin = () => {
       </NavLogo>
       <HeaderMid>
         <StyledLink to="/about">About Us</StyledLink>
-        <UserIcon>
+        <UserIcon ref={ref}>
           <Button onClick={handleOpen}>
-            <Icon src="../../../../public/images/author_icon.png" />
+            <Icon src="../../../../images/author_icon.png" />
           </Button>
           {open ? (
-            <MenuControl ref={ref}>
+            <MenuControl>
+              <TriangleOne></TriangleOne>
+              <TriangleTwo></TriangleTwo>
               <MenuButton
                 onClick={() => {
                   window.location.href = "/profiles";
                 }}
               >
-                Profile
+                <IconControl>
+                  <FaRegUserCircle />
+                </IconControl>
+                <TextControl>Profile</TextControl>
               </MenuButton>
               <MenuButton
                 onClick={() => {
                   window.location.href = "/account-security";
                 }}
               >
-                Account
+                <IconControl>
+                  <MdSwitchAccount />
+                </IconControl>
+                <TextControl>Account</TextControl>
               </MenuButton>
-              <MenuButton>Payment</MenuButton>
+              <MenuButton>
+                <IconControl>
+                  <MdPayment />
+                </IconControl>
+                <TextControl>Payment</TextControl>
+              </MenuButton>
+
               <MenuButton
                 onClick={() => {
                   window.location.href = "/mobile-verification";
                 }}
               >
-                Notification
+                <IconControl>
+                  <FaTelegramPlane />
+                </IconControl>
+                <TextControl>Notification</TextControl>
               </MenuButton>
+
               <MenuButton
                 onClick={() => {
                   window.location.href = "/follow";
                 }}
               >
-                Follow us
+                <IconControl>
+                  <GrContactInfo />
+                </IconControl>
+                <TextControl>Contact us</TextControl>
               </MenuButton>
-              <MenuButton onClick={logoutHandler}>Logout</MenuButton>
+              <MenuButton onClick={logoutHandler}>
+                <IconControl>
+                  <MdOutlineLogout />
+                </IconControl>
+                <TextControl>Logout</TextControl>
+              </MenuButton>
             </MenuControl>
           ) : null}
         </UserIcon>
