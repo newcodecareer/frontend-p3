@@ -20,7 +20,13 @@ const ResetPassword = () => {
         <Input type="email" placeholder="Email address" />
       </InputContainer>
       <BtnContainer>
-        <Button>Reset Password</Button>
+        <Button
+          onClick={() => {
+            window.location.href = "/change-password";
+          }}
+        >
+          Reset Password
+        </Button>
       </BtnContainer>
       <TermContainer>
         <Paragraph inputWeight="600">Not receive any email?</Paragraph>

@@ -21,7 +21,15 @@ import MyNeeds from "./components/MyNeeds/MyNeeds";
 import MobileVerificationStepTwo from "./components/MobileVerification/MobileVerificationStepTwo";
 import MobileVerificationStepThree from "./components/MobileVerification/MobileVerificationStepThree";
 import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
-import MyNeed from "./components/MyNeed/MyNeed";
+// import MyNeed from "./components/MyNeed/MyNeed";
+import AccountSecurity from "./components/AccountSecurity/AccountSecurity";
+import ChangeEmail from "./components/AccountSecurity/ChangeEmail";
+import ChangeEmailStepTwo from "./components/AccountSecurity/ChangeEmailStepTwo";
+import ResetPasswordStepTwo from "./components/ChangePassword/ResetPasswordStepTwo";
+import ChangePhoneNumber from "./components/AccountSecurity/ChangePhoneNumber";
+import ChangePhoneNumberStepTwo from "./components/AccountSecurity/ChangePhoneNumberStepTwo";
+import ChangePhoneNumberStepThree from "./components/AccountSecurity/ChangePhoneNumberStepThree";
+import ChangePhoneNumberStepFour from "./components/AccountSecurity/ChangePhoneNumberStepFour";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -119,6 +127,42 @@ const routes = [
   {
     path: "/avatar",
     element: <UploadAvatar />,
+  },
+  {
+    path: "/account-security",
+    element: <AccountSecurity />,
+  },
+  {
+    path: "/change-email",
+    element: <ChangeEmail />,
+  },
+  {
+    path: "/change-email-step-two",
+    element: <ChangeEmailStepTwo />,
+  },
+  {
+    path: "/reset-password-step-two",
+    element: <ResetPasswordStepTwo />,
+  },
+  {
+    path: "/reset-password-step-two",
+    element: <ResetPasswordStepTwo />,
+  },
+  {
+    path: "/change-phone-number-step-one",
+    element: <ChangePhoneNumber />,
+  },
+  {
+    path: "/change-phone-number-step-two",
+    element: <ChangePhoneNumberStepTwo />,
+  },
+  {
+    path: "/change-phone-number-step-three",
+    element: <ChangePhoneNumberStepThree />,
+  },
+  {
+    path: "/change-phone-number-step-four",
+    element: <ChangePhoneNumberStepFour />,
   },
 ];
 

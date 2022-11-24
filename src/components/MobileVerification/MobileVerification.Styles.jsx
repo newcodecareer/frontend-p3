@@ -10,7 +10,7 @@ import {
 
 export const Input = styled.input`
   display: flex;
-  margin: auto;
+  margin: 1rem auto;
   width: 15rem;
   border: solid 3px ${thirdFontColor};
   color: ${primaryFontColor};

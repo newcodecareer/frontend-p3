@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import * as React from "react";
 // import { useEffect, useRef } from "react";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle, FaTelegramPlane } from "react-icons/fa";
 import { MdSwitchAccount } from "react-icons/md";
 import { MdPayment } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
@@ -50,7 +50,7 @@ const NavAfterLogin = () => {
     setOpen(!open);
   };
   useOnClickOutside(ref, () => setOpen(false));
-  
+
   const { setIsLogin } = useContext(AuthContext);
   const logoutHandler = () => {
     localStorage.removeItem("token");
@@ -98,7 +98,11 @@ const NavAfterLogin = () => {
                 </IconControl>
                 <TextControl>Profile</TextControl>
               </MenuButton>
-              <MenuButton>
+              <MenuButton
+                onClick={() => {
+                  window.location.href = "/account-security";
+                }}
+              >
                 <IconControl>
                   <MdSwitchAccount />
                 </IconControl>
@@ -110,6 +114,18 @@ const NavAfterLogin = () => {
                 </IconControl>
                 <TextControl>Payment</TextControl>
               </MenuButton>
+
+              <MenuButton
+                onClick={() => {
+                  window.location.href = "/mobile-verification";
+                }}
+              >
+                <IconControl>
+                  <FaTelegramPlane />
+                </IconControl>
+                <TextControl>Notification</TextControl>
+              </MenuButton>
+
               <MenuButton
                 onClick={() => {
                   window.location.href = "/follow";
