@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { fontFamily, forthFontColor, primaryThemeColor, fontSizeM } from "../common/index.styles";
 
 export const MyNeedContainer = styled.div`
-  width: 55%;
+  width: 60%;
   margin: auto;
+  margin-top:3%;
   padding: 0;
   font-family: ${fontFamily};
 `;
@@ -28,7 +29,7 @@ export const CheckOffer = styled.p`
 `;
 
 export const Offer = styled.div`
-  flex: 1.7;
+  flex: 1.5;
 `;
 
 export const Title = styled.h1`
@@ -135,7 +136,7 @@ export const OfferNumber = styled.p`
 `;
 
 export const OfferBox = styled.div`
-  height: 50vh;
+  height: 45vh;
   overflow-y: scroll;
   overflow-x: hidden;
 `;

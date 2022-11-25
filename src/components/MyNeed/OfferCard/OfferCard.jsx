@@ -58,7 +58,7 @@ const OfferCard = () => {
         </InfoBox>
 
         <CommentBox>
-          <Comment>I am a experiened cat and can help load and unload</Comment>
+          <Comment>I am a experiened man and can help load and unload</Comment>
         </CommentBox>
       </OfferDetails>
     </CardContainer>
