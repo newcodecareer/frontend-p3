@@ -21,7 +21,7 @@ import MyNeeds from "./components/MyNeeds/MyNeeds";
 import MobileVerificationStepTwo from "./components/MobileVerification/MobileVerificationStepTwo";
 import MobileVerificationStepThree from "./components/MobileVerification/MobileVerificationStepThree";
 import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
-// import MyNeed from "./components/MyNeed/MyNeed";
+import MyNeed from "./components/MyNeed/MyNeed";
 import AccountSecurity from "./components/AccountSecurity/AccountSecurity";
 import ChangeEmail from "./components/AccountSecurity/ChangeEmail";
 import ChangeEmailStepTwo from "./components/AccountSecurity/ChangeEmailStepTwo";
@@ -163,6 +163,10 @@ const routes = [
   {
     path: "/change-phone-number-step-four",
     element: <ChangePhoneNumberStepFour />,
+  },
+  {
+    path: "/my-need",
+    element: <MyNeed />,
   },
 ];
 

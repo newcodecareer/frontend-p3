@@ -73,7 +73,7 @@ const NavAfterLogin = () => {
               <Link to="/browse-needs">Browse Needs</Link>
             </li>
             <li>
-              <Link to="/myNeeds">My Needs</Link>
+              <Link to="/my-need">My Needs</Link>
             </li>
           </ul>
         </NavList>
