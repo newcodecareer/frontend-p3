@@ -37,7 +37,7 @@ const PostStepThree = () => {
         </ParagraphBox>
       </ParagraphContainer>
       <ButtonContainer>
-        <Link to="/post-step-two">
+        <Link to="/post-needs">
           <Button inputWidth="240px" inputColor={secondaryFontColor}>
             Back
           </Button>

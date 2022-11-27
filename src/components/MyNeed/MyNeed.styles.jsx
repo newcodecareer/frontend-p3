@@ -4,7 +4,7 @@ import { fontFamily, forthFontColor, primaryThemeColor, fontSizeM } from "../com
 export const MyNeedContainer = styled.div`
   width: 60%;
   margin: auto;
-  margin-top:3%;
+  margin-top: 3%;
   padding: 0;
   font-family: ${fontFamily};
 `;
@@ -58,10 +58,10 @@ export const View = styled.p`
 `;
 
 export const NeedDetails = styled.div`
+  margin-bottom: 1rem;
   margin-top: 2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  border-bottom-right-radius: 0;
   flex: 1;
   padding-left: 2rem;
   padding-right: 2rem;
