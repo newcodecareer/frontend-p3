@@ -5,7 +5,7 @@ import Signup from "./components/Auth/Signup";
 import BrowseNeeds from "./components/BrowseNeeds/BrowseNeeds";
 
 import PostStepOne from "./components/Post/PostStepOne";
-import PostStepTwo from "./components/Post/PostStepTwo";
+// import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
@@ -64,10 +64,10 @@ const routes = [
     path: "/post-needs",
     element: <PostStepOne />,
   },
-  {
-    path: "/post-step-two",
-    element: <PostStepTwo />,
-  },
+  // {
+  //   path: "/post-step-two",
+  //   element: <PostStepTwo />,
+  // },
   {
     path: "/post-step-three",
     element: <PostStepThree />,
