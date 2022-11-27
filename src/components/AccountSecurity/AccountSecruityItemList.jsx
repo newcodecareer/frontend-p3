@@ -15,8 +15,8 @@ export default function AccountSecruityItemList() {
       {item ? (
         <div>
           <VerInputs>
-            <Input type="text" placeholder="Current password" />
-            <Input type="text" placeholder="New password" />
+            <Input type="password" placeholder="Current password" />
+            <Input type="password" placeholder="New password" />
           </VerInputs>
           <ButtonContainer>
             <Button onClick={() => setItem(false)}>Cancel</Button>
