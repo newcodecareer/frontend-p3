@@ -74,6 +74,7 @@ const PostStepOne = () => {
     setDetails("");
   };
 
+  // TODO send http req to backend
   const resetInput = () => {
     setTitle("");
     setLocation("");
