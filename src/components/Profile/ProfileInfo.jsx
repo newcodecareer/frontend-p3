@@ -41,7 +41,7 @@ const reducer = (state, action) => {
   }
 };
 
-const ProfileInfo = ({ firstName, lastName }) => {
+const ProfileInfo = () => {
   const [info, setInfo] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -113,8 +113,7 @@ const ProfileInfo = ({ firstName, lastName }) => {
         <DataContainer>
           <div>
             <Paragraph>
-              {firstName ? localStorage.getItem("first name") : ""}{" "}
-              {lastName ? localStorage.getItem("last name") : ""}
+              {localStorage.getItem("first name")} {localStorage.getItem("last name")}
             </Paragraph>
           </div>
           <div>

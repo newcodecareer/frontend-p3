@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { api, parseJwt } from "../../utils/axios";
-import { primaryThemeColor } from "../common/index.styles";
 import ABNInfo from "./ABNInfo";
 // import About from "./About";
 import Address from "./Address";
@@ -29,12 +28,14 @@ const Profile = () => {
   console.log("profile data", profileData);
   const firstName = profileData.firstName;
   const lastName = profileData.lastName;
+  localStorage.setItem("first name", firstName);
+  localStorage.setItem("last name", lastName);
 
   return (
     <ProfileContainer>
       <ProfileImage />
       <Form>
-        <ProfileInfo firstName={firstName} lastName={lastName} />
+        <ProfileInfo firstname={firstName} lastname={lastName} />
         <Address />
         {/* <About /> */}
         {/* <Portfolio /> */}
