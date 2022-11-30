@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import * as React from "react";
 // import { useEffect, useRef } from "react";
 import { FaRegUserCircle, FaTelegramPlane } from "react-icons/fa";
@@ -52,10 +53,13 @@ const NavAfterLogin = () => {
   useOnClickOutside(ref, () => setOpen(false));
 
   const { setIsLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const logoutHandler = () => {
     localStorage.removeItem("token");
     localStorage.setItem("is login", false);
     setIsLogin(false);
+    navigate("/");
   };
 
   return (

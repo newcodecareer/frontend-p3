@@ -22,7 +22,6 @@ import {
   OfferBox,
 } from "./MyNeed.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faDollarSign,
   // faCalendarDays,
@@ -30,7 +29,6 @@ import {
   faLocationDot,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-
 import OfferCard from "./OfferCard/OfferCard";
 
 const MyNeed = () => {

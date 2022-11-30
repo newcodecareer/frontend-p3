@@ -56,7 +56,6 @@ const OfferCard = () => {
             </PriceBox>
           </BtnBox>
         </InfoBox>
-
         <CommentBox>
           <Comment>I am a experienced man and can help load and unload</Comment>
         </CommentBox>
