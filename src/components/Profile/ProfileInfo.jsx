@@ -59,6 +59,7 @@ const ProfileInfo = () => {
     });
   };
   const userData = parseJwt(localStorage.getItem("token"));
+
   const saveHandler = async (e) => {
     e.preventDefault();
     await api(`customers/${userData.id}`, {

@@ -28,14 +28,33 @@ const Profile = () => {
   console.log("profile data", profileData);
   const firstName = profileData.firstName;
   const lastName = profileData.lastName;
+  const address = profileData.address;
+  const ABN = profileData.ABN;
+  const birthdayDay = profileData.birthdayDay;
+  const birthdayMonth = profileData.birthdayMonth;
+  const birthdayYear = profileData.birthdayYear;
+  const skillOne = profileData.skillOne;
+  const skillTwo = profileData.skillTwo;
+  const skillThree = profileData.skillThree;
+  const skillFour = profileData.skillFour;
+
   localStorage.setItem("first name", firstName);
   localStorage.setItem("last name", lastName);
+  localStorage.setItem("address", address);
+  localStorage.setItem("birthdayDay", birthdayDay);
+  localStorage.setItem("birthdayMonth", birthdayMonth);
+  localStorage.setItem("birthdayYear", birthdayYear);
+  localStorage.setItem("ABN", ABN);
+  localStorage.setItem("skillOne", skillOne);
+  localStorage.setItem("skillTwo", skillTwo);
+  localStorage.setItem("skillThree", skillThree);
+  localStorage.setItem("skillFour", skillFour);
 
   return (
     <ProfileContainer>
       <ProfileImage />
       <Form>
-        <ProfileInfo firstname={firstName} lastname={lastName} />
+        <ProfileInfo />
         <Address />
         {/* <About /> */}
         {/* <Portfolio /> */}
