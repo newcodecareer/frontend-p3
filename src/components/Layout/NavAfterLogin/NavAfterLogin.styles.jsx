@@ -92,23 +92,12 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const Button = styled.button`
-  background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
-  border: none;
-  cursor: pointer;
-  &:hover {
-    color: ${primaryThemeColor};
-    filter: brightness(1);
-  }
-`;
-
 export const MenuControl = styled.div`
   background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
   flex-direction: column;
   position: fixed;
   z-index: 2;
-  margin-top: 5px;
-  border: 1px solid;
+  margin-top: 10px;
   border-radius: 5px;
   width: 140px;
   height: auto;
@@ -117,7 +106,28 @@ export const MenuControl = styled.div`
   box-shadow: 0 0 10px grey;
 `;
 
-export const Icon = styled.img``;
+export const Button = styled.button`
+  background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
+  border: none;
+  cursor: pointer;
+  &:hover {
+    ${MenuControl} {
+      transition: max-height 0.25s ease-in;
+    }
+  }
+`;
+
+export const Icon = styled.img`
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  border-radius: 100%;
+  &:hover {
+    background-color: ${primaryThemeColor};
+    filter: brightness(1.2);
+  }
+  transition: 0.2s;
+`;
 
 export const MenuButton = styled.button`
   width: 100%;
@@ -128,13 +138,46 @@ export const MenuButton = styled.button`
   border-radius: 5px;
   padding: 10px;
   padding-left: 15px;
-  margin: 0;
   font-family: ${fontFamily};
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   &:hover {
     background-color: ${primaryThemeColor};
-    filter: brightness(1);
+    filter: brightness(1.2);
+  }
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+`;
+
+export const IconControl = styled.div`
+  margin-top: 5px;
+  margin-right: 10px;
+`;
+
+export const TextControl = styled.div`
+  text-align: center;
+`;
+
+export const TriangleOne = styled.div``;
+
+export const TriangleTwo = styled.div`
+  position: relative;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 15px;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent grey;
+  ::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    border-width: 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent white;
   }
 `;

@@ -1,5 +1,8 @@
+// import { useState } from "react";
+// import UploadAvatar from "../UploadAvatar/UploadAvatar";
 import { HiUser } from "react-icons/hi2";
 import { FiEdit2 } from "react-icons/fi";
+// import { primaryThemeColor } from "../common/index.styles";
 import { BtnImage, ImageContainer } from "./Profile.styles";
 
 const ProfileImage = () => {

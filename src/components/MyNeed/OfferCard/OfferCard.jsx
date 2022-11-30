@@ -28,7 +28,7 @@ const OfferCard = () => {
       <OfferDetails>
         <InfoBox>
           <PortraitBox>
-            <RoundPortrait src="../../../public/images/cat.jpeg" />
+            <RoundPortrait src="../../../images/cat.jpeg" />
           </PortraitBox>
           <Username>Gurpreet S.</Username>
           <RatingBox>
@@ -56,9 +56,8 @@ const OfferCard = () => {
             </PriceBox>
           </BtnBox>
         </InfoBox>
-
         <CommentBox>
-          <Comment>I am a experiened cat and can help load and unload</Comment>
+          <Comment>I am a experienced man and can help load and unload</Comment>
         </CommentBox>
       </OfferDetails>
     </CardContainer>

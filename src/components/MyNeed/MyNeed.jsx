@@ -24,6 +24,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDollarSign,
+  // faCalendarDays,
   faEye,
   faLocationDot,
   faPaperPlane,
@@ -61,7 +62,7 @@ const MyNeed = () => {
             <FontAwesomeIcon icon={faLocationDot} />
             &nbsp;&nbsp;Mountain Creek QLD 4557, Australia
           </NeedLocation>
-          <NeedInfo>small sofa move from QLD to Sydney around 13/11/2022</NeedInfo>
+          <NeedInfo>Move sofa from QLD to Sydney around 13/11/2022</NeedInfo>
           <DueDate>Due Date</DueDate>
           <DateDay>
             {/* <FontAwesomeIcon icon={faCalendarDays} />&nbsp; */}

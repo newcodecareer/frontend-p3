@@ -18,7 +18,13 @@ export default function ChangePassword() {
       </ChangePasswordSecondIcon>
       {/* <ChangePasswordIcons /> */}
       <ChangePasswordContext />
-      <ChangePasswordBtn>Change Password</ChangePasswordBtn>
+      <ChangePasswordBtn
+        onClick={() => {
+          window.location.href = "/reset-password-step-two";
+        }}
+      >
+        Send
+      </ChangePasswordBtn>
     </div>
   );
 }
