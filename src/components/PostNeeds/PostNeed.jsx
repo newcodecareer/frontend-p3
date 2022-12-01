@@ -12,7 +12,7 @@ import {
 const PostNeed = () => {
   return (
     <PostContainer>
-      <StepsTiitle>Houddy, your house best buddy</StepsTiitle>
+      <StepsTiitle>Houddy, your house&apos;s best buddy</StepsTiitle>
       <Subtitle>Find right tradie as simple as three steps</Subtitle>
       <CardContainer>
         <Card>
