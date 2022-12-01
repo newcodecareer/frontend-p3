@@ -91,6 +91,13 @@ const ContactUs = () => {
       job: "UI Designer",
       link: "https://www.linkedin.com/in/kitson-zhang-48b08441/",
     },
+    {
+      ImgSrc: "../../../public/images/BA.png",
+      alt: "pic",
+      Name: "Ziqi (Claire) Zhou ",
+      job: "BA",
+      link: "https://www.linkedin.com/in/clairezhou98/",
+    },
   ];
   return (
     <ContactUsPage>
