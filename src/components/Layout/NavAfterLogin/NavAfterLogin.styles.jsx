@@ -149,13 +149,13 @@ export const MenuButton = styled.button`
   transition: 0.2s;
   display: flex;
   align-items: center;
-  animation: animate 0.5s ;
-  @keyframes animate{
-    from{
-      height:20px;
+  animation: animate 0.5s;
+  @keyframes animate {
+    from {
+      height: 20px;
     }
     to {
-      height:42px;
+      height: 42px;
     }
   }
 `;

@@ -2,7 +2,7 @@ import React, { useReducer, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../utils/axios";
 import validation from "./SignUpValidation";
-import {AiFillEye} from 'react-icons/ai';
+import { AiFillEye } from "react-icons/ai";
 import {
   BtnContainer,
   Button,
@@ -129,9 +129,9 @@ const Signup = () => {
   const [errors, setErrors] = useState({});
   const [shown, setShown] = useState(false);
 
-  const showPassword = () =>{
+  const showPassword = () => {
     setShown(!shown);
-  }
+  };
   //   const debounce = setTimeout(() => {
   //     setFormIsValid(
   //       state.isFirstNameValid &&
@@ -263,35 +263,38 @@ const Signup = () => {
               placeholder="Email address"
             />
             {errors.email && <VadliationText>{errors.email}</VadliationText>}
-            <div style = {{
-              display:"flex", 
-              marginLeft:35,
+            <div
+              style={{
+                display: "flex",
+                marginLeft: 35,
               }}
             >
               <Input
-                type={shown ? "text" :"password"}
+                type={shown ? "text" : "password"}
                 value={state.password}
                 onChange={passwordChangeHandler}
                 onBlur={validatePasswordHandler}
                 placeholder="Create password"
-                style = {{width:510}}
+                style={{ width: 510 }}
               />
-              <button 
-                onClick={showPassword} 
-                type = "button"
-                style = {{
-                  height:30,
-                  width:30,
-                  marginTop:24,
+              <button
+                onClick={showPassword}
+                type="button"
+                style={{
+                  height: 30,
+                  width: 30,
+                  marginTop: 24,
                 }}
               >
-                <AiFillEye/>
+                <AiFillEye />
               </button>
             </div>
             {errors.password && <VadliationText>{errors.password}</VadliationText>}
           </InputContainer>
           <BtnContainer>
-            <Button type="submit" onClick={submitHandler}>Sign up</Button>
+            <Button type="submit" onClick={submitHandler}>
+              Sign up
+            </Button>
           </BtnContainer>
           <TermContainer>
             <Paragraph>

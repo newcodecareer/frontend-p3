@@ -7,8 +7,8 @@ const FollowUsPage = () => {
   return (
     <FollowUsPageCss>
       {/* <FollowUs /> */}
-      <ContactUs/>
-      <NewFooter/>
+      <ContactUs />
+      <NewFooter />
     </FollowUsPageCss>
   );
 };
