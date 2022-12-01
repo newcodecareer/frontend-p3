@@ -30,6 +30,8 @@ import ChangePhoneNumber from "./components/AccountSecurity/ChangePhoneNumber";
 import ChangePhoneNumberStepTwo from "./components/AccountSecurity/ChangePhoneNumberStepTwo";
 import ChangePhoneNumberStepThree from "./components/AccountSecurity/ChangePhoneNumberStepThree";
 import ChangePhoneNumberStepFour from "./components/AccountSecurity/ChangePhoneNumberStepFour";
+import CategoryPage from "./components/CategoryPage/CategoryPage";
+import { element } from "prop-types";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -168,6 +170,10 @@ const routes = [
     path: "/my-need",
     element: <MyNeed />,
   },
+  {
+    path: "/category-page",
+    element: <CategoryPage />,
+  }
 ];
 
 export default routes;

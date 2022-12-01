@@ -1,4 +1,4 @@
-import { Category, Heading, SubHeading, CardContainer, Card, Img, Text } from "./categories.style";
+import { Category, Heading, SubHeading, CardContainer, Card, Img, Text } from "./categories.styles";
 
 const Categories = () => {
   return (
@@ -7,56 +7,56 @@ const Categories = () => {
       <SubHeading>Emergency</SubHeading>
       <CardContainer>
         <Card>
-          <Img src="/images/brust.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/brust.png" alt="OMG something wrong" /></a>
           <Text>Burst Pipe</Text>
         </Card>
         <Card>
-          <Img src="/images/lock.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/lock.png" alt="OMG something wrong" /></a>
           <Text>Locked Out</Text>
         </Card>
         <Card>
-          <Img src="/images/short.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/short.png" alt="OMG something wrong" /></a>
           <Text>Short Out</Text>
         </Card>
         <Card>
-          <Img src="/images/removal.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/removal.png" alt="OMG something wrong" /></a>
           <Text>Removal</Text>
         </Card>
       </CardContainer>
       <SubHeading>Most Popular</SubHeading>
       <CardContainer>
         <Card>
-          <Img src="/images/builder.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/builder.png" alt="OMG something wrong" /></a>
           <Text>Builder</Text>
         </Card>
         <Card>
-          <Img src="/images/electrican.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/electrican.png" alt="OMG something wrong" /></a>
           <Text>Electrician</Text>
         </Card>
         <Card>
-          <Img src="/images/plumber.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/plumber.png" alt="OMG something wrong" /></a>
           <Text>Plumber</Text>
         </Card>
         <Card>
-          <Img src="/images/handyman.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/handyman.png" alt="OMG something wrong" /></a>
           <Text>Handyman</Text>
         </Card>
       </CardContainer>
       <CardContainer>
         <Card>
-          <Img src="/images/fenceing.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/fenceing.png" alt="OMG something wrong" /></a>
           <Text>Fencing</Text>
         </Card>
         <Card>
-          <Img src="/images/painting.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/painting.png" alt="OMG something wrong" /></a>
           <Text>Painting</Text>
         </Card>
         <Card>
-          <Img src="/images/gardening.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/gardening.png" alt="OMG something wrong" /></a>
           <Text>Gardening</Text>
         </Card>
         <Card>
-          <Img src="/images/cleaning.png" alt="OMG something wrong" />
+        <a href="/category-page"><Img src="/images/cleaning.png" alt="OMG something wrong" /></a>
           <Text>Cleaning</Text>
         </Card>
       </CardContainer>
