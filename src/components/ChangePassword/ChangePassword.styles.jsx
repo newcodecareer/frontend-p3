@@ -6,7 +6,7 @@ export const ChangePasswordUserIcon = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   span {
     width: 9rem;
     font-size: 9rem;
@@ -22,7 +22,7 @@ export const ChangePasswordSecondIcon = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
 `;
 
 export const ChangePasswordContextStyle = styled.div`
