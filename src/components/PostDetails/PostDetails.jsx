@@ -81,7 +81,7 @@ const PostDetails = () => {
           </div>
           <HeadingRight>
             <BudgetLabel>NEED BUDGET</BudgetLabel>
-            <Budget>$350</Budget>
+            <Budget>$122</Budget>
             <Button onClick={togglePopup}>Make an offer</Button>
             {isOpen && <Offer handleClose={togglePopup} content={<div></div>} />}
           </HeadingRight>
