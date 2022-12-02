@@ -22,7 +22,6 @@ import {
   OfferBox,
 } from "./MyNeed.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faDollarSign,
   // faCalendarDays,
@@ -30,12 +29,66 @@ import {
   faLocationDot,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-
 import OfferCard from "./OfferCard/OfferCard";
+// import { api } from "../../utils/axios";
+import axios from "axios";
+// import {postsData} from '../API/PostsData';
+import { useEffect, useState } from "react";
 
 const MyNeed = () => {
+  const [needsData, setNeedsData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // useEffect( () => {
+  //   api("http://localhost:3000/v1/posts", {
+  //     method: "get",
+  //     headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+  //   })
+  //     .then((response) => {
+  //       setNeedsData(response.data);
+  //     })
+  //     .catch((err) => {
+  //       if (err) {
+  //         console.log(err);
+  //       }
+  //     });
+  // },[]);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/v1/posts`);
+        setNeedsData(response.data);
+        setError(null);
+      } catch (err) {
+        setError(err.message);
+        setNeedsData(null);
+      } finally {
+        setLoading(false);
+        console.log("ok");
+      }
+    };
+    getData();
+  }, []);
+
+  // console.log(needsData.slice(-1));
+  const [{ title, location, onDate, budget, details }] = needsData
+    ? needsData.slice(-1)
+    : [
+        {
+          title: "move a sofa for me",
+          location: "sunshine coast, 4551",
+          onDate: "11/11/2023",
+          budget: "100",
+          details: "Just need one guy to move the sofa this weekend",
+        },
+      ];
+
   return (
     <MyNeedContainer>
+      {loading && <div>A moment please...</div>}
+      {error && <div>{`There is a problem fetching the post data - ${error}`}</div>}
       <NeedBox>
         <Offer>
           <CheckOffer>
@@ -55,25 +108,27 @@ const MyNeed = () => {
             <OfferNumber>&#40;5&#41;</OfferNumber>
           </OfferTitle>
         </Offer>
+
+        {/* details of my need card */}
         <NeedDetails>
           <Needheader>
-            <NeedTitle>Help move sofa</NeedTitle>
+            <NeedTitle>{title}</NeedTitle>
             <EditBtn>Edit</EditBtn>
           </Needheader>
           <NeedLocation>
             <FontAwesomeIcon icon={faLocationDot} />
-            &nbsp;&nbsp;Mountain Creek QLD 4557, Australia
+            &nbsp;&nbsp; {location}
           </NeedLocation>
-          <NeedInfo>small sofa move from QLD to Sydney around 13/11/2022</NeedInfo>
+          <NeedInfo>{details}</NeedInfo>
           <DueDate>Due Date</DueDate>
           <DateDay>
             {/* <FontAwesomeIcon icon={faCalendarDays} />&nbsp; */}
-            Oct 20
+            {onDate}
           </DateDay>
-          <PriceTitle>Price</PriceTitle>
+          <PriceTitle>Budget</PriceTitle>
           <PriceNumber>
             <FontAwesomeIcon icon={faDollarSign} />
-            &nbsp; 200
+            &nbsp; {budget}
           </PriceNumber>
         </NeedDetails>
       </NeedBox>

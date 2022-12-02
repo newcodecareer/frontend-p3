@@ -146,3 +146,8 @@ export const BtnAdd = styled.button`
   padding: 0;
   cursor: pointer;
 `;
+
+export const UnorderedList = styled.ul`
+  list-style: none;
+  margin-left: -40px;
+`;

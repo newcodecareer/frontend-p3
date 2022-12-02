@@ -1,31 +1,195 @@
-import { Background, Heading, InputGroup, Label, Input, Button } from "./PostStepOne.styles";
+import {
+  Background,
+  Heading,
+  InputGroup,
+  Label,
+  Input,
+  Button,
+  TextArea,
+  ButtonContainer,
+  BreakLine,
+} from "./PostStepOne.styles";
 
+import { secondaryFontColor } from "../common/index.styles";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import InputErrorModal from "../InputErrorModal/InputErrorModal";
 
 const PostStepOne = () => {
+  const [title, setTitle] = useState("");
+  const [location, setLocation] = useState("");
+  const [onDate, setOnDate] = useState("");
+  const [budget, setBudget] = useState("");
+  const [details, setDetails] = useState("");
+  const [error, setError] = useState(undefined);
+
+  const changeTitleHandler = (e) => {
+    setTitle(e.target.value);
+  };
+
+  const changeLocationHandler = (e) => {
+    setLocation(e.target.value);
+  };
+
+  const changeOnDateHandler = (e) => {
+    setOnDate(e.target.value);
+  };
+
+  const changeBudgetHandler = (e) => {
+    setBudget(e.target.value);
+  };
+
+  const changeDetailsHandler = (e) => {
+    setDetails(e.target.value);
+  };
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+    if (
+      title.trim().length === 0 ||
+      location.trim().length === 0 ||
+      onDate.trim().length === 0 ||
+      budget.trim().length === 0 ||
+      details.trim().length === 0
+    ) {
+      setError({
+        title: "An Error has Occurred.",
+        message: "Input cannot be empty.",
+      });
+      return;
+    }
+
+    if (Number(budget) < 1) {
+      setError({
+        title: "An Error has Occurred.",
+        message: "Budget cannot be less then 1.",
+      });
+      return;
+    }
+
+    // TODO send http req to backend
+    try {
+      const res = await fetch("http://localhost:3000/v1/posts", {
+        method: "POST",
+        body: JSON.stringify({
+          title,
+          location,
+          onDate,
+          budget,
+          details,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+      // const resJson = await res.json();
+      if (res.status === 200) {
+        setTitle("");
+        setLocation("");
+        setOnDate("");
+        setBudget("");
+        setDetails("");
+        setError({ title: "Post saved", message: "The post created successfully" });
+      } else {
+        console.log("Some error occurred");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  // TODO send http req to backend
+
+  const resetInput = () => {
+    setTitle("");
+    setLocation("");
+    setOnDate("");
+    setBudget("");
+    setDetails("");
+  };
+
   return (
-    <Background>
-      <div>
-        <Heading>Take three steps to get started.</Heading>
-        <InputGroup>
+    <>
+      {error && (
+        <InputErrorModal
+          title={error.title}
+          message={error.message}
+          onModalDismiss={() => setError(undefined)}
+        />
+      )}
+      <Background>
+        <Heading>Take steps to get started.</Heading>
+        <form onSubmit={onSubmitHandler}>
+          <InputGroup>
+            <div>
+              <Label htmlFor="title">What service do you need?</Label>
+              <Input
+                type="text"
+                id="title"
+                value={title}
+                onChange={changeTitleHandler}
+                placeholder="e.g. Plumber"
+              />
+            </div>
+            <div>
+              <Label htmlFor="location">Where is the location?</Label>
+              <Input
+                type="text"
+                id="location"
+                value={location}
+                onChange={changeLocationHandler}
+                placeholder="Enter your postcode"
+              />
+            </div>
+            <div>
+              <Label htmlFor="onDate">When do you need this done?</Label>
+              <Input
+                type="text"
+                id="onDate"
+                value={onDate}
+                onChange={changeOnDateHandler}
+                placeholder="DD/MM/YYYY"
+              />
+            </div>
+            <div>
+              <Label htmlFor="budget">What is your budget?</Label>
+              <Input
+                type="text"
+                id="budget"
+                value={budget}
+                onChange={changeBudgetHandler}
+                placeholder="Enter your budget"
+              />
+            </div>
+          </InputGroup>
+          <Label htmlFor="details">Please clarify your details.</Label>
           <div>
-            <Label>what service do you need?</Label>
-            <Input type="text" placeholder="e.g. Plumber" />
+            <TextArea
+              type="text"
+              id="details"
+              value={details}
+              onChange={changeDetailsHandler}
+              placeholder="Please clarify your details. 
+            The more specific they are, the more accurate the quotes are. "
+            />
           </div>
-          <div>
-            <Label>where is the location?</Label>
-            <Input type="text" placeholder="Enter your postcode" />
-          </div>
-          <div>
-            <Label>when do you need this done?</Label>
-            <Input type="text" placeholder="DD/MM/YYYY" />
-          </div>
-          <Link to="/post-step-two">
-            <Button primary>Next</Button>
-          </Link>
-        </InputGroup>
-      </div>
-    </Background>
+          <BreakLine></BreakLine>
+          <ButtonContainer>
+            <Link to="/post-needs">
+              <Button onClick={resetInput} inputWidth="240px" inputColor={secondaryFontColor}>
+                Cancel
+              </Button>
+            </Link>
+            {/* <Link to="/post-step-three"> */}
+            <Button type="submit" inputWidth="240px">
+              Submit
+            </Button>
+            {/* </Link> */}
+          </ButtonContainer>
+        </form>
+      </Background>
+    </>
   );
 };
 

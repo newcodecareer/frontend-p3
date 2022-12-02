@@ -31,11 +31,6 @@ const PostNeed = () => {
           <Description>Select the best buddy and leave reviews and rewards.</Description>
         </Card>
       </CardContainer>
-      {/* <div>
-        <Link to="/post-needs">
-          <PostNeedBtn>Post Your Need</PostNeedBtn>
-        </Link>
-      </div> */}
     </PostContainer>
   );
 };

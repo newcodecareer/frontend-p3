@@ -5,7 +5,7 @@ import Signup from "./components/Auth/Signup";
 import BrowseNeeds from "./components/BrowseNeeds/BrowseNeeds";
 
 import PostStepOne from "./components/Post/PostStepOne";
-import PostStepTwo from "./components/Post/PostStepTwo";
+// import PostStepTwo from "./components/Post/PostStepTwo";
 import PostStepThree from "./components/Post/PostStepThree";
 import SearchFilters from "./components/SearchFilters/SearchFilters";
 import Profile from "./components/Profile/Profile";
@@ -21,7 +21,7 @@ import MyNeeds from "./components/MyNeeds/MyNeeds";
 import MobileVerificationStepTwo from "./components/MobileVerification/MobileVerificationStepTwo";
 import MobileVerificationStepThree from "./components/MobileVerification/MobileVerificationStepThree";
 import UploadAvatar from "./components/UploadAvatar/UploadAvatar";
-// import MyNeed from "./components/MyNeed/MyNeed";
+import MyNeed from "./components/MyNeed/MyNeed";
 import AccountSecurity from "./components/AccountSecurity/AccountSecurity";
 import ChangeEmail from "./components/AccountSecurity/ChangeEmail";
 import ChangeEmailStepTwo from "./components/AccountSecurity/ChangeEmailStepTwo";
@@ -30,6 +30,8 @@ import ChangePhoneNumber from "./components/AccountSecurity/ChangePhoneNumber";
 import ChangePhoneNumberStepTwo from "./components/AccountSecurity/ChangePhoneNumberStepTwo";
 import ChangePhoneNumberStepThree from "./components/AccountSecurity/ChangePhoneNumberStepThree";
 import ChangePhoneNumberStepFour from "./components/AccountSecurity/ChangePhoneNumberStepFour";
+import CategoryPage from "./components/CategoryPage/CategoryPage";
+import { element } from "prop-types";
 
 // import Homepage from "./pages/HomePage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
@@ -64,10 +66,10 @@ const routes = [
     path: "/post-needs",
     element: <PostStepOne />,
   },
-  {
-    path: "/post-step-two",
-    element: <PostStepTwo />,
-  },
+  // {
+  //   path: "/post-step-two",
+  //   element: <PostStepTwo />,
+  // },
   {
     path: "/post-step-three",
     element: <PostStepThree />,
@@ -164,6 +166,14 @@ const routes = [
     path: "/change-phone-number-step-four",
     element: <ChangePhoneNumberStepFour />,
   },
+  {
+    path: "/my-need",
+    element: <MyNeed />,
+  },
+  {
+    path: "/category-page",
+    element: <CategoryPage />,
+  }
 ];
 
 export default routes;
