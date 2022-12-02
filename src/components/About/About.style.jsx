@@ -6,8 +6,8 @@ import {
   fontSizeL,
   primaryThemeColor,
   fontFamily,
-  secondaryThemeColor,
-  bgcColor,
+  // secondaryThemeColor,
+  // bgcColor,
 } from "../common/index.styles";
 
 export const AboutPage = styled.div`
@@ -101,92 +101,92 @@ export const FAQ = styled.div`
 `;
 
 // TeamMemebers div
-export const TeamMembers = styled.div`
-  flex-direction: column;
-`;
+// export const TeamMembers = styled.div`
+//   flex-direction: column;
+// `;
 
-export const MemberTitle = styled.h2`
-  margin-top: 20px;
-  color: ${primaryThemeColor};
-  font-size: ${fontSizeXXL};
-  text-align: center;
-  margin-top: 100px;
-`;
+// export const MemberTitle = styled.h2`
+//   margin-top: 20px;
+//   color: ${primaryThemeColor};
+//   font-size: ${fontSizeXXL};
+//   text-align: center;
+//   margin-top: 100px;
+// `;
 
-export const TeamMembersUp = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+// export const TeamMembersUp = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
 
-export const TeamMembersMid = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+// export const TeamMembersMid = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
 
-export const Photo = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 0%;
-  overflow: hidden;
-`;
+// export const Photo = styled.div`
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 0%;
+//   overflow: hidden;
+// `;
 
-export const Button = styled.button`
-  margin-top: 280px;
-  padding-top: 5px;
+// export const Button = styled.button`
+//   margin-top: 280px;
+//   padding-top: 5px;
 
-  margin-bottom: 20px;
-  background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
-  border-radius: 100%;
-  cursor: pointer;
-  &:hover {
-    color: ${primaryThemeColor};
-    filter: brightness(1);
-  }
-  text-align: center;
-`;
+//   margin-bottom: 20px;
+//   background-color: ${(props) => props.inputBackgroundColor || `${bgcColor}`};
+//   border-radius: 100%;
+//   cursor: pointer;
+//   &:hover {
+//     color: ${primaryThemeColor};
+//     filter: brightness(1);
+//   }
+//   text-align: center;
+// `;
 
-export const MemberH1 = styled.h1`
-  font-size: 1.5rem;
-  position: absolute;
-  top: 260px;
-  color: ${bgcColor};
-`;
+// export const MemberH1 = styled.h1`
+//   font-size: 1.5rem;
+//   position: absolute;
+//   top: 260px;
+//   color: ${bgcColor};
+// `;
 
-export const Card = styled.div`
-  flex-shrink: 0;
-  flex-grow: 0;
-  position: relative;
-  width: 220px;
-  height: 320px;
-  overflow: hidden;
-  margin: 20px;
-  background-color: ${secondaryThemeColor};
-  border-radius: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 0 30px #2c2c2c;
-  color: var(--font_color);
-  &:hover {
-    ${Photo} {
-      width: 200px;
-      height: 200px;
-      top: 30px;
-      border-radius: 50%;
-    }
-    ${MemberH1} {
-      position: absolute;
-      top: 220px;
-      color: black;
-    }
-  }
-`;
+// export const Card = styled.div`
+//   flex-shrink: 0;
+//   flex-grow: 0;
+//   position: relative;
+//   width: 220px;
+//   height: 320px;
+//   overflow: hidden;
+//   margin: 20px;
+//   background-color: ${secondaryThemeColor};
+//   border-radius: 20px;
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   flex-direction: column;
+//   box-shadow: 0 0 30px #2c2c2c;
+//   color: var(--font_color);
+//   &:hover {
+//     ${Photo} {
+//       width: 200px;
+//       height: 200px;
+//       top: 30px;
+//       border-radius: 50%;
+//     }
+//     ${MemberH1} {
+//       position: absolute;
+//       top: 220px;
+//       color: black;
+//     }
+//   }
+// `;
 
-export const Img2 = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-export const MemberH2 = styled.h2``;
+// export const Img2 = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// `;
+// export const MemberH2 = styled.h2``;

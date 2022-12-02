@@ -1,5 +1,4 @@
-import { BsLinkedin } from "react-icons/Bs";
-
+// import { BsLinkedin } from "react-icons/Bs";
 import {
   AboutPage,
   AboutOne,
@@ -8,20 +7,20 @@ import {
   Text,
   AboutTwo,
   Img,
-  Img2,
+  // Img2,
   AboutTwoText,
   TextControl,
   Heading,
   SubHeading,
   FAQ,
-  TeamMembers,
-  TeamMembersUp,
-  TeamMembersMid,
-  Card,
-  Photo,
-  MemberH1,
-  MemberTitle,
-  Button,
+  // TeamMembers,
+  // TeamMembersUp,
+  // TeamMembersMid,
+  // Card,
+  // Photo,
+  // MemberH1,
+  // MemberTitle,
+  // Button,
 } from "./About.style";
 
 const About = () => {
@@ -76,7 +75,7 @@ const About = () => {
           additional costs.
         </Text>
       </FAQ>
-      <TeamMembers>
+      {/* <TeamMembers>
         <MemberTitle>Team Members</MemberTitle>
         <TeamMembersUp>
           <Card>
@@ -152,7 +151,7 @@ const About = () => {
             <MemberH1>Comming Soon</MemberH1>
           </Card>
         </TeamMembersMid>
-      </TeamMembers>
+      </TeamMembers> */}
     </AboutPage>
   );
 };

@@ -1,4 +1,4 @@
-import { FaFacebookF } from "react-icons/fa";
+import { BsGithub } from "react-icons/Bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
@@ -44,7 +44,7 @@ const NewFooter = () => {
                 window.location.href = "#";
               }}
             >
-              <FaFacebookF />
+              <BsGithub />
             </Button>
             <Button
               onClick={() => {

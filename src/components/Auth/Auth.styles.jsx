@@ -9,7 +9,6 @@ import {
   fontSizeM,
   fontSizeS,
   primaryShadowColor,
-  btnFontColor,
 } from "../common/index.styles";
 
 export const Form = styled.form`
@@ -98,6 +97,13 @@ export const StyledLink = styled(Link)`
   font-weight: ${(props) => props.inputWeight || "700"};
   text-decoration: none;
   &:hover {
-    color: ${btnFontColor};
+    color: ${primaryThemeColor};
   }
+`;
+
+export const VadliationText = styled.div`
+  color: red;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 40px;
 `;
