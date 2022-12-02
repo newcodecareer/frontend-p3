@@ -1,7 +1,8 @@
-import React, { useReducer, useContext } from "react";
+import React, { useReducer, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { api } from "../../utils/axios";
+import { AiFillEye } from "react-icons/ai";
 import {
   BtnContainer,
   Form,
@@ -74,7 +75,10 @@ const reducer = (state, action) => {
 const Login = () => {
   // const [formIsValid, setFormIsValid] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState, undefined);
-
+  const [shown, setShown] = useState(false);
+  const showPassword = () => {
+    setShown(!shown);
+  };
   // useEffect(() => {
   //   const debounce = setTimeout(() => {
   //     setFormIsValid(state.isEmailValid && state.isPasswordValid);
@@ -148,13 +152,39 @@ const Login = () => {
             onBlur={validateEmailHandler}
             placeholder="Email address"
           />
-          <Input
+          {/* <Input
             type="password"
             value={state.password}
             onChange={passwordChangeHandler}
             onBlur={validatePasswordHandler}
-            placeholder="Enter the password"
-          />
+            placeholder="Create password"
+          /> */}
+          <div
+            style={{
+              display: "flex",
+              marginLeft: 35,
+            }}
+          >
+            <Input
+              type={shown ? "text" : "password"}
+              value={state.password}
+              onChange={passwordChangeHandler}
+              onBlur={validatePasswordHandler}
+              placeholder="Input your password"
+              style={{ width: 510 }}
+            />
+            <button
+              onClick={showPassword}
+              type="button"
+              style={{
+                height: 30,
+                width: 30,
+                marginTop: 24,
+              }}
+            >
+              <AiFillEye />
+            </button>
+          </div>
         </InputContainer>
         <BtnContainer>
           <Button type="submit">Log in</Button>

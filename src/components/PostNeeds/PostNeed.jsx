@@ -12,7 +12,7 @@ import {
 const PostNeed = () => {
   return (
     <PostContainer>
-      <StepsTiitle>Houddy, your house best buddy</StepsTiitle>
+      <StepsTiitle>Houddy, your house&apos;s best buddy</StepsTiitle>
       <Subtitle>Find right tradie as simple as three steps</Subtitle>
       <CardContainer>
         <Card>
@@ -31,11 +31,6 @@ const PostNeed = () => {
           <Description>Select the best buddy and leave reviews and rewards.</Description>
         </Card>
       </CardContainer>
-      {/* <div>
-        <Link to="/post-needs">
-          <PostNeedBtn>Post Your Need</PostNeedBtn>
-        </Link>
-      </div> */}
     </PostContainer>
   );
 };

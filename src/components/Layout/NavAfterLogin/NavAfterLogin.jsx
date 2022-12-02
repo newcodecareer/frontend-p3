@@ -4,7 +4,7 @@ import * as React from "react";
 // import { useEffect, useRef } from "react";
 import { FaRegUserCircle, FaTelegramPlane } from "react-icons/fa";
 import { MdSwitchAccount } from "react-icons/md";
-import { MdPayment } from "react-icons/md";
+// import { MdPayment } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
 import { MdOutlineLogout } from "react-icons/md";
 import { useEffect, useRef, useContext } from "react";
@@ -112,13 +112,12 @@ const NavAfterLogin = () => {
                 </IconControl>
                 <TextControl>Account</TextControl>
               </MenuButton>
-              <MenuButton>
+              {/* <MenuButton>
                 <IconControl>
                   <MdPayment />
                 </IconControl>
                 <TextControl>Payment</TextControl>
-              </MenuButton>
-
+              </MenuButton> */}
               <MenuButton
                 onClick={() => {
                   window.location.href = "/mobile-verification";

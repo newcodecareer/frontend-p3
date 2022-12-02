@@ -1,6 +1,8 @@
 import React, { useReducer, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../utils/axios";
+import validation from "./SignUpValidation";
+import { AiFillEye } from "react-icons/ai";
 import {
   BtnContainer,
   Button,
@@ -11,6 +13,7 @@ import {
   Paragraph,
   StyledLink,
   TermContainer,
+  VadliationText,
 } from "./Auth.styles";
 
 const firstNameValidator = (value) => {
@@ -123,8 +126,12 @@ const Signup = () => {
   // const [formIsValid, setFormIsValid] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState, undefined);
   const [isSignup, setIsSignup] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [shown, setShown] = useState(false);
 
-  // useEffect(() => {
+  const showPassword = () => {
+    setShown(!shown);
+  };
   //   const debounce = setTimeout(() => {
   //     setFormIsValid(
   //       state.isFirstNameValid &&
@@ -194,6 +201,8 @@ const Signup = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    setErrors(validation(state));
+    console.log(state);
     await api("/auth/signup", {
       method: "post",
       requestData: {
@@ -207,6 +216,20 @@ const Signup = () => {
   };
 
   const navigate = useNavigate();
+
+  // const [users,setUsers] = useState([]);
+
+  // useEffect(()=>{
+  //     getUsers();
+  // }, []);
+
+  // async function getUsers(){
+  //     const response = await fetch('mongodb+srv://fun-cool-team:jFkYK7IjVCCFRCGr@cluster0.covdzx8.mongodb.net/Houddy/customers');
+  //     const users = await response.json();
+  //     setUsers(users);
+  // }
+
+  // console.log(users);
 
   return (
     <>
@@ -223,6 +246,7 @@ const Signup = () => {
               onBlur={validateFirstNameHandler}
               placeholder="Your first name"
             />
+            {errors.firstName && <VadliationText>{errors.firstName}</VadliationText>}
             <Input
               type="text"
               value={state.lastName}
@@ -230,6 +254,7 @@ const Signup = () => {
               onBlur={validateLastNameHandler}
               placeholder="Your last name"
             />
+            {errors.lastName && <VadliationText>{errors.lastName}</VadliationText>}
             <Input
               type="email"
               value={state.email}
@@ -237,16 +262,39 @@ const Signup = () => {
               onBlur={validateEmailHandler}
               placeholder="Email address"
             />
-            <Input
-              type="password"
-              value={state.password}
-              onChange={passwordChangeHandler}
-              onBlur={validatePasswordHandler}
-              placeholder="Create password"
-            />
+            {errors.email && <VadliationText>{errors.email}</VadliationText>}
+            <div
+              style={{
+                display: "flex",
+                marginLeft: 35,
+              }}
+            >
+              <Input
+                type={shown ? "text" : "password"}
+                value={state.password}
+                onChange={passwordChangeHandler}
+                onBlur={validatePasswordHandler}
+                placeholder="Create password"
+                style={{ width: 510 }}
+              />
+              <button
+                onClick={showPassword}
+                type="button"
+                style={{
+                  height: 30,
+                  width: 30,
+                  marginTop: 24,
+                }}
+              >
+                <AiFillEye />
+              </button>
+            </div>
+            {errors.password && <VadliationText>{errors.password}</VadliationText>}
           </InputContainer>
           <BtnContainer>
-            <Button type="submit">Sign up</Button>
+            <Button type="submit" onClick={submitHandler}>
+              Sign up
+            </Button>
           </BtnContainer>
           <TermContainer>
             <Paragraph>
