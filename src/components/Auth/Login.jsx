@@ -153,7 +153,7 @@ const Login = () => {
             value={state.password}
             onChange={passwordChangeHandler}
             onBlur={validatePasswordHandler}
-            placeholder="Create password"
+            placeholder="Enter the password"
           />
         </InputContainer>
         <BtnContainer>

@@ -43,7 +43,7 @@ const PostStepOne = () => {
     setDetails(e.target.value);
   };
 
-  const onSubmitHandler = (e) => {
+  const onSubmitHandler = async (e) => {
     e.preventDefault();
     if (
       title.trim().length === 0 ||
@@ -67,14 +67,40 @@ const PostStepOne = () => {
       return;
     }
 
-    setTitle("");
-    setLocation("");
-    setOnDate("");
-    setBudget("");
-    setDetails("");
+    // TODO send http req to backend
+    try {
+      const res = await fetch("http://localhost:3000/v1/posts", {
+        method: "POST",
+        body: JSON.stringify({
+          title,
+          location,
+          onDate,
+          budget,
+          details,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
+      // const resJson = await res.json();
+      if (res.status === 200) {
+        setTitle("");
+        setLocation("");
+        setOnDate("");
+        setBudget("");
+        setDetails("");
+        setError({ title: "Post saved", message: "The post created successfully" });
+      } else {
+        console.log("Some error occurred");
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // TODO send http req to backend
+
   const resetInput = () => {
     setTitle("");
     setLocation("");
