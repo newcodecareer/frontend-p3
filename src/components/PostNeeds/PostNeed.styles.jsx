@@ -33,12 +33,12 @@ export const Card = styled.div`
   padding: 20px;
   margin: 30px;
   // box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
-  border: 1px solid #BEBEBE;
+  border: 1px solid #bebebe;
 
   &:hover {
     box-shadow: 0 10px 10px 0 rgba(48, 55, 66, 0.15);
-    transform: translate(0,-5px);
-    transition: all .2s ease-in-out;
+    transform: translate(0, -5px);
+    transition: all 0.2s ease-in-out;
     transition-delay: 0s !important;
   }
 `;

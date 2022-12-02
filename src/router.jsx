@@ -173,7 +173,7 @@ const routes = [
   {
     path: "/category-page",
     element: <CategoryPage />,
-  }
+  },
 ];
 
 export default routes;
