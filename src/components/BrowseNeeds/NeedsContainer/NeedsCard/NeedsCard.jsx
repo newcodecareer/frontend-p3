@@ -17,9 +17,10 @@ import { PostContext } from "../../../../context/PostContext";
 import PostDetails from "../../../PostDetails/PostDetails";
 
 // TODO temporary use location, will use api mapping later
-const location = "North Lakes";
+// const location = "North Lakes";
 
-const NeedsCard = () => {
+const NeedsCard = (props) => {
+  const {title, location, onDate, budget}= props;
   const { setShowPost } = useContext(PostContext);
   const handleClick = (event) => {
     setShowPost((current) => !current);
@@ -30,7 +31,7 @@ const NeedsCard = () => {
       <NeedsCardContainer onClick={handleClick}>
         <TitleContainer>
           <NeedsInfoContainer>
-            <Title>Need Plumbers to fix residential toilet pipe blocked</Title>
+            <Title>{title}</Title>
             <ParagraphContainer>
               <SlLocationPin />
               <p>{location}</p>
@@ -41,11 +42,11 @@ const NeedsCard = () => {
             </ParagraphContainer>
             <ParagraphContainer>
               <AiOutlineClockCircle />
-              <p>Anytime</p>
+              <p>Due day: {onDate}</p>
             </ParagraphContainer>
           </NeedsInfoContainer>
           <PriceContainer>
-            <p>$300</p>
+            <p>{budget}</p>
             <UserIcon>
               <HiUser />
             </UserIcon>
