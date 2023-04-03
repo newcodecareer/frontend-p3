@@ -33,9 +33,9 @@ import ChangePhoneNumberStepFour from "./components/AccountSecurity/ChangePhoneN
 import CategoryPage from "./components/CategoryPage/CategoryPage";
 import { element } from "prop-types";
 
-// import Homepage from "./pages/HomePage";
+// import Homepage from "./pages/Homepage";
 const ErrorPage = React.lazy(() => import("./pages/ErrorPage"));
-const Homepage = React.lazy(() => import("./pages/HomePage"));
+const Homepage = React.lazy(() => import("./pages/Homepage"));
 
 const routes = [
   {
