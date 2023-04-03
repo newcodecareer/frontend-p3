@@ -9,7 +9,7 @@ export default function ChangePhoneNumberStepFour() {
   return (
     <div>
       <ChangePasswordSecondIcon>
-        <img src="public\images\lock-password.png" alt="" />
+        <img src="\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
         <p>Your security phone number has been changed.</p>

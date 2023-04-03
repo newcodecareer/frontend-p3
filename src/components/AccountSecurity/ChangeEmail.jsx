@@ -10,7 +10,7 @@ export default function ChangeEmail() {
   return (
     <div>
       <ChangePasswordSecondIcon>
-        <img src="public\images\lock-password.png" alt="" />
+        <img src="\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
         <p>

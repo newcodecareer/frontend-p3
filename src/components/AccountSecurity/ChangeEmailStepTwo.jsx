@@ -9,7 +9,7 @@ export default function ChangeEmailStepTwo() {
   return (
     <div>
       <ChangePasswordSecondIcon>
-        <img src="public\images\lock-password.png" alt="" />
+        <img src="\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       <ChangePasswordContextStyle>
         <p>If you do not see the email in your inbox, please check your junk mail folder.</p>

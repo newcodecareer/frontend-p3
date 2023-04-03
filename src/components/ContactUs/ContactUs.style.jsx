@@ -18,7 +18,7 @@ export const Title = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../../public/images/contactus1.jpg");
+  background-image: url("../../../images/contactus1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

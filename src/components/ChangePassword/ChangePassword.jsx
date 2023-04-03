@@ -14,7 +14,7 @@ export default function ChangePassword() {
         </span>
       </ChangePasswordUserIcon>
       <ChangePasswordSecondIcon>
-        <img src="public\images\lock-password.png" alt="" />
+        <img src="\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
       {/* <ChangePasswordIcons /> */}
       <ChangePasswordContext />

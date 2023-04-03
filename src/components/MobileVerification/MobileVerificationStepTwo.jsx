@@ -17,7 +17,7 @@ export default function MobileVerificationStepTwo() {
         </span>
       </ChangePasswordUserIcon>
       <ChangePasswordSecondIcon>
-        <img src="public\images\mobile.png" alt="" />
+        <img src="/images/mobile.png" alt="" />
       </ChangePasswordSecondIcon>
       <MobileVerificationStepTwoContext />
       <MobileVerificationCodeInput />

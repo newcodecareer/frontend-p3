@@ -16,7 +16,7 @@ export default function MobileVerificationStepThree() {
         </span>
       </ChangePasswordUserIcon>
       <ChangePasswordSecondIcon>
-        <img src="public\images\mobile.png" alt="" />
+        <img src="/images/mobile.png" alt="" />
       </ChangePasswordSecondIcon>
       <MobileVerificationStepThreeContext />
       <MobileVerificationStepThreeBtn />

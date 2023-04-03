@@ -7,7 +7,7 @@ export default function AccountSecurity() {
   return (
     <div>
       <ChangePasswordSecondIcon>
-        <img src="public\images\lock-password.png" alt="" />
+        <img src="\images\lock-password.png" alt="" />
       </ChangePasswordSecondIcon>
 
       <SecurityItemContainer>
