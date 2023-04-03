@@ -76,9 +76,9 @@ const NavAfterLogin = () => {
             <li>
               <Link to="/browse-needs">Browse Needs</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/my-need">My Needs</Link>
-            </li> */}
+            </li>
           </ul>
         </NavList>
       </NavLogo>
