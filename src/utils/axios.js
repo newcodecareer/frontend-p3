@@ -8,7 +8,7 @@ const REQUEST_TIMEOUT = 10000;
 
 const axiosInstance = axios.create({
   // baseURL: environment.apiBaseUrl,
-  baseURL: "http://localhost:3000/v1",
+  baseURL: "https://houddy-service.onrender.com",
   timeout: REQUEST_TIMEOUT,
 });
 
