@@ -41,11 +41,11 @@ export const Card = styled.div`
   width: 130px;
   height: 100px;
   // box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  border: 1px solid #BEBEBE;
+  border: 1px solid #bebebe;
 
   &:hover {
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .25);
-    transition: all .2s ease-in-out;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
   }
 `;
 
